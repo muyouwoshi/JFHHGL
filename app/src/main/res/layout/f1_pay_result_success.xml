@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_margin="@dimen/px24_dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/pay_result_success_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px52_sp" />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/px200_dp"
+        android:layout_height="@dimen/px200_dp"
+        android:layout_marginTop="@dimen/px45_dp"
+        android:src="@drawable/f1_pay_result_success" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/button_big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px108_dp"
+        android:layout_margin="@dimen/px80_dp"
+        android:adjustViewBounds="true"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_fill_theme_pink_bg"
+        android:gravity="center"
+        android:text="@string/ok" />
+</LinearLayout>

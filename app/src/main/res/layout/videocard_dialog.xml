@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px25_dp"
+    android:paddingLeft="@dimen/px25_dp"
+    android:paddingRight="@dimen/px25_dp">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/video_card_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="@dimen/big_font_45"
+            android:textColor="#ffda9f"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px30_dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/px60_dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/px448_dp"
+                    android:src="@drawable/video_card_bg"
+                    android:layout_height="@dimen/px240_dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/px60_dp"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:id="@+id/des2"
+                android:textColor="#c2c2c2"
+                android:textSize="@dimen/big_font_40"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/px40_dp"
+                android:layout_marginLeft="@dimen/px60_dp"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#c2c2c2"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我的聊天卡:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_marginLeft="@dimen/px30_dp"
+                    android:textColor="@color/color_F85556"
+                    android:layout_gravity="center_horizontal"
+                    android:text="X3张"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px60_dp"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/use"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px130_dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/px40_dp"
+                android:layout_marginLeft="@dimen/px60_dp"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:layout_marginTop="@dimen/px50_dp"
+                android:background="@drawable/f1_bt_invite_expired"
+                android:gravity="center"
+                android:text="立即使用"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/no_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_chongzhi"
+                android:layout_marginBottom="@dimen/px40_dp"
+                android:gravity="center"
+                android:text="知道了,暂不使用"
+                android:textColor="#c2c2c2"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px10_dp"
+        android:background="@drawable/bg_bottom_while_shape" />
+
+</LinearLayout>

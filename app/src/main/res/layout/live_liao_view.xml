@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/live_liao_item1_tv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_live_liao_item"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:maxLength="3"
+        android:tag="1"
+        />
+
+    <TextView
+        android:id="@+id/live_liao_item2_tv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_live_liao_item"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:maxLength="3"
+        android:tag="2"
+        />
+
+    <TextView
+        android:id="@+id/live_liao_item3_tv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_live_liao_item"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:tag="3"
+        />
+
+    <TextView
+        android:id="@+id/live_liao_tv"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/color_85ffd8"
+        android:gravity="center"
+        android:layout_marginLeft="19dp"
+        android:textSize="13dp"
+        android:background="@drawable/live_user_liao_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/live_lianliao_tips_tv"
+        android:background="@drawable/live_bg_lianliao"
+        android:textSize="13dp"
+        android:textColor="@color/color_333333"
+        android:text="连撩10钻/次"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_above="@id/live_liao_tv"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_marginBottom="1dp"
+        />
+</RelativeLayout>

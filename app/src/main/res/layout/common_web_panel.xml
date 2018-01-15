@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.juxin.library.view.CustomFrameLayout
+        android:id="@+id/customFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/common_net_error" />
+
+        <include layout="@layout/common_loading_h5" />
+    </com.juxin.library.view.CustomFrameLayout>
+
+</RelativeLayout>

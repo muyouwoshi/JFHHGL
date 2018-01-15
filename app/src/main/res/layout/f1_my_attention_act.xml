@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    <include layout="@layout/base_title" />
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="@dimen/px108_dp"-->
+            <!--android:orientation="horizontal" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/viewpager_follow_me"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:gravity="center"-->
+                <!--android:text="关注我的"-->
+                <!--android:textColor="@color/picker_pink_color"-->
+                <!--android:textSize="@dimen/px48_sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/viewpager_me_follow"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:gravity="center"-->
+                <!--android:text="我关注的"-->
+                <!--android:textColor="@color/text_gray"-->
+                <!--android:textSize="@dimen/px48_sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/myconcern_cursor"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="matrix"-->
+            <!--android:src="@drawable/myconcern_indicator" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:background="@color/color_F0F2F2">
+        <com.juxin.library.controls.smarttablayout.SmartTabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/my_attention_stl_titles"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorColor="@color/color_E36D87"
+            app:stl_indicatorThickness="@dimen/px9_dp"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorCornerRadius="0dp"
+            app:stl_overlineColor="#4D000000"
+            app:stl_overlineThickness="0dp"
+            app:stl_underlineColor="@color/transparent"
+            app:stl_underlineThickness="2dp"
+            app:stl_dividerColor="@color/color_E36D87"
+            app:stl_dividerThickness="0dp"
+            app:stl_defaultTabTextAllCaps="false"
+            app:stl_defaultTabTextColor="@color/color_FF413B"
+            app:stl_defaultTabTextSize="@dimen/px46_sp"
+            app:stl_defaultTabTextHorizontalPadding="16dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_distributeEvenly="false"
+            app:stl_clickable="true"
+            app:stl_titleOffset="auto_center"
+            app:stl_drawDecorationAfterTab="false"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_attention_vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

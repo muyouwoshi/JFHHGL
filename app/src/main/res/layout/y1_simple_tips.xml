@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/y2_simple_tip_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tip_footer_height"
+        android:background="@color/color_fba62d">
+
+        <TextView
+            android:id="@+id/simple_tips_tev"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tip_footer_height"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/px35_dp"
+            android:paddingRight="@dimen/px35_dp"
+            android:text="聊天请使用文明用语,发布不良信息被举报将被封号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px39_sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

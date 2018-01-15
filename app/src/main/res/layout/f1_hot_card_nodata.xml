@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hot_card_nodata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/px100_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/f1_hot_card_top_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hot_card_nodata_top_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="@string/hot_card_nodata_top_tip"
+                android:textSize="@dimen/px48_sp" />
+
+            <ImageView
+                android:id="@+id/hot_card_nodata_top_iv"
+                style="@style/avatar_big"
+                android:layout_weight="1"
+                android:src="@drawable/f1_failure_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/px360_dp"
+                    android:layout_height="@dimen/px100_dp"
+                    android:src="@drawable/f1_linkstar" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hot_card_nodata_bottom_tip"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px46_sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f1_hot_card_bottom_bg"
+            android:orientation="vertical">
+
+            <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/f1_sorry_bigbg" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f1_sorry_bottombg" />
+    </LinearLayout>
+
+</LinearLayout>

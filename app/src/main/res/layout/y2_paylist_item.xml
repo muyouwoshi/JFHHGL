@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/paylist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/y2_paylist_item_seletor"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px35_dp"
+        android:paddingLeft="@dimen/px35_dp"
+        android:paddingRight="@dimen/px40_dp"
+        android:paddingTop="@dimen/px35_dp">
+
+        <ImageView
+            android:id="@+id/paylist_item_icon"
+            android:layout_width="@dimen/px145_dp"
+            android:layout_height="@dimen/px145_dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_head" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:layout_marginRight="@dimen/px35_dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paylist_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝支付"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/px45_sp" />
+
+            <TextView
+                android:id="@+id/paylist_item_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20_dp"
+                android:lines="1"
+                android:text="支付宝支付"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/px39_sp" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/right_go"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <View style="@style/divider_line_horizontal" />
+
+</LinearLayout>

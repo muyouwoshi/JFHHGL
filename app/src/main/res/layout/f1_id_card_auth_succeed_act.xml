@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <include layout="@layout/base_title" />
+    <ImageView
+        android:layout_width="@dimen/px300_dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="@dimen/px212_dp"
+        android:background="@drawable/f1_rz_shhz"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px55_dp"
+        android:textSize="@dimen/px52_sp"
+        android:textColor="@color/color_666666"
+        android:text="认证审核中"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px44_dp"
+        android:textSize="@dimen/px32_sp"
+        android:textColor="@color/color_CCCCCC"
+        android:text="将于1-7个工作日内完成"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px144_dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="95"
+            android:layout_height="@dimen/px1_dp"/>
+        <Button
+            android:id="@+id/id_card_succeed_btn_red"
+            android:layout_width="0dp"
+            android:layout_weight="500"
+            android:layout_height="@dimen/px155_dp"
+            android:gravity="center"
+            android:textSize="@dimen/px45_sp"
+            android:textColor="@color/color_666666"
+            android:background="@drawable/f1_id_card_succeed_btn_bg"
+            android:text="返回钱包"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="@dimen/px1_dp"/>
+        <Button
+            android:id="@+id/id_card_succeed_btn_main"
+            android:layout_width="0dp"
+            android:layout_weight="500"
+            android:textSize="@dimen/px45_sp"
+            android:gravity="center"
+            android:textColor="@color/color_666666"
+            android:layout_height="@dimen/px155_dp"
+            android:background="@drawable/f1_id_card_succeed_btn_bg"
+            android:text="返回首页"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="95"
+            android:layout_height="@dimen/px1_dp"/>
+    </LinearLayout>
+
+</LinearLayout>

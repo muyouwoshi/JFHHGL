@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/px2_dp"
+                android:color="@color/filter_tab_color_sel" />
+            <!--填充-->
+            <solid android:color="@color/transparent" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/update_portrait_tips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tip_footer_height"
+        android:background="@color/color_fba62d"
+        android:paddingLeft="@dimen/px35_dp"
+        android:paddingRight="@dimen/px35_dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/update_portrait_icon"
+            style="@style/icon_small"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_upload_head_carema" />
+
+        <TextView
+            android:id="@+id/update_portrait_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:layout_toRightOf="@id/update_portrait_icon"
+            android:text="上传真实美观头像 获得红包奖励提高80%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px39_sp" />
+
+        <ImageView
+            style="@style/icon_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/y1_back_ico_bai" />
+    </RelativeLayout>
+</LinearLayout>

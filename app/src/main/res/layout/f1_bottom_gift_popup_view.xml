@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="177dp"
+    android:layout_height="wrap_content">
+    <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+        android:id="@+id/bottom_gift_popup_ceiv"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/f1_songli_shu"/>
+    <View
+        android:id="@+id/bottom_gift_popup_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px39_dp"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@+id/bottom_gift_popup_ceiv"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gift_pupup_rlv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/px18_dp"
+        android:layout_marginRight="@dimen/px18_dp"
+        android:layout_marginTop="@dimen/px18_dp"
+        android:layout_alignBottom="@+id/bottom_gift_popup_view"/>
+
+</RelativeLayout>

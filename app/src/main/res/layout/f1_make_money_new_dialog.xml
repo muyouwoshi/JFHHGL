@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/make_money_img_tip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px560_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/f1_actimg_new" />
+
+        <ImageView
+            android:id="@+id/make_money_cancel_btn"
+            style="@style/icon_middle"
+            android:layout_alignRight="@id/make_money_img_tip"
+            android:layout_margin="@dimen/px20_dp"
+            android:src="@drawable/f1_close_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px50_dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/f1_hot_card_bottom_new_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/px75_dp">
+
+
+
+        <Button
+            android:id="@+id/make_money_sure_btn"
+            style="@style/button_big"
+            android:layout_width="@dimen/px870_dp"
+            android:layout_height="@dimen/px156_dp"
+            android:background="@drawable/make_money_dialog_new_btn"
+            android:text="@null" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px50_dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/xiaomishu"
+                android:textColor="@color/color_45A3EC"
+                android:layout_width="wrap_content"
+                android:text="联系小秘书"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/filter_text_gray_color"
+                android:layout_width="wrap_content"
+                android:text="获取帮助"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

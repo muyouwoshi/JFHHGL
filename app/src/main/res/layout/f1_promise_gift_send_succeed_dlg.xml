@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/px120_dp"
+    android:layout_marginRight="@dimen/px120_dp"
+    android:background="@drawable/p1_gift_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px66_dp"
+    android:paddingRight="@dimen/px66_dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px100_dp"
+        android:text="发送成功"
+        android:textColor="@color/color_zhuyao" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px90_dp"
+        android:textColor="@color/color_999999"
+        tools:text="定情信物已经发送,耐心等待对方同意哦～小友小秘书会将女孩子的反馈第一时间发送给您。" />
+
+    <TextView
+        android:id="@+id/promise_gift_send_succeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px60_dp"
+        android:layout_marginTop="@dimen/px30_dp"
+        android:gravity="right"
+        android:text="知道了"
+        android:textColor="@color/color_4AD3C2" />
+
+</LinearLayout>

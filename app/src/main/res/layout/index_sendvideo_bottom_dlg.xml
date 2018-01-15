@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px25_dp">
+
+    <include
+        layout="@layout/public_index_rechargevip_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/videoCardDiamand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px135_dp"
+        android:layout_marginLeft="@dimen/px60_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:layout_marginTop="@dimen/px60_dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/videoCardPay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/p1_pay_bg_new">
+
+            <ImageView
+                android:id="@+id/videoCardPay_select"
+                android:layout_width="@dimen/px40_dp"
+                android:layout_height="@dimen/px40_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px8_dp"
+                android:layout_marginTop="@dimen/px8_dp"
+                android:background="@drawable/f1_select_right" />
+
+            <TextView
+                android:id="@+id/videoCardNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="免费视频卡(0张)"
+                android:textColor="@color/color_FD7194" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/diamondsPay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:layout_weight="1"
+            android:background="@drawable/p1_pay_bg_new">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/diamondsPay_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="钻石支付"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/diamondsPay_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="50钻/分钟"
+                    android:textColor="@color/text_ciyao_gray"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/diamonds_select"
+                android:layout_width="@dimen/px40_dp"
+                android:layout_height="@dimen/px40_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px8_dp"
+                android:layout_marginTop="@dimen/px8_dp"
+                android:background="@drawable/f1_select_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- 商品列表 / 支付方式容器 -->
+    <LinearLayout
+        android:id="@+id/pay_type_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px35_dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px45_dp"
+        android:paddingRight="@dimen/px45_dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/default_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dsec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:text="尊贵的VIP用户,可直接发送视频语音"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px20_dp"
+            android:text=""
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/px30_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remainderDiamonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px60_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钻石余额:"
+            android:textColor="@color/color_fe9b05"
+            android:textSize="@dimen/px36_sp" />
+
+        <TextView
+            android:id="@+id/diamand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10_dp"
+            android:text=""
+            android:textSize="@dimen/px36_sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px130_dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px40_dp"
+        android:layout_marginLeft="@dimen/px60_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:layout_marginTop="@dimen/px40_dp"
+        android:background="@drawable/f1_bt_invite_expired"
+        android:gravity="center"
+        android:text="发送视频"
+        android:textColor="@color/white" />
+</LinearLayout>

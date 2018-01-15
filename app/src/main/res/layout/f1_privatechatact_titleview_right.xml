@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px64_dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px40_dp"
+        android:paddingRight="@dimen/px180_dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/cus_top_title_rl_intimacy"
+            android:layout_width="@dimen/px60_dp"
+            android:layout_height="@dimen/px60_dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="@dimen/px66_dp"
+                android:layout_height="@dimen/px66_dp"
+                android:background="@drawable/f2_icon_qinmidu_new"/>
+
+            <com.juxin.predestinate.ui.user.my.view.ContourTextView
+                android:id="@+id/cus_top_title_tv_intimacy_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px26_sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/px16_dp"
+                tools:text="Lv1"/>
+            <ImageView
+                android:id="@+id/cus_top_title_task_num"
+                style="@style/badge_common"
+                android:layout_width="@dimen/px22_dp"
+                android:layout_height="@dimen/px22_dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cus_top_title_img_phone"
+            android:layout_width="@dimen/px70_dp"
+            android:layout_height="@dimen/px70_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:background="@drawable/f2_icon_voice_video"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

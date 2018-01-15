@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/chat_panel_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px12_dp"
+        android:layout_marginTop="@dimen/px12_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:numColumns="8"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/px60_dp" />
+
+</LinearLayout>

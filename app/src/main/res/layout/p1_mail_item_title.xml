@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_gap_item" />
+
+    <LinearLayout
+        android:id="@+id/mail_item_title_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px140_dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px35_dp"
+        android:paddingRight="@dimen/px35_dp">
+
+        <TextView
+            android:id="@+id/mail_item_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="私密消息"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px36_sp" />
+
+        <TextView
+            android:id="@+id/mail_item_title_desc"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="（9条未读）"
+            android:textColor="@color/color_ciyao"
+            android:textSize="@dimen/px36_sp" />
+
+        <ImageView
+            android:id="@+id/mail_item_title_btn"
+            android:layout_width="@dimen/px150_dp"
+            android:layout_height="@dimen/px150_dp"
+            android:paddingTop="@dimen/px30_dp"
+            android:paddingBottom="@dimen/px30_dp"
+            android:paddingLeft="@dimen/px30_dp"
+            android:src="@drawable/mail_item_private_selector" />
+    </LinearLayout>
+
+    <View style="@style/divider_line_horizontal" />
+</LinearLayout>

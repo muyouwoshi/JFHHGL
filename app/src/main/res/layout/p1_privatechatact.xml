@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:marq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:id="@+id/netStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.juxin.predestinate.module.local.msgview.ChatViewLayout
+                android:id="@+id/privatechat_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/tips_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </RelativeLayout>
+        <com.juxin.library.view.roadlights.LMarqueeView
+            android:id="@+id/privatechat_lmv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            marq:marqueeAnimIsDuration="false"
+            android:layout_marginTop="@dimen/px100_dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1_dp"
+            android:background="@color/color_e2e2e2"/>
+        <com.juxin.predestinate.ui.user.my.CommonDlg.CloseFriendTaskView
+            android:id="@+id/privatechat_friend_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="-2px"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/px25_dp"
+    android:layout_marginRight="@dimen/px25_dp"
+    android:background="@drawable/p1_gift_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px104_dp"
+    android:paddingLeft="@dimen/px110_dp"
+    android:paddingRight="@dimen/px110_dp">
+
+    <TextView
+        android:id="@+id/to_lift_private_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px100_dp"
+        android:textSize="@dimen/px56_sp"
+        tools:text="是否与玲珑心（Lv2相见恨晚）" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px45_dp"
+        android:text="解除密友关系？"
+        android:textColor="@color/color_zhuyao"
+        android:textSize="@dimen/px56_sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px100_dp">
+
+        <TextView
+            android:id="@+id/to_lift_private_tv_reject"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px108_dp"
+            android:layout_marginRight="@dimen/px100_dp"
+            android:layout_weight="1"
+            android:background="@drawable/f1_to_lift_private_reject_bg"
+            android:gravity="center"
+            android:text="确认解除"
+            android:textColor="@color/color_5BCDC0"
+            android:textSize="@dimen/px45_sp"/>
+
+        <TextView
+            android:id="@+id/to_lift_private_tv_think"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px108_dp"
+            android:layout_weight="1"
+            android:background="@drawable/f1_to_lift_private_consider_bg"
+            android:gravity="center"
+            android:text="考虑一下"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px45_sp"/>
+    </LinearLayout>
+</LinearLayout>

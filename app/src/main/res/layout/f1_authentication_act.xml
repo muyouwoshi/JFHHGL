@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_auth_hot_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lmarquee_boy_bg"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:padding="@dimen/px30_dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/px60_dp"
+            android:layout_height="@dimen/px60_dp"
+            android:src="@drawable/f1_auth_horn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px18_dp"
+            android:text="@string/auth_girl_hot"
+            android:textColor="@color/color_ecb567"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px30_dp"
+        android:paddingRight="@dimen/px30_dp">
+
+        <TextView
+            android:id="@+id/tv_auth_top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="@dimen/px45_dp"
+            android:text="@string/auth_step"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_auth_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:text="@string/auth_is_first_step"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_auth_phone"
+        style="@style/style_my_auth_item"
+        android:layout_marginTop="@dimen/px30_dp">
+
+        <ImageView
+            android:id="@+id/iv_auth_phone"
+            android:layout_width="@dimen/px90_dp"
+            android:layout_height="@dimen/px90_dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/f1_auth_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px18_dp"
+            android:layout_toRightOf="@+id/iv_auth_phone"
+            android:text="@string/auth_safe_bind_phone"
+            android:textColor="@color/gray_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_auth_phone"
+            style="@style/style_my_auth_item_text"
+            android:background="@drawable/f1_auth_bt_border"
+            android:text="@string/auth_bind_phone"
+            android:textColor="@color/theme_color_red"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_auth_id"
+        style="@style/style_my_auth_item"
+        android:layout_marginTop="@dimen/px45_dp">
+
+        <ImageView
+            android:id="@+id/iv_auth_id"
+            android:layout_width="@dimen/px90_dp"
+            android:layout_height="@dimen/px90_dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/f1_auth_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px18_dp"
+            android:layout_toLeftOf="@+id/ll_auth_id"
+            android:layout_toRightOf="@+id/iv_auth_id"
+            android:text="@string/auth_law_rule"
+            android:textColor="@color/gray_text"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_auth_id"
+            style="@style/style_my_auth_item_text"
+            android:background="@drawable/f1_auth_bt_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_auth_id_ok"
+                android:layout_width="@dimen/px45_dp"
+                android:layout_height="@dimen/px45_dp"
+                android:layout_marginRight="@dimen/px12_dp"
+                android:src="@drawable/p1_pay_wx_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_auth_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_real_name"
+                android:textColor="@color/theme_color_red"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_auth_video"
+        style="@style/style_my_auth_item"
+        android:layout_marginTop="@dimen/px45_dp">
+
+        <ImageView
+            android:id="@+id/iv_auth_video"
+            android:layout_width="@dimen/px90_dp"
+            android:layout_height="@dimen/px90_dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/f1_auth_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px18_dp"
+            android:layout_toLeftOf="@+id/ll_auth_video"
+            android:layout_toRightOf="@+id/iv_auth_video"
+            android:text="@string/auth_id_video"
+            android:textColor="@color/gray_text"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_auth_video"
+            style="@style/style_my_auth_item_text"
+            android:background="@drawable/f1_auth_bt_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_auth_video_ok"
+                android:layout_width="@dimen/px45_dp"
+                android:layout_height="@dimen/px45_dp"
+                android:layout_marginRight="@dimen/px12_dp"
+                android:src="@drawable/p1_pay_wx_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_auth_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_videoauth"
+                android:textColor="@color/theme_color_red"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_auth_live"
+        style="@style/style_my_auth_item"
+        android:layout_marginTop="@dimen/px45_dp">
+
+        <ImageView
+            android:id="@+id/iv_auth_live"
+            android:layout_width="@dimen/px90_dp"
+            android:layout_height="@dimen/px90_dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/live_ic_auth_live" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px18_dp"
+            android:layout_toLeftOf="@+id/ll_auth_live"
+            android:layout_toRightOf="@+id/iv_auth_live"
+            android:text="@string/auth_live"
+            android:textColor="@color/gray_text"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_auth_live"
+            style="@style/style_my_auth_item_text"
+            android:background="@drawable/f1_auth_bt_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_auth_live_ok"
+                android:layout_width="@dimen/px45_dp"
+                android:layout_height="@dimen/px45_dp"
+                android:layout_marginRight="@dimen/px12_dp"
+                android:src="@drawable/p1_pay_wx_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_auth_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_auth_live"
+                android:textColor="@color/theme_color_red"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px30_dp"
+        android:paddingTop="@dimen/px45_dp"
+        android:text="@string/auth_info_safekeeping"
+        android:textColor="@color/filter_text_gray_color"
+        android:textSize="12sp" />
+</LinearLayout>

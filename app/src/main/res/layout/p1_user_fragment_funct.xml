@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 爵位功能 begin 布局删除需谨慎不然panel无法计算权重weight  //inflate 方式参数 失效-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/rl_identity"
+        style="@style/center_peerage_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_identity"
+            android:layout_width="@dimen/px105_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/f1_icon_identity" />
+
+        <TextView
+            android:id="@+id/tv_identity_top"
+            style="@style/text_middle"
+            android:layout_alignTop="@+id/iv_identity"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_identity"
+            android:text="身份"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_identity"
+            style="@style/text_small"
+            android:layout_alignBottom="@+id/iv_identity"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_marginTop="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_identity"
+            android:text="无"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px30_sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/center_peerage_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="@dimen/px105_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/text_middle"
+            android:layout_alignTop="@+id/iv_title"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_title"
+            android:text="爵位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_small"
+            android:layout_alignBottom="@+id/iv_title"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_marginTop="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_title"
+            android:text="无"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px30_sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_guard"
+        style="@style/center_peerage_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_guard"
+            android:layout_width="@dimen/px105_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/f1_icon_guard" />
+
+        <TextView
+            style="@style/text_middle"
+            android:layout_alignTop="@+id/iv_guard"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_guard"
+            android:text="守护"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_guard"
+            style="@style/text_small"
+            android:layout_alignBottom="@+id/iv_guard"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_marginTop="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_guard"
+            android:text="无"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px30_sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_car"
+        style="@style/center_peerage_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="@dimen/px105_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/text_middle"
+            android:layout_alignTop="@+id/iv_car"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_car"
+            android:text="座驾"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_car"
+            style="@style/text_small"
+            android:layout_alignBottom="@+id/iv_car"
+            android:layout_marginLeft="@dimen/px9_dp"
+            android:layout_marginTop="@dimen/px9_dp"
+            android:layout_toRightOf="@+id/iv_car"
+            android:text="无"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px30_sp" />
+    </RelativeLayout>
+</LinearLayout>

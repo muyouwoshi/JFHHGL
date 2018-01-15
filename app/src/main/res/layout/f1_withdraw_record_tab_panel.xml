@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/base_title"/>
+
+    <LinearLayout
+        android:id="@+id/pay_dlg_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px50_dp"
+        android:layout_marginRight="@dimen/px50_dp"
+        android:layout_marginTop="@dimen/px38_dp"
+        android:background="@drawable/f2__vip_top__bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px28_dp">
+
+        <ImageView
+            android:layout_width="@dimen/px38_dp"
+            android:layout_height="@dimen/px38_dp"
+            android:background="@drawable/f2_th_ico"/>
+
+        <TextView
+            android:id="@+id/wode_record_panel_tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:text="提现审核通过后，提现到账时间为72小时"
+            android:textColor="#d8ab64"
+            android:textSize="@dimen/px30_sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.CustomStatusListView
+            android:id="@+id/withdraw_record_panel_crv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/withdraw_record_panel_tv_data_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/px230_dp"
+                android:layout_height="@dimen/px230_dp"
+                android:background="@drawable/xiaoyou_mr02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px50_dp"
+                android:layout_marginBottom="@dimen/px150_dp"
+                android:textSize="@dimen/px32_sp"
+                android:textColor="@color/color_acacac"
+                android:text="@string/no_record"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

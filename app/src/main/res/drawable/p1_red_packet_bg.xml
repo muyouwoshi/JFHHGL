@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- button 红色8px圆角样式 -->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="#FFDE75" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="#FFDE75" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="@color/btn_enable" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="#FFD175" />
+        </shape>
+    </item>
+
+</selector>

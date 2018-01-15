@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px40_dp"
+        android:background="@drawable/bg_shape_round_whit"
+        android:paddingBottom="@dimen/px80_dp"
+        android:paddingLeft="@dimen/px40_dp"
+        android:paddingRight="@dimen/px40_dp">
+
+        <ImageView
+            android:id="@+id/share_dlg_close"
+            style="@style/icon_middle_center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/px40_dp"
+            android:src="@drawable/dlg_close_small" />
+
+        <TextView
+            android:id="@+id/share_dlg_title"
+            style="@style/text_big"
+            android:layout_below="@id/share_dlg_close"
+            android:layout_centerHorizontal="true"
+            android:text="@string/share_dlg_title" />
+
+        <TextView
+            android:id="@+id/share_dlg_content"
+            style="@style/text_middle"
+            android:layout_below="@id/share_dlg_title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/px30_dp"
+            android:text="@string/share_dlg_content"
+            android:textColor="@color/color_dca14e" />
+
+        <ImageView
+            android:id="@+id/share_dlg_btn"
+            style="@style/icon_big"
+            android:layout_below="@id/share_dlg_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px100_dp"
+            android:src="@drawable/spread_save_code" />
+
+        <TextView
+            style="@style/text_middle"
+            android:layout_below="@id/share_dlg_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px40_dp"
+            android:layout_marginTop="@dimen/px20_dp"
+            android:text="@string/share_dlg_btn_txt"
+            android:textColor="@color/text_zhuyao_black" />
+    </RelativeLayout>
+</LinearLayout>

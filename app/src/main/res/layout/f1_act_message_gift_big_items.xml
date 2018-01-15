@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp">
+
+        <LinearLayout
+            android:id="@+id/ll_gift_item"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/px40_dp"
+            android:paddingBottom="@dimen/px30_dp"
+            android:background="@drawable/f1_view_select"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px150_dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_gift_pic"
+                    android:layout_width="@dimen/px120_dp"
+                    android:layout_height="@dimen/px120_dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px60_dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px15_dp"
+                android:paddingRight="@dimen/px15_dp">
+
+                <ImageView
+                    android:layout_width="@dimen/px25_dp"
+                    android:layout_height="@dimen/px25_dp"
+                    android:background="@drawable/f1_ic_my_diamonds_gray"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_gift_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/px15_dp"
+                    tools:text="500钻石"
+                    android:textColor="@color/color_FF839D"
+                    android:textSize="@dimen/px32_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px60_dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px15_dp"
+                android:paddingRight="@dimen/px15_dp">
+
+                <TextView
+                    android:id="@+id/tv_gift_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="钻石"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px32_sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,231 @@
+apply plugin: 'com.android.application'
+apply plugin: 'AndResGuard'
+apply plugin: 'newlens'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    productFlavors {
+        "${rootProject.getFlavor()}" {}
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file(cStoreFile)
+            storePassword cStorePassword
+            keyAlias cKeyAlias
+            keyPassword cKeyPassword
+            v1SigningEnabled true
+            v2SigningEnabled false
+        }
+
+        release {
+            storeFile file(cStoreFile)
+            storePassword cStorePassword
+            keyAlias cKeyAlias
+            keyPassword cKeyPassword
+            v1SigningEnabled true
+            v2SigningEnabled false
+        }
+    }
+
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion rootProject.versions.minSDK
+        targetSdkVersion rootProject.versions.targetSDK
+
+        applicationId cApplicationId
+        signingConfig signingConfigs.release
+
+        versionCode Integer.parseInt(cVersionCode)
+        versionName cVersionName
+        flavorDimensions "${versionCode}"
+
+        ndk { abiFilters "armeabi" }//让64位的操作系统可以兼容32位的库文件 , "arm64-v8a", "x86" , "armeabi-v7a"
+        multiDexEnabled true// 65535限制
+        resConfigs "en", "zh"//清理无用语言包
+
+        manifestPlaceholders = [baidu_AK: cBaiduAK, lite_update_appid: cLiteUpdateAppid, qq_share_appid: cQQShareId]
+
+        /**
+         * 软件轻量包升级配置，配置文档如下：
+         * http://test.game.xiaoyouapp.cn:20080/juxin/api_doc/src/master/info/android_app_id.md
+         */
+        buildConfigField "String", "LITE_UPDATE_APPID", "\"${cLiteUpdateAppid}\""
+        buildConfigField "String", "QQ_SHARE_APPID", "\"${cQQShareId}\""
+        buildConfigField "String", "WX_SHARE_APPID", "\"${cWeChatShareId}\""
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    //忽略警告信息
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+    }
+
+    buildTypes {
+        debug {
+            //
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true//是否优化资源文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        //修改默认输出文件名
+        variant.outputs.all {
+            outputFileName = cApkDefName
+        }
+
+        //修改AndroidManifest.xml中的微信回调路径
+        variant.outputs.each { output ->
+            output.processManifest.doLast {
+                def sOutFile = file("${manifestOutputDirectory}/AndroidManifest.xml")
+                def sContent = sOutFile.getText('UTF-8')
+
+                sContent = sContent.replace("\"com.juxin.predestinate.wxapi.WXEntryActivity\"", "\"${cApplicationId}.wxapi.WXEntryActivity\"")
+                sContent = sContent.replace("\"com.juxin.predestinate.wxapi.WXPayEntryActivity\"", "\"${cApplicationId}.wxapi.WXPayEntryActivity\"")
+                sOutFile.write(sContent, 'UTF-8')
+            }
+        }
+
+        if (variant.buildType.name == 'release') {
+            project.getTasksByName("assemble${variant.name.capitalize()}", false).each { task ->
+                task.doLast {
+                    def outDir = "${project.buildDir}\\outputs\\"
+
+                    //备份mapping.txt
+                    def mapDir = "${outDir}mapping\\${rootProject.getFlavor()}\\release\\"
+                    def mapSrc = "mapping.txt"
+                    def mapDst = "mapping_${cAppName}_${cVersionCode}_${cVersionName}.txt"
+
+                    copy {
+                        from mapDir + mapSrc
+                        into new File(rootProject.cApkPath).canonicalPath
+
+                        rename(mapSrc, mapDst)
+                    }
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+andResGuard {
+    // mappingFile = file("./resource_mapping.txt")
+    mappingFile = null
+    // 当你使用v2签名的时候，7zip压缩是无法生效的。
+    use7zip = true
+    useSign = true
+    // 打开这个开关，会keep住所有资源的原始路径，只混淆资源的名字
+    keepRoot = false
+    whiteList = [
+            // for your icon
+            "R.drawable.icon",
+            // for fabric
+            "R.string.com.crashlytics.*",
+            // for umeng update
+            "R.string.umeng*",
+            "R.string.UM*",
+            "R.string.tb_*",
+            "R.layout.umeng*",
+            "R.layout.tb_*",
+            "R.drawable.umeng*",
+            "R.drawable.tb_*",
+            "R.anim.umeng*",
+            "R.color.umeng*",
+            "R.color.tb_*",
+            "R.style.*UM*",
+            "R.style.umeng*",
+            "R.id.umeng*",
+            // umeng share for sina
+            "R.drawable.sina*",
+            // for google-services.json
+            "R.string.google_app_id",
+            "R.string.gcm_defaultSenderId",
+            "R.string.default_web_client_id",
+            "R.string.ga_trackingId",
+            "R.string.firebase_database_url",
+            "R.string.google_api_key",
+            "R.string.google_crash_reporting_api_key",
+            // umeng share for facebook
+            "R.layout.*facebook*",
+            "R.id.*facebook*",
+            // umeng share for messager
+            "R.layout.*messager*",
+            "R.id.*messager*",
+            // umeng share commond
+            "R.id.progress_bar_parent",
+            "R.id.webView",
+            "R.raw.*"
+    ]
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+            "resources.arsc"
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.8-RC1'
+    }
+
+    finalApkBackupPath = "$cApkAndResPath"
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile project(':library')
+
+    // 分享sdk[provide by tangjianbo]
+    compile(name: 'ShareLibrary', ext: 'aar')
+
+    // 友盟统计
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    // 听云统计
+    compile "com.networkbench.newlens.agent.android:nbs.newlens.agent:2.7.0"
+
+    // dagger2依赖注入
+    compile 'com.google.dagger:dagger:2.12'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.12'
+
+    // sqlbrite数据库
+    compile 'com.squareup.sqlbrite2:sqlbrite:2.0.0'
+
+    // 权限检测
+    compile 'com.github.dfqin:grantor:2.3.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

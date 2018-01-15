@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px306_dp"
+        android:layout_marginLeft="@dimen/px130_dp"
+        android:layout_marginRight="@dimen/px130_dp"
+        android:background="@drawable/live_share_redbag_top_round">
+
+        <ImageView
+            android:id="@+id/live_share_iv_close"
+            android:layout_width="@dimen/px82_dp"
+            android:layout_height="@dimen/px82_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px31_dp"
+            android:layout_marginTop="@dimen/px31_dp"
+            android:src="@drawable/f1_close_btn02" />
+
+        <TextView
+            android:id="@+id/live_share_tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px140_dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="恭喜您，获得每日打卡红包"
+            android:textColor="@color/color_e24c4c"
+            android:textSize="@dimen/px48_sp" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_first"
+            android:layout_marginTop="@dimen/px21_dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/color_ffdea5"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px130_dp"
+        android:layout_marginRight="@dimen/px130_dp"
+        android:background="@drawable/redbag_red_bot_round">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+            android:id="@+id/live_share_ceiv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/live_hb_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/live_share_ceiv_bg"
+            android:layout_alignTop="@+id/live_share_ceiv_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="396"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/live_share_ll_random"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="@dimen/px200_dp"
+                        android:layout_height="@dimen/px200_dp"
+                        android:src="@drawable/live_jb_w"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px23_dp"
+                        android:text="随机金额"
+                        android:textColor="@color/color_ee8988"
+                        android:textSize="@dimen/px38_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/live_share_ll_succeed_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/live_share_tv_succeed_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px145_dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="1.2"
+                        android:textSize="43sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px145_dp"
+                        android:layout_marginBottom="@dimen/px23_dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:padding="0dp"
+                        android:text=" 元"
+                        android:textSize="@dimen/px50_dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/live_share_tv_failure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="无法获取到红包"
+                    android:textColor="@color/color_ee8988"
+                    android:textSize="@dimen/px40_sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/live_share_tv_init_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="金额随机，分享成"
+                    android:textColor="@color/color_ee8988"
+                    android:textSize="@dimen/px40_sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/live_share_tv_init_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20_dp"
+                    android:gravity="center"
+                    android:text="功后即可领取"
+                    android:textColor="@color/color_ee8988"
+                    android:textSize="@dimen/px40_sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="130" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="230"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/live_share_tv_bottom_succeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="已存入红包，可直接提现"
+                    android:textColor="@color/color_f6dddd"
+                    android:textSize="@dimen/px40_sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/live_share_tv_bottom_init_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px145_dp"
+                    android:layout_marginLeft="@dimen/px100_dp"
+                    android:layout_marginRight="@dimen/px100_dp"
+                    android:background="@drawable/live_share_redbag_share_bg"
+                    android:gravity="center"
+                    android:text="@string/go_share"
+                    android:textColor="@color/color_FAFAFA"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50" />
+
+                <TextView
+                    android:id="@+id/live_share_tv_bottom_succeed_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="知道了"
+                    android:textColor="@color/color_FAFAFA"
+                    android:textSize="@dimen/px52_sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/live_share_tv_bottom_init_befor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/redbag_limited"
+                    android:textColor="@color/color_f6dddd"
+                    android:textSize="@dimen/px40_sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px32_dp"
+            android:layout_below="@+id/live_share_ceiv_bg"
+            android:background="@drawable/live_share_redbag_bottom_round" />
+    </RelativeLayout>
+
+</LinearLayout>

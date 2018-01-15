@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F0F2F2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px60_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/phone_verify_edt_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="输入手机号码"
+            android:inputType="numberSigned"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:padding="@dimen/px30_dp"
+            android:textSize="@dimen/px42_sp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px60_dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phone_verify_edt_phone_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.58"
+                android:layout_marginRight="@dimen/px30_dp"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="验证码"
+                android:padding="@dimen/px30_dp"
+                android:textSize="@dimen/px42_sp"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/phone_verify_bt_take_phone_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.42"
+                android:gravity="center"
+                android:background="@drawable/f1_btn_phoneverify_selector"
+                android:padding="@dimen/px30_dp"
+                android:text="免费获取验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px42_sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/phone_verify_btn_phoneverify_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px114_dp"
+            android:layout_marginTop="@dimen/px120_dp"
+            android:background="@drawable/f1_btn_phoneverify_selector"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px48_sp" />
+    </LinearLayout>
+</LinearLayout>

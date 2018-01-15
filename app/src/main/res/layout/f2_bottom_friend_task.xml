@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/friend_task_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px35_dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_task_container"
+        android:layout_margin="@dimen/px25_dp"
+        android:background="@drawable/f2_round_white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/px200_dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="好友等级"
+            android:textColor="@color/color_ciyao"
+            android:textSize="@dimen/px36_sp" />
+
+        <TextView
+            android:id="@+id/friend_task_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px15_dp"
+            android:gravity="center"
+            android:text="不离不弃"
+            android:textColor="@color/color_FD698C"
+            android:textSize="@dimen/px45_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px35_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/px341_dp"
+                android:layout_height="@dimen/px140_dp"
+                android:background="@drawable/f2_infoimg01"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/px15_dp">
+
+                <ImageView
+                    android:layout_width="@dimen/px72_dp"
+                    android:layout_height="@dimen/px72_dp"
+                    android:src="@drawable/f2_icon_tonghuashichang" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px12_dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="语聊时长(分钟)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px30_sp" />
+
+                    <TextView
+                        android:id="@+id/friend_task_talk_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px3_dp"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px39_sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/px341_dp"
+                android:layout_height="@dimen/px140_dp"
+                android:layout_marginLeft="@dimen/px35_dp"
+                android:background="@drawable/f2_infoimg02"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/px15_dp">
+
+                <ImageView
+                    android:layout_width="@dimen/px72_dp"
+                    android:layout_height="@dimen/px72_dp"
+                    android:src="@drawable/f2_icon_zengsongliwu" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px12_dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="赠送礼物数"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px30_sp" />
+
+                    <TextView
+                        android:id="@+id/friend_task_gift_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px3_dp"
+                        android:text="69"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px39_sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px100_dp"
+            android:paddingRight="@dimen/px100_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px35_dp"
+                android:layout_height="@dimen/px35_dp"
+                android:src="@drawable/f2_icon_jinrirenwu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30_dp"
+                android:text="今日任务"
+                android:textColor="@color/color_ciyao"
+                android:textSize="@dimen/px39_sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friend_task_lin_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px100_dp"
+            android:paddingRight="@dimen/px100_dp" />
+
+        <View style="@style/divider_line_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/friend_task_lin_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round_bot_gwhite"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/px50_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px60_dp"
+                android:layout_height="@dimen/px60_dp"
+                android:src="@drawable/f2_icon_xiaoxi_weixuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px35_dp"
+                android:text="聊天"
+                android:textColor="@color/color_zhuyao"
+                android:textSize="@dimen/px45_sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px300_dp"
+        android:layout_alignTop="@+id/friend_task_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px300_dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px30_dp"
+            android:paddingRight="@dimen/px30_dp">
+
+            <ImageView
+                android:id="@+id/friendtaskdlg_other_avater"
+                style="@style/avatar_middle"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                style="@style/avatar_big"
+                android:layout_marginLeft="@dimen/px30_dp"
+                android:layout_marginRight="@dimen/px30_dp"
+                android:layout_marginTop="@dimen/px60_dp"
+                android:src="@drawable/f2_icon_haoyouwu" />
+
+            <ImageView
+                android:id="@+id/friendtaskdlg_other_self"
+                style="@style/avatar_middle"
+                android:src="@drawable/ic_launcher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friendtaskdlg_privilege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px35_dp"
+            android:paddingLeft="@dimen/px70_dp"
+            android:paddingRight="@dimen/px35_dp"
+            android:paddingTop="@dimen/px35_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px39_dp"
+                android:layout_height="@dimen/px39_dp"
+                android:src="@drawable/f2_ywico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px15_dp"
+                android:text="特权"
+                android:textColor="@color/color_ciyao"
+                android:textSize="@dimen/px36_sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

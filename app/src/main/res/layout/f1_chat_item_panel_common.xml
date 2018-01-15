@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.library.view.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_customFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.juxin.predestinate.module.logic.baseui.custom.EmojiTextView
+        android:id="@+id/chat_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px25_dp"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/px39_sp"
+        app:emojiSize="24dp" />
+
+    <ImageView
+        android:id="@+id/chat_item_img"
+        android:layout_width="@dimen/px400_dp"
+        android:layout_height="@dimen/px400_dp"
+        android:src="@drawable/default_pic" />
+
+    <include layout="@layout/f1_chat_item_panel_voice" />
+
+    <include layout="@layout/f1_chat_item_panel_video" />
+
+</com.juxin.library.view.CustomFrameLayout>

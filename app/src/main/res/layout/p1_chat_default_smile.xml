@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/chat_panel_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.juxin.predestinate.module.logic.baseui.custom.PointsView
+        android:id="@+id/chat_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/px10_dp">
+
+    </com.juxin.predestinate.module.logic.baseui.custom.PointsView>
+</FrameLayout>

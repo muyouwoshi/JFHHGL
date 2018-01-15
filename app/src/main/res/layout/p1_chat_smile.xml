@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        style="@style/divider_line"
+        android:background="@color/color_DDDDDD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px540_dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/chat_smile_package_layouts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            style="@style/divider_line"
+            android:background="@color/color_DDDDDD"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.HorizontalListView
+            android:id="@+id/chat_smile_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px108_dp"
+            android:paddingLeft="@dimen/px15_dp"
+            android:paddingRight="@dimen/px15_dp">
+
+        </com.juxin.predestinate.module.logic.baseui.custom.HorizontalListView>
+
+        <TextView
+            android:id="@+id/tv_custom_face_del"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px108_dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/px15_dp"
+            android:padding="@dimen/px15_dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px45_sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

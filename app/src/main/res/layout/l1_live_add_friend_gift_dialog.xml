@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/px25_dp"
+    android:gravity="bottom"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:background="@drawable/p1_gift_dialog_bg"
+        >
+
+        <ImageView
+            android:id="@+id/live_friend_dialog_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_live_add_friend_dialog_banner" />
+
+        <ImageView
+            android:id="@+id/live_friend_dialog_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_live_friend_dialog_close" />
+
+
+        <RelativeLayout
+            android:id="@+id/live_friend_dialog_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="@color/color_ebebeb" />
+
+            <TextView
+                android:id="@+id/live_friend_dialog_diamonds_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/live_friend_dialog_recharge_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/live_friend_dialog_diamonds_tv"
+                android:text="充值"
+                android:textColor="@color/color_ffa624"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/live_friend_dialog_send_tv"
+                android:layout_width="67dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="赠送"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:background="@drawable/ic_live_friend_send"
+                />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/live_friend_dialog_gift"
+            android:layout_below="@id/live_friend_dialog_banner"
+            android:layout_above="@id/live_friend_dialog_bottom"
+            />
+    </RelativeLayout>
+</LinearLayout>

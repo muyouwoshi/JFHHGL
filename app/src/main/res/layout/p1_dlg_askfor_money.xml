@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:clipChildren="false"
+        android:id="@+id/rl">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/p1_dlg_askfor_money"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/dlg_wangmoney_tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/img"
+            android:layout_marginBottom="100dp"
+            android:background="#391e1e"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="已有7373737人，赚到373737元" />
+
+        <TextView
+            android:id="@+id/dlg_wangmoney_tv_btn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/f1_dlg_wantmoney_btn"
+            android:gravity="center"
+            android:text="查看如何赚钱"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_dlg_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/rl"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/f1_dlg_close_big" />
+
+
+</RelativeLayout>

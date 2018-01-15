@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/floating_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200_dp"
+        android:background="#A8000000"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="@dimen/px150_dp"
+                android:layout_height="@dimen/px150_dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px25_dp"
+                android:layout_marginRight="@dimen/px25_dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_head" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_img"
+                android:layout_toRightOf="@+id/user_img"
+                android:singleLine="true"
+                android:text="Lisa"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px45_sp" />
+
+            <TextView
+                android:id="@+id/user_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/user_img"
+                android:layout_toRightOf="@+id/user_img"
+                android:singleLine="true"
+                android:text="你好，请问你在吗？"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px39_sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_ignore"
+                style="@style/button_middle_list"
+                android:layout_marginRight="@dimen/px30_dp"
+                android:background="@drawable/p1_notify_close_btn"
+                android:text="@string/message_close"
+                android:textColor="#888"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:id="@+id/btn_reply"
+                style="@style/button_middle_list"
+                android:layout_marginRight="@dimen/px30_dp"
+                android:text="@string/message_replay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

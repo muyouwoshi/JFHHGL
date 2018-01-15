@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px45_dp"
+        android:paddingLeft="@dimen/px45_dp"
+        android:paddingRight="@dimen/px45_dp">
+
+        <!-- 标题 begin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/px45_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送私房照，"
+                android:textColor="@color/text_zhuyao_black"
+                android:textSize="@dimen/px52_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轻松拿收益"
+                android:textColor="@color/theme_color_red"
+                android:textSize="@dimen/px52_sp" />
+        </LinearLayout>
+        <!-- 标题 end -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="点击上传专属私密照片"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px42_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px24_dp">
+
+            <com.juxin.predestinate.module.logic.baseui.custom.HorizontalListView
+                android:id="@+id/hsv_listview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px212_dp" />
+
+            <ImageView
+                android:id="@+id/iv_add_pic"
+                android:layout_width="@dimen/px212_dp"
+                android:layout_height="@dimen/px212_dp"
+                android:layout_gravity="center"
+                android:src="@drawable/f1_bt_add_gift" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_context"
+                style="@style/chat_input_text_edit"
+                android:layout_marginBottom="@dimen/px24_dp"
+                android:hint="输入对帅哥说的话，撒个娇、卖个萌"
+                android:maxLength="40" />
+
+            <TextView
+                android:id="@+id/tv_context_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_context"
+                android:layout_alignRight="@+id/et_context"
+                android:textSize="@dimen/px20_dp"
+                android:textColor="@color/color_C8C8CE"
+                android:layout_marginBottom="@dimen/px10_dp"
+                android:layout_marginRight="@dimen/px10_dp"
+                android:text="0/40"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="选择查看解锁所需礼物"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px42_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+        </LinearLayout>
+
+        <!-- 选择礼物 begin -->
+        <include layout="@layout/f1_ask_for_gift_item"/>
+        <!-- 选择礼物 end -->
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px135_dp"
+            android:layout_marginBottom="@dimen/px30_dp"
+            android:background="@drawable/f1_bt_invite_expired"
+            android:gravity="center"
+            android:padding="@dimen/px30_dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px48_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请上传个人真实视频，请勿发送广告、涉黄图片等违法内容。"
+            android:textColor="@color/color_f38635"
+            android:textSize="@dimen/px34_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px18_dp"
+            android:text="一经发现，严肃处理，后果自负"
+            android:textColor="@color/color_f38635"
+            android:textSize="@dimen/px34_sp" />
+    </LinearLayout>
+</LinearLayout>

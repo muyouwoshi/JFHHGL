@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="@dimen/px60_dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/px10_dp">
+
+    <LinearLayout
+        android:id="@+id/rl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/chat_panel_secre_audio_img_audio"
+            android:layout_width="@dimen/px45_dp"
+            android:layout_height="@dimen/px45_dp"
+            android:layout_marginBottom="@dimen/px35_dp"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:layout_marginTop="@dimen/px35_dp"
+            android:src="@drawable/f1_voice_from_icon" />
+
+        <TextView
+            android:id="@+id/chat_panel_secre_audio_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px35_dp"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:layout_marginRight="@dimen/px130_dp"
+            android:layout_marginTop="@dimen/px35_dp"
+            android:text="@string/private_voice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px30_sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rl_content"
+        android:layout_alignLeft="@+id/rl_content"
+        android:layout_alignRight="@+id/rl_content"
+        android:layout_alignTop="@+id/rl_content">
+
+        <ImageView
+            android:layout_width="@dimen/px45_dp"
+            android:layout_height="@dimen/px45_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px13_dp"
+            android:layout_marginTop="@dimen/px13_dp"
+            android:background="@drawable/f1_unlock" />
+    </RelativeLayout>
+</RelativeLayout>

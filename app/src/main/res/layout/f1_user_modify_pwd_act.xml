@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_modifypwd_desc_001"
+                    android:textColor="#a3a6ac"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_modifypwd_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="1068595"
+                    android:textColor="#fd9bb4"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/txt_modifypwd_desc_002"
+                android:textColor="#a3a6ac"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/f1_bg_edit_modifypwd"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_oldpwd_desc"
+                    android:textColor="#81868c"
+                    android:textSize="15sp" />
+
+                <com.juxin.predestinate.ui.setting.ClearEditText
+                    android:id="@+id/edtTxt_modify_oldpwd"
+                    style="@style/ext_modify_pwd"
+                    android:hint="@string/ext_oldpwd_hit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/f1_bg_edit_modifypwd"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_newpwd_desc"
+                    android:textColor="#81868c"
+                    android:textSize="15sp" />
+
+                <com.juxin.predestinate.ui.setting.ClearEditText
+                    android:id="@+id/edtTxt_modify_newpwd"
+                    style="@style/ext_modify_pwd"
+                    android:hint="@string/ext_newpwd_hit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/f1_bg_edit_modifypwd"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_replacepwd_desc"
+                    android:textColor="#81868c"
+                    android:textSize="15sp" />
+
+                <com.juxin.predestinate.ui.setting.ClearEditText
+                    android:id="@+id/edtTxt_modify_renewpwd"
+                    style="@style/ext_modify_pwd"
+                    android:hint="@string/ext_replacepwd_hit" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_modify_pwd_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:background="@drawable/f1_btn_upload_head_redback_selector"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/bt_complete"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

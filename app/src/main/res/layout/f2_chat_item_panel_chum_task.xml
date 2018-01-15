@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/chat_item_chum_task_img_left"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/f2_chat_close_task" />
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp">
+
+        <LinearLayout
+            android:id="@+id/chat_item_chum_task_ll_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/p1_gift_dialog_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/px30_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我们今天的好友任务还没有完成哦~"
+                    android:textColor="@color/color_zhuyao"
+                    android:textSize="@dimen/px40_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:text="快点完成任务增加亲密度吧。~"
+                    android:textColor="@color/color_zhuyao"
+                    android:textSize="@dimen/px40_sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px55_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lovers_task"
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/px34_sp" />
+
+                            <TextView
+                                android:id="@+id/chat_item_chum_task_lovers_task"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/px34_sp"
+                                tools:text="赠送任意礼物1个" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/chat_item_chum_task_lovers_award_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/px26_dp"
+                                android:text="@string/mission_rewards"
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/px34_sp" />
+
+                            <TextView
+                                android:id="@+id/chat_item_chum_task_lovers_award"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/px26_dp"
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/px34_sp"
+                                tools:text="@string/mission_rewards" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chat_item_chum_task_ll_action"
+                        android:layout_width="@dimen/px286_dp"
+                        android:layout_height="@dimen/px120_dp"
+                        android:layout_marginLeft="@dimen/px16_dp"
+                        android:background="@drawable/f2_close_task_btn_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/chat_item_chum_task_task_icon"
+                            android:layout_width="@dimen/px64_dp"
+                            android:layout_height="@dimen/px64_dp"
+                            android:background="@drawable/f2_icon_video_task" />
+
+                        <TextView
+                            android:id="@+id/chat_item_chum_task_task_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px16_dp"
+                            android:text="去完成"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/chat_item_chum_task_img_right"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/f2_right_chat_close_task" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

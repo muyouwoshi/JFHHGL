@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 声音录制弹出提示面板 -->
+    <solid android:color="#66000000" />
+    <corners android:radius="@dimen/px15_dp" />
+</shape>

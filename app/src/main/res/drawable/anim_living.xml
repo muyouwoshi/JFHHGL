@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/live_a_1" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_2" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_3" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_4" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_5" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_6" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_7" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_8" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_9" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_10" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_11" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_12" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_13" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_14" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_15" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_16" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_17" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_18" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_19" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_20" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_21" android:duration="200"/>
+    <item android:drawable="@drawable/live_a_22" android:duration="200"/>
+</animation-list>

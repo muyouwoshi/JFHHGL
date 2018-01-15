@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/bottom_gif_num_pop_item_ll"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:paddingLeft="@dimen/px76_dp"
+              android:orientation="horizontal">
+    <TextView
+        android:id="@+id/bottom_gif_num_pop_item_num"
+        android:layout_width="@dimen/px200_dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/px27_dp"
+        android:textColor="@color/color_47cfd3"
+        android:text="1314"/>
+    <TextView
+        android:id="@+id/bottom_gif_num_pop_item_moral"
+        android:layout_width="@dimen/px200_dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/px27_dp"
+        android:textColor="@color/color_999999"
+        android:text="一生一世"/>
+</LinearLayout>

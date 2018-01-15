@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.library.view.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customMailFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.juxin.predestinate.ui.mail.base.CustomLetterMailItem
+        android:id="@+id/chat_item_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.juxin.predestinate.ui.mail.base.CustomOtherMailItem
+        android:id="@+id/chat_item_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.juxin.predestinate.ui.mail.base.CustomSpecialMailItem
+        android:id="@+id/chat_item_private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.juxin.predestinate.ui.mail.base.CustomTitleItem
+        android:id="@+id/chat_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.juxin.predestinate.ui.mail.base.CustomBottomItem
+        android:id="@+id/chat_item_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.juxin.predestinate.ui.mail.base.CustomBlankBarItem
+        android:id="@+id/chat_item_blankbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</com.juxin.library.view.CustomFrameLayout>

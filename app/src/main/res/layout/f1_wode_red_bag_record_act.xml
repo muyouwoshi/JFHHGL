@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/wode_wallet_ll_withdraw"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/base_title"/>
+
+    <!--- top start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_5e574c"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px30_dp"
+        android:paddingLeft="@dimen/px80_dp"
+        android:paddingTop="@dimen/px80_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/head_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px42_sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px1_dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/px44_dp"
+                android:layout_height="@dimen/px44_dp"
+                android:background="@drawable/xiaoyou_info_img"/>
+
+            <TextView
+                android:id="@+id/wode_wallet_tv_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px21_dp"
+                android:paddingRight="@dimen/px60_dp"
+                android:text="@string/withdrawexplain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36_sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/wode_wallet_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px60_dp"
+            android:text="0.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px120_sp"/>
+
+        <TextView
+            android:id="@+id/wode_wallet_tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px120_dp"
+            android:layout_marginTop="@dimen/px40_dp"
+            android:text="@string/balance_in_full"
+            android:textColor="@color/color_b2afa9"
+            android:textSize="@dimen/px30_sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wode_wallet_tv_draw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200_dp"
+        android:layout_marginLeft="@dimen/px12_dp"
+        android:layout_marginRight="@dimen/px12_dp"
+        android:layout_marginTop="-32dp"
+        android:background="@drawable/xiaoyou_tx_btnbg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px41_dp"
+        android:paddingTop="@dimen/px41_dp"
+        android:text="@string/head_draw_bt"
+        android:textColor="@color/color_5e574c"
+        android:textSize="@dimen/px46_sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px40_dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px50_dp"
+        android:paddingRight="@dimen/px50_dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_weight="1"
+            android:background="@color/color_CCCCCC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px66_dp"
+            android:paddingRight="@dimen/px66_dp"
+            android:text="@string/detail_of_income"
+            android:textColor="@color/color_c5c8d3"
+            android:textSize="@dimen/px34_sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_weight="1"
+            android:background="@color/color_CCCCCC"/>
+    </LinearLayout>
+
+</LinearLayout>

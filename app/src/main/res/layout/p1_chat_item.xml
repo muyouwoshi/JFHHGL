@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/chat_item_time"
+        style="@style/chat_item_time"
+        android:text="2015-04-21 10:25" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/chat_item_left"
+            layout="@layout/p1_chat_item_left" />
+
+        <include
+            android:id="@+id/chat_item_right"
+            layout="@layout/p1_chat_item_right" />
+
+        <LinearLayout
+            android:id="@+id/chat_item_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </FrameLayout>
+</LinearLayout>

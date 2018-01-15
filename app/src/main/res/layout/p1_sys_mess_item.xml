@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:auto="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sys_mess_item_tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px20_dp"
+        android:layout_marginTop="@dimen/px20_dp"
+        android:text="3月6日 晚上：8：31"
+        android:textColor="@color/color_CCCCCC"
+        android:textSize="@dimen/px34_sp"/>
+
+    <LinearLayout
+        android:id="@+id/sys_mess_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px40_dp"
+        android:layout_marginLeft="@dimen/px50_dp"
+        android:layout_marginRight="@dimen/px50_dp"
+        android:layout_marginTop="@dimen/px20_dp"
+        android:background="@drawable/p1_sys_mess_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/px50_dp">
+
+        <TextView
+            android:id="@+id/sys_mess_item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updata_mess"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px48_sp"/>
+
+        <com.juxin.predestinate.module.logic.baseui.custom.FixedRatioImageView
+            android:id="@+id/sys_mess_item_img_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px46_dp"
+            auto:mWidthRatio="521"
+            auto:mHeightRatio="245"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/sys_mess_item_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px46_dp"
+            android:text="@string/sys_mess_content"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px42_sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_marginTop="@dimen/px60_dp"
+            android:background="@color/color_DFDFDF"/>
+
+        <TextView
+            android:id="@+id/sys_mess_item_tv_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/px40_dp"
+            android:paddingTop="@dimen/px40_dp"
+            android:text="@string/sys_mess_btn_text"
+            android:textColor="@color/color_45A3EC"
+            android:textSize="@dimen/px48_sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

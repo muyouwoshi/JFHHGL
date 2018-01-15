@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/bottom_gif_view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px25_dp"
+        android:paddingLeft="@dimen/px25_dp"
+        android:paddingRight="@dimen/px25_dp">
+
+        <RelativeLayout
+            android:id="@+id/bottom_gif_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/p1_gift_dialog_bg"
+            android:paddingTop="@dimen/px42_dp">
+
+            <LinearLayout
+                android:id="@+id/bottom_gif_ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px50_dp"
+                android:layout_marginRight="@dimen/px50_dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_bottom_banned_exit"
+                        android:layout_width="@dimen/px70_dp"
+                        android:layout_height="@dimen/px70_dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/f1_bottom_banned_out" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/px100_dp"
+                    android:layout_height="@dimen/px100_dp"
+                    android:background="@drawable/f1_bottom_banned_tip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20_dp"
+                    android:text="@string/dal_bottom_banned_title"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_big" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20_dp"
+                    android:text="@string/dal_bottom_banned_desc"
+                    android:textColor="@color/text_ciyao_gray"
+                    android:textSize="@dimen/px34_sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bottom_banned_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px30_dp"
+                    android:layout_marginRight="@dimen/px30_dp"
+                    android:layout_marginTop="@dimen/px60_dp"
+                    android:background="@drawable/f1_btn_banned_bg"
+                    android:gravity="center"
+                    android:text="封停时间:永久"
+                    android:textColor="@color/color_FD7194" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px40_dp"
+                    android:layout_marginTop="@dimen/px60_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dal_bottom_banned_cus_tip"
+                        android:textColor="@color/text_ciyao_gray"
+                        android:textSize="@dimen/px34_sp" />
+
+                    <TextView
+                        android:id="@+id/bottom_banned_csphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px5_dp"
+                        android:text="@string/txt_customerservice_phone_default"
+                        android:textColor="@color/txt_bottom_banned_phone"
+                        android:textSize="@dimen/px34_sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

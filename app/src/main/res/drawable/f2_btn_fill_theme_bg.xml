@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- button 8px圆角样式 -->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="@color/white" />
+            <stroke android:width="1px" android:color="@color/color_cbcdd0"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="@color/white" />
+            <stroke android:width="1px" android:color="@color/color_cbcdd0"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="@color/white" />
+            <stroke android:width="1px" android:color="@color/color_cbcdd0"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/px8_dp" />
+            <solid android:color="@color/white" />
+            <stroke android:width="1px" android:color="@color/color_cbcdd0"/>
+        </shape>
+    </item>
+
+</selector>

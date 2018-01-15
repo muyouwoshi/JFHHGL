@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/net_error_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tip_footer_height"
+        android:background="@color/color_feeebd"
+        android:padding="@dimen/px30_dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/net_error_icon"
+            style="@style/icon_small"
+            android:layout_centerVertical="true"
+            android:src="@drawable/networkset_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:layout_toRightOf="@id/net_error_icon"
+            android:text="网络不给力，请检查网络设置"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <ImageView
+            style="@style/icon_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/y1_go_ico" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/net_error_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_margintop" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px76_dp"
+        android:paddingRight="@dimen/px76_dp"
+        android:paddingTop="@dimen/px76_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f2_round_random"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/px59_dp"
+            android:paddingTop="@dimen/px72_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px76_dp"
+                android:layout_height="@dimen/px76_dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f2_warn_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px35_dp"
+                android:text="对方正在忙线中..."
+                android:textColor="@color/color_d8ab64"
+                android:textSize="@dimen/px46_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px35_dp"
+                android:text="暂无法接听您的邀请"
+                android:textColor="@color/color_5d5d5d"
+                android:textSize="@dimen/px32_sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px59_dp"
+            android:background="@drawable/abtest_dialog_submit_button_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px52_dp"
+            android:paddingTop="@dimen/px52_dp"
+            android:text="看缘份，随便挑一位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px39_sp" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/px62_dp"
+            android:text="@string/message_close"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px39_sp" />
+    </LinearLayout>
+</LinearLayout>

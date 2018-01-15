@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/erweima_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/channel_icon"
+        android:layout_width="@dimen/px100_dp"
+        android:layout_height="@dimen/px100_dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/spread_share_dialog_item_erweima" />
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/spread_share_dialog_item_erweima"
+        android:textColor="@color/color_494949"
+        android:textSize="@dimen/px36_sp" />
+</LinearLayout>

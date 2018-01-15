@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.predestinate.module.logic.baseui.custom.RightSlidLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</com.juxin.predestinate.module.logic.baseui.custom.RightSlidLinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_normal"
+    android:orientation="horizontal">
+
+    <ImageView
+        style="@style/icon_small"
+        android:id="@+id/live_info_image"
+        android:layout_marginRight="@dimen/margin_small"
+        android:src="@drawable/anim_living"
+        />
+    <TextView
+        android:id="@+id/live_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/living"
+        android:textColor="@color/theme_color_red"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/px30_sp"
+        />
+
+    <TextView
+        android:id="@+id/live_info_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px30_sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px10_dp"
+        android:textColor="@color/filter_text_gray_color"
+        android:maxLines="1"
+        android:ellipsize="end"
+       />
+
+</LinearLayout>

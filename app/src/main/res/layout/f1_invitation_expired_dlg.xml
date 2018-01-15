@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/px45_dp"
+            android:text="邀请已过有效期"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px52_sp" />
+
+        <ImageView
+            android:layout_width="@dimen/px180_dp"
+            android:layout_height="@dimen/px180_dp"
+            android:layout_gravity="center"
+            android:src="@drawable/f1_invite_expired" />
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px135_dp"
+            android:layout_margin="@dimen/px60_dp"
+            android:background="@drawable/f1_bt_invite_expired"
+            android:gravity="center"
+            android:padding="@dimen/px30_dp"
+            android:text="立即回拨（50钻石/分钟）"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px48_sp" />
+    </LinearLayout>
+</LinearLayout>

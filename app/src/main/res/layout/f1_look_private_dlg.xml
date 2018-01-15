@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:orientation="vertical">
+
+        <!-- video pic begin -->
+        <LinearLayout
+            android:id="@+id/ll_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round_white"
+            android:orientation="vertical"
+            android:padding="@dimen/px60_dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/px45_dp"
+                android:text=""
+                android:textColor="@color/text_zhuyao_black"
+                android:textSize="@dimen/px52_sp" />
+
+            <ImageView
+                android:id="@+id/iv_video_gift"
+                android:layout_width="@dimen/px180_dp"
+                android:layout_height="@dimen/px180_dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_video_gift_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/px30_dp"
+                android:text="0钻石"
+                android:textColor="@color/theme_color_red"
+                android:textSize="@dimen/px42_sp" />
+
+            <TextView
+                android:id="@+id/tv_video_gift_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="钻石"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px42_sp" />
+
+            <TextView
+                android:id="@+id/tv_video_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px135_dp"
+                android:layout_marginTop="@dimen/px40_dp"
+                android:background="@drawable/f1_bt_invite_expired"
+                android:gravity="center"
+                android:text="打赏查看"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px48_sp" />
+        </LinearLayout>
+        <!-- video pic end -->
+
+        <!-- audio msg begin -->
+        <LinearLayout
+            android:id="@+id/ll_audio_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_top_white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_audio_msg_close"
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px60_dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/px24_dp"
+                    android:src="@drawable/dlg_close_small"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/px60_dp"
+                    android:paddingLeft="@dimen/px60_dp"
+                    android:paddingRight="@dimen/px60_dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="温馨提示："
+                        android:textColor="#ff8d1b"
+                        android:textSize="@dimen/px52_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/px18_dp"
+                        android:text="解锁对方发来的私密消息，需要打赏哦~"
+                        android:textColor="@color/text_zhuyao_black"
+                        android:textSize="@dimen/px42_sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_bot_gwhite"
+                android:orientation="vertical"
+                android:padding="@dimen/px60_dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/gift_item_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/px60_dp"
+                    android:paddingTop="@dimen/px30_dp"
+                    android:paddingRight="@dimen/px60_dp"
+                    android:paddingBottom="@dimen/px30_dp">
+
+                    <ImageView
+                        android:id="@+id/iv_audio_msg_gift"
+                        android:layout_width="@dimen/px180_dp"
+                        android:layout_height="@dimen/px180_dp" />
+
+                    <TextView
+                        android:id="@+id/tv_audio_msg_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0钻石"
+                        android:textColor="@color/theme_color_red"
+                        android:textSize="@dimen/px42_sp" />
+
+                    <TextView
+                        android:id="@+id/tv_audio_msg_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px18_dp"
+                        android:text="钻石"
+                        android:textColor="@color/text_ciyao_gray"
+                        android:textSize="@dimen/px42_sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_audio_msg_ok"
+                    android:layout_width="@dimen/px480_dp"
+                    android:layout_height="@dimen/px135_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    android:background="@drawable/f1_bt_invite_expired"
+                    android:gravity="center"
+                    android:text="打赏她"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px48_sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- audio msg end -->
+    </LinearLayout>
+</LinearLayout>

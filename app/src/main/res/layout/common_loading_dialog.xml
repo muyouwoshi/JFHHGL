@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 用于dialog的loading -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_loading_dialog"
+    android:gravity="center"
+    android:minWidth="@dimen/px386_dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px45_dp"
+    android:paddingLeft="@dimen/px60_dp"
+    android:paddingRight="@dimen/px60_dp"
+    android:paddingTop="@dimen/px45_dp">
+
+    <ProgressBar
+        android:layout_width="@dimen/px100_dp"
+        android:layout_height="@dimen/px100_dp"
+        android:indeterminateDrawable="@drawable/loading_progressbar"
+        android:indeterminateDuration="1000" />
+
+    <TextView
+        android:id="@+id/loading_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px30_dp"
+        android:gravity="center"
+        android:text="加载中"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/px39_sp" />
+
+    <TextView
+        android:id="@+id/cancel"
+        style="@style/button_small"
+        android:layout_width="@dimen/px255_dp"
+        android:layout_marginTop="@dimen/px35_dp"
+        android:text="取消"
+        android:textColor="@color/color_aaaaaa" />
+</LinearLayout>

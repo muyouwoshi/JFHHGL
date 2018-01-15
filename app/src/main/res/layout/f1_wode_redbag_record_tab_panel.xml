@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pay_dlg_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px50_dp"
+        android:layout_marginRight="@dimen/px50_dp"
+        android:layout_marginTop="@dimen/px38_dp"
+        android:background="@drawable/f2__vip_top__bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px28_dp">
+
+        <ImageView
+            android:layout_width="@dimen/px40_dp"
+            android:layout_height="@dimen/px40_dp"
+            android:background="@drawable/f2_th_ico"/>
+
+        <TextView
+            android:id="@+id/wode_record_panel_tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:text="点击放入钱包后，可提现金额增加，该条记录自动删除"
+            android:textColor="#d8ab64"
+            android:textSize="@dimen/px34_sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.CustomStatusListView
+            android:id="@+id/wode_record_panel_crv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/withdraw_record_panel_tv_data_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/px230_dp"
+                android:layout_height="@dimen/px230_dp"
+                android:background="@drawable/xiaoyou_mr01"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px40_dp"
+                android:text="暂无收入记录"
+                android:textColor="@color/color_acacac"
+                android:textSize="@dimen/px32_sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px8_dp"
+        android:background="@drawable/xiaoyou_withdraw_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px190_dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/wode_record_panel_btn_one_key"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px135_dp"
+            android:layout_marginLeft="@dimen/px50_dp"
+            android:layout_marginRight="@dimen/px50_dp"
+            android:background="@drawable/xiaoyoyu_withdraw_btn_selector"
+            android:gravity="center"
+            android:text="一键放入钱包"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px46_sp"/>
+
+    </LinearLayout>
+</LinearLayout>

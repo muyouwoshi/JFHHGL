@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_start_live_tip"
+              android:layout_width="match_parent"
+              android:layout_height="23dp"
+              android:background="@drawable/live_start_live_tip"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_start_live_tip"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="13sp"/>
+
+</LinearLayout>

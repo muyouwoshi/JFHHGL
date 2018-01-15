@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="42dp" >
+
+    <ImageView
+        android:layout_width="34.66dp"
+        android:layout_height="34.66dp"
+        android:id="@+id/item_recycler_img"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="5dp"
+        />
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="13.3dp"
+        android:id="@+id/item_recycler_numb_iv"
+        android:src="@drawable/icon_guanjun"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="1dp"
+        />
+    <ImageView
+        android:layout_width="28.6dp"
+        android:layout_height="14dp"
+        android:id="@+id/item_recycler_rank_iv"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginRight="2dp"
+        />
+</FrameLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.juxin.predestinate.module.logic.baseui.intercept.InterceptTouchRelativeLayout
+            android:id="@+id/chat_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/px40_dp"
+            android:paddingRight="@dimen/px40_dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.juxin.predestinate.module.logic.baseui.xlistview.ExListView
+                    android:id="@+id/chat_content_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="@dimen/px40_dp"
+                    android:footerDividersEnabled="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="#00000000"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <ImageView
+                    android:id="@+id/chat_spread_diamond"
+                    android:layout_width="@dimen/px147_dp"
+                    android:layout_height="@dimen/px74_dp"
+                    android:layout_alignBottom="@+id/chat_content_list"
+                    android:layout_alignLeft="@+id/chat_content_list"
+                    android:layout_marginBottom="@dimen/px35_dp"
+                    android:src="@drawable/spread_diamond"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/input_accept_chum"
+                    android:layout_width="@dimen/px145_dp"
+                    android:layout_height="@dimen/px145_dp"
+                    android:layout_above="@+id/input_giftview"
+                    android:layout_alignRight="@+id/chat_content_list"
+                    android:layout_marginBottom="@dimen/px35_dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/input_giftview"
+                    android:layout_width="@dimen/px145_dp"
+                    android:layout_height="@dimen/px145_dp"
+                    android:layout_alignBottom="@+id/chat_content_list"
+                    android:layout_alignRight="@+id/chat_content_list"
+                    android:layout_marginBottom="@dimen/px45_dp"
+                    android:src="@drawable/f1_fc_gift_w" />
+
+                <TextView
+                    android:id="@+id/tv_get_red_package_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/input_giftview"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/px11_dp"
+                    android:background="@drawable/abtest_get_red_package_tip_bg"
+                    android:gravity="center"
+                    android:text="恭喜你获得红包"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/chat_fixed_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:padding="10dp" />
+        </com.juxin.predestinate.module.logic.baseui.intercept.InterceptTouchRelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/chat_float_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_content_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/chat_content_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

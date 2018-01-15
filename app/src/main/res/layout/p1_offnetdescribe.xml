@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/base_title" />
+
+    <TextView
+        android:layout_marginTop="@dimen/px50_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_width="match_parent"
+        android:text="您的设备未启用移动网络或无线局域网"
+        android:textColor="@color/color_212121"
+        android:textSize="@dimen/big_font_60"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/big_font_45"
+        android:layout_marginTop="@dimen/px25_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:text="如果需要连接到互联网,可以参考以下方法:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/text_middle_gray"
+        android:layout_marginTop="@dimen/px15_dp"
+        android:textSize="@dimen/big_font_36"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:lineSpacingExtra="@dimen/px10_dp"
+        android:text="检察手机中的无线局域网设置,查看是否有可以接入的无线局域网信号."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/text_middle_gray"
+        android:layout_marginTop="@dimen/px10_dp"
+        android:textSize="@dimen/big_font_36"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:text="检察手机是否已接入移动网络,并且手机没有被停机"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:layout_marginTop="@dimen/px60_dp"
+        android:textSize="@dimen/big_font_45"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:text="如果您已接入无线局域网:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/px20_dp"
+        android:textSize="@dimen/big_font_36"
+        android:textColor="@color/text_middle_gray"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:lineSpacingExtra="@dimen/px10_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:text="请检查您所连接的无线局域网热点是否已接入互联网,或该热点是否已允许您的设备访问互联网."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

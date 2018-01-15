@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="@dimen/px60_dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/px15_dp">
+
+    <LinearLayout
+        android:id="@+id/rl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:orientation="vertical"
+        >
+
+        <com.juxin.predestinate.module.logic.baseui.custom.NoScrollHorizontalListView
+            android:id="@+id/chat_item_panel_prave_phote_hlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4.7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/px33_dp"
+                android:layout_height="@dimen/px33_dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/f1_unlock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20_dp"
+                android:text="@string/unlock_the_pictures"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px26_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px1_dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/chat_item_panel_prave_phote_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_num"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px22_sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

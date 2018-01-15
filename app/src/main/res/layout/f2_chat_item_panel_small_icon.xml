@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/px870_dp"
+    android:padding="@dimen/px30_dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/small_icon_icon"
+        style="@style/avatar_middle"
+        android:src="@drawable/default_head" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/small_icon_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_gift_hello_man"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/small_icon_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px9_dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="送你棒棒糖一个"
+            android:textColor="@color/color_ciyao"
+            android:textSize="@dimen/px36_sp" />
+
+        <TextView
+            android:id="@+id/small_icon_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px15_dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:text=">> 查看特权"
+            android:textColor="@color/color_FF9900"
+            android:textSize="@dimen/px39_sp" />
+    </LinearLayout>
+</LinearLayout>

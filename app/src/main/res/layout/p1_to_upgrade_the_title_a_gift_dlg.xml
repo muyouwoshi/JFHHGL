@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px25_dp"
+        android:layout_marginLeft="@dimen/px25_dp"
+        android:layout_marginRight="@dimen/px25_dp"
+        android:background="@drawable/p1_gift_dialog_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/px66_dp">
+        <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f1_img_pop_up_present" />
+
+        <TextView
+            android:id="@+id/to_upgrade_gift_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px130_dp"
+            android:paddingLeft="@dimen/px66_dp"
+            android:paddingRight="@dimen/px66_dp"
+            tools:text="@string/por_una_cabeza"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px50_dp" />
+
+        <TextView
+            android:id="@+id/to_upgrade_gift_tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to_upgrade_gift_tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px18_dp"
+            android:paddingLeft="@dimen/px66_dp"
+            android:paddingRight="@dimen/px66_dp"
+            android:text="@string/gift_to_him"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px50_dp" />
+
+        <LinearLayout
+            android:id="@+id/to_upgrade_gift_ll_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to_upgrade_gift_tv_tip"
+            android:layout_marginTop="@dimen/px120_dp"
+            android:paddingLeft="@dimen/px66_dp"
+            android:paddingRight="@dimen/px66_dp">
+
+            <LinearLayout
+                android:id="@+id/to_upgrade_gift_ll_gift_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:layout_weight="1"
+                android:background="@drawable/f1_gift_send_select_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/to_upgrade_gift_img_one"
+                    android:layout_width="@dimen/px140_dp"
+                    android:layout_height="@dimen/px140_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/to_upgrade_gift_tv_needstone_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    tools:text="18钻石"
+                    android:textColor="@color/color_F69B00"
+                    android:textSize="@dimen/px40_sp" />
+
+                <TextView
+                    android:id="@+id/to_upgrade_gift_tv_gifname_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px34_dp"
+                    android:layout_marginTop="@dimen/px12_dp"
+                    tools:text="泰迪熊"
+                    android:textColor="@color/color_BEBEBE"
+                    android:textSize="@dimen/px28_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/to_upgrade_gift_ll_gift_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:layout_weight="1"
+                android:background="@drawable/f1_gift_send_unselect_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/to_upgrade_gift_img_two"
+                    android:layout_width="@dimen/px140_dp"
+                    android:layout_height="@dimen/px140_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/to_upgrade_gift_tv_needstone_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    tools:text="18钻石"
+                    android:textColor="@color/color_F69B00"
+                    android:textSize="@dimen/px40_sp" />
+
+                <TextView
+                    android:id="@+id/to_upgrade_gift_tv_gifname_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px34_dp"
+                    android:layout_marginTop="@dimen/px12_dp"
+                    tools:text="泰迪熊"
+                    android:textColor="@color/color_BEBEBE"
+                    android:textSize="@dimen/px28_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/to_upgrade_gift_ll_gift_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/f1_gift_send_unselect_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/to_upgrade_gift_img_three"
+                    android:layout_width="@dimen/px140_dp"
+                    android:layout_height="@dimen/px140_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/to_upgrade_gift_tv_needstone_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    tools:text="18钻石"
+                    android:textColor="@color/color_F69B00"
+                    android:textSize="@dimen/px40_sp" />
+
+                <TextView
+                    android:id="@+id/to_upgrade_gift_tv_gifname_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px34_dp"
+                    android:layout_marginTop="@dimen/px12_dp"
+                    tools:text="泰迪熊"
+                    android:textColor="@color/color_BEBEBE"
+                    android:textSize="@dimen/px28_sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to_upgrade_gift_ll_gift"
+            android:layout_marginTop="@dimen/px130_dp"
+            android:paddingLeft="@dimen/px66_dp"
+            android:paddingRight="@dimen/px66_dp">
+
+            <TextView
+                android:id="@+id/to_upgrade_gift_tv_cancle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px140_dp"
+                android:layout_marginRight="@dimen/px70_dp"
+                android:layout_weight="1"
+                android:background="@drawable/f1_gift_send_btn_cancel_bg"
+                android:gravity="center"
+                android:text="@string/txt_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px46_sp" />
+
+            <TextView
+                android:id="@+id/to_upgrade_gift_tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px140_dp"
+                android:layout_weight="1"
+                android:background="@drawable/f1_btn_present"
+                android:gravity="center"
+                android:text="@string/donate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px46_sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px15_dp"
+        android:layout_marginRight="@dimen/px15_dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="@dimen/px185_dp"
+            android:layout_height="@dimen/px185_dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/price_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px8_dp"
+                android:gravity="center"
+                android:text="@string/user_other_set_chat_price"
+                android:textColor="@color/color_F89302"
+                android:textSize="@dimen/px26_sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/px20_dp"
+                android:gravity="center"
+                android:text="@string/user_other_set_chat_price"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px26_sp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px15_dp"
+            android:text="发信息"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px30_sp" />
+
+        <TextView
+            android:id="@+id/txt_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px15_dp"
+            android:text="好友特价"
+            android:textColor="@color/color_9A9A9A"
+            android:textSize="@dimen/px22_sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

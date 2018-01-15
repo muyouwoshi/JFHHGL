@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.predestinate.ui.live.view.GestureLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <ImageView
+        android:id="@+id/live_empty_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/zhibo_off"
+        android:layout_gravity="right|bottom"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14.6dp"
+        android:layout_marginBottom="25.3dp"
+        />
+</com.juxin.predestinate.ui.live.view.GestureLayout>

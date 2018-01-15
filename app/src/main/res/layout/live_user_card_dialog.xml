@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#00ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_live_user_card_dialog"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginTop="17dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/icon_jubao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3.3dp"
+                    android:gravity="center"
+                    android:text="举报"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="12dp"
+                android:padding="3dp"
+                android:src="@drawable/icon_close" />
+
+            <LinearLayout
+                android:id="@+id/ll_nikename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nikename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:text="小包不好惹" />
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignTop="@id/tv_nikename"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_nikename"
+                    android:src="@drawable/icon_girl" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_nikename"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:textColor="#8d8d8d"
+                android:textSize="10sp"
+                tools:text="ID：3463409" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_id"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_dengji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_juewei"
+                        android:layout_width="45dp"
+                        android:layout_height="22dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jue_pinmin" />
+
+                    <ImageView
+                        android:id="@+id/iv_vip"
+                        android:layout_width="42.5dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/vip" />
+
+                    <ImageView
+                        android:id="@+id/iv_zuanshi"
+                        android:layout_width="25dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/live_zs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_dengji"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本场送礼:"
+                        android:textColor="#b2b5bb"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gift_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="#5a5e6d"
+                        android:textSize="13sp"
+                        tools:text="34979" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="本场在线:"
+                        android:textColor="#b2b5bb"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_online_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="#5a5e6d"
+                        android:textSize="13sp"
+                        tools:text="02:32" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#9e9e9e" />
+
+            <LinearLayout
+                android:id="@+id/ll_setting2"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="#fafafa"
+                android:orientation="horizontal">
+
+                <com.juxin.predestinate.ui.live.ui.ViewLiveButton
+                    android:id="@+id/vlb_addfriend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:icon="@drawable/jiahaoyou"
+                    app:showLine="false"
+                    app:textColor="#ff5679"
+                    app:textString="加好友" />
+
+                <com.juxin.predestinate.ui.live.ui.ViewLiveButton
+                    android:id="@+id/vlb_isfriend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:icon="@drawable/yitianjiahaoyou"
+                    app:textColor="#cecece"
+                    app:textString="已好友" />
+
+                <com.juxin.predestinate.ui.live.ui.ViewLiveButton
+                    android:id="@+id/vlb_go_out"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:icon="@drawable/tichu"
+                    app:textColor="#8e8e8d"
+                    app:textString="踢出" />
+
+                <com.juxin.predestinate.ui.live.ui.ViewLiveButton
+                    android:id="@+id/vlb_no_say"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:icon="@drawable/jinyan"
+                    app:textColor="#8e8e8d"
+                    app:textString="禁言" />
+
+                <com.juxin.predestinate.ui.live.ui.ViewLiveButton
+                    android:id="@+id/vlb_setting_administrator"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:icon="@drawable/shehuichangkong"
+                    app:textColor="#8e8e8d"
+                    app:textString="设为场控" />
+
+                <com.juxin.predestinate.ui.live.ui.ViewLiveButton
+                    android:id="@+id/vlb_cancel_administrator"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:icon="@drawable/shehuichangkong"
+                    app:textColor="#8e8e8d"
+                    app:textString="取消场控" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/ll_below"></View>
+</RelativeLayout>

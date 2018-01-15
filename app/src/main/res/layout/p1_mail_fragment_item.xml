@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:cacheColorHint="@color/transparent"
+    android:orientation="vertical">
+
+    <com.juxin.predestinate.ui.mail.item.CustomMailItem
+        android:id="@+id/mail_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!--//这些代码先暂时不要删 谢谢 KIND-->
+    <!--<com.juxin.library.view.CustomFrameLayout-->
+    <!--android:id="@+id/mail_itemFrameLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<com.juxin.predestinate.ui.mail.item.CustomMailItem-->
+    <!--android:id="@+id/mail_item"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical" />-->
+
+    <!--<com.juxin.predestinate.ui.mail.base.CustomBlankBarItem-->
+    <!--android:id="@+id/chat_item_blankbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical" />-->
+    <!--</com.juxin.library.view.CustomFrameLayout>-->
+
+</LinearLayout>

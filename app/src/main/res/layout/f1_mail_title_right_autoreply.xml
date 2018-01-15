@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/px27_dp"
+    android:paddingTop="@dimen/px27_dp">
+
+    <ImageView
+        android:id="@+id/iv_auto_reply"
+        android:layout_width="@dimen/px76_dp"
+        android:layout_height="@dimen/px76_dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px40_dp"
+        android:src="@drawable/woman_autoreply_zdhf_btn" />
+
+    <com.juxin.library.unread.BadgeView
+        android:id="@+id/badge_auto_reply"
+        style="@style/badge_num"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px35_dp" />
+
+</RelativeLayout>

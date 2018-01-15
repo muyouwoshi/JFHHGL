@@ -1,0 +1,144 @@
+<resources>
+    <string-array name="auth_arr">
+        <item>手机认证</item>
+        <item>银行信息</item>
+        <item>身份认证</item>
+        <item>视频认证</item>
+    </string-array>
+    <string-array name="friend_list_Label">
+        <item>标签分组</item>
+        <item>亲密好友等级</item>
+    </string-array>
+    <string-array name="friend_list_describe">
+        <item>为您的亲密好友添加分组</item>
+        <item>为您的亲密好友添加分组</item>
+    </string-array>
+    <string-array name="red_path">
+        <item>水果游戏红包</item>
+        <item>打擂奖励</item>
+        <item>聊天红包</item>
+        <item>聊天排名奖励</item>
+        <item>礼物折现</item>
+        <item>摇钱树红包</item>
+        <item>好友邀请</item>
+        <item>好友邀请</item>
+        <item>视频聊天</item>
+        <item>语音聊天</item>
+        <item>视频任务补贴</item>
+        <item>语音任务补贴</item>
+        <item>礼物任务补贴</item>
+        <item>活跃奖金</item>
+    </string-array>
+    <!-- ================个人中心条目配置start================== -->
+    <!-- 个人中心条目配置 -->
+    <string-array name="user_authority_name">
+        <item>@string/girl_live_stat</item>
+        <item>分享赚钱</item>
+        <item>主页</item>
+        <item>钱包</item>
+        <item>Y币</item>
+        <item>钻石</item>
+        <item>VIP充值</item>
+        <item>认证</item>
+        <item>相册</item>
+        <item>@string/woman_auto_reply</item>
+        <item>女神追捕</item>
+        <item>资料</item>
+    </string-array>
+    <integer-array name="user_authority_level">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <!-- ================个人中心条目配置end================== -->
+
+    <!-- ================个人资料列表配置start================== -->
+    <string-array name="zone_data">
+        <item>最近上线时间</item>
+        <item>交友目的</item>
+        <item>恋爱观念</item>
+        <item>首次见面希望</item>
+        <item>喜欢约会的地点</item>
+    </string-array>
+    <string-array name="base_data">
+        <item>昵称</item>
+        <item>性别</item>
+        <item>年龄</item>
+        <item>居住地</item>
+        <item>身高</item>
+        <item>月收入</item>
+        <item>情感状态</item>
+    </string-array>
+    <string-array name="detail_data">
+        <item>学历</item>
+        <item>职业</item>
+        <item>生日</item>
+        <item>体重</item>
+        <item>星座</item>
+    </string-array>
+    <string-array name="contact_data">
+        <item>QQ：</item>
+        <item>手机：</item>
+        <item>微信：</item>
+    </string-array>
+    <string-array name="contact_ect_data">
+        <item>QQ</item>
+        <item>手机</item>
+        <item>微信</item>
+    </string-array>
+    <!-- ================个人资料列表配置end================== -->
+
+    <!-- ============== 举报 start ============ -->
+    <string-array name="defriend_type_name">
+        <item>酒托、饭托</item>
+        <item>骚扰（垃圾信息、广告）</item>
+        <item>诈骗信息</item>
+        <item>色情、暴力信息</item>
+        <item>形象差异极大（性别不符）</item>
+    </string-array>
+    <integer-array name="defriend_type_num">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+    <!-- ============== 举报 end ============ -->
+    <!--============ 发现 筛选 start============== -->
+
+    <string-array name="discover_select_item">
+        <item>查看全部</item>
+        <item>只看附近的人</item>
+    </string-array>
+    <integer-array name="discover_select_position">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    <!--============ 发现 筛选 end============== -->
+
+    <!--============ 直播==============--> 
+    <array name="live_double_gif"> 
+        <item>@drawable/giftcombo_idle_0</item> 
+        <item>@drawable/giftcombo_idle_1</item> 
+        <item>@drawable/giftcombo_idle_2</item> 
+        <item>@drawable/giftcombo_idle_3</item> 
+        <item>@drawable/giftcombo_idle_4</item> 
+        <item>@drawable/giftcombo_idle_5</item> 
+        <item>@drawable/giftcombo_idle_6</item> 
+        <item>@drawable/giftcombo_idle_7</item> 
+        <item>@drawable/giftcombo_idle_8</item> 
+        <item>@drawable/giftcombo_idle_9</item> 
+        <item>@drawable/giftcombo_idle_10</item> 
+        <item>@drawable/giftcombo_idle_11</item> 
+        <item>@drawable/giftcombo_idle_12</item> 
+    </array>
+</resources>

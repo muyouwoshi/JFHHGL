@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/rl_head_top"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/iv_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_99293049"/>
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_marginTop="@dimen/px150_dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- 头像 -->
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="@dimen/px246_dp"
+                android:layout_height="@dimen/px246_dp"
+                android:src="@drawable/default_head" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_corner_half_trans"
+                    android:paddingLeft="@dimen/px15_dp"
+                    android:paddingRight="@dimen/px15_dp"
+                    android:text="ID:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px34_sp" />
+
+                <ImageView
+                    android:id="@+id/img_vip"
+                    android:layout_width="@dimen/px42_dp"
+                    android:layout_height="@dimen/px42_dp"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:src="@drawable/p1_vip_ico"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- 邀请码  begin -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px80_dp"
+                android:layout_marginTop="@dimen/px80_dp"
+                android:background="@drawable/f2_bg_invitation_code"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px18_dp"
+                    android:layout_marginLeft="@dimen/px39_dp"
+                    android:text="@string/user_invite_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px34_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_invite_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px12_dp"
+                    android:text="1111"
+                    android:textColor="@color/color_adb3c7"
+                    android:textSize="@dimen/px34_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/px36_dp"
+                    android:paddingRight="@dimen/px36_dp"
+                    android:layout_marginLeft="@dimen/px24_dp"
+                    android:gravity="center"
+                    android:background="@drawable/f2_bg_invitation_copy"
+                    android:text="@string/copy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px34_sp"/>
+            </LinearLayout>
+            <!-- 邀请码  end -->
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 性别，年龄 身高 地址等基础信息-->
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head_top"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px30_dp">
+
+        <TextView
+            android:id="@+id/user_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , "
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , "
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , "
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_middle_gray"
+            android:textSize="@dimen/px39_sp" />
+    </LinearLayout>
+</LinearLayout>

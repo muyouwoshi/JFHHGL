@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/base_title"/>
+
+    <ScrollView
+        style="@style/NoMultipoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/set_item"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px40_dp"
+                android:paddingTop="@dimen/px40_dp">
+
+                <TextView
+                    style="@style/set_desc"
+                    android:text="当前登录账号"/>
+
+                <TextView
+                    android:id="@+id/setting_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="@string/txt_set_topuid_desc"
+                    android:textColor="@color/color_9ea3b5"
+                    android:textSize="13sp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_video_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/setting_video_switch"
+                        style="@style/set_item">
+
+                        <TextView
+                            style="@style/set_desc"
+                            android:text="开启视频通话"/>
+
+                        <ToggleButton
+                            android:id="@+id/setting_video_switch_iv"
+                            style="@style/set_togglebtn"/>
+                    </LinearLayout>
+
+                    <View style="@style/set_line"/>
+
+                    <LinearLayout
+                        android:id="@+id/setting_audio_switch"
+                        style="@style/set_item">
+
+                        <TextView
+                            style="@style/set_desc"
+                            android:text="开启语音通话"/>
+
+                        <ToggleButton
+                            android:id="@+id/setting_audio_switch_iv"
+                            style="@style/set_togglebtn"/>
+                    </LinearLayout>
+
+                    <View style="@style/set_line"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_message"
+                    style="@style/set_item">
+
+                    <TextView
+                        style="@style/set_desc"
+                        android:text="@string/txt_newmsg_remind"/>
+
+                    <ToggleButton
+                        android:id="@+id/setting_message_iv"
+                        style="@style/set_togglebtn"/>
+                </LinearLayout>
+
+                <View style="@style/set_line"/>
+
+                <LinearLayout
+                    android:id="@+id/setting_vibration"
+                    style="@style/set_item">
+
+                    <TextView
+                        style="@style/set_desc"
+                        android:text="@string/txt_shock_remind"/>
+
+                    <ToggleButton
+                        android:id="@+id/setting_vibration_iv"
+                        style="@style/set_togglebtn"/>
+                </LinearLayout>
+
+                <View style="@style/set_line"/>
+
+                <LinearLayout
+                    android:id="@+id/setting_voice"
+                    style="@style/set_item">
+
+                    <TextView
+                        style="@style/set_desc"
+                        android:text="@string/txt_voice_remind"/>
+
+                    <ToggleButton
+                        android:id="@+id/setting_voice_iv"
+                        style="@style/set_togglebtn"/>
+                </LinearLayout>
+
+                <View style="@style/set_line"/>
+
+                <LinearLayout
+                    android:id="@+id/setting_quit_message"
+                    style="@style/set_item">
+
+                    <TextView
+                        style="@style/set_desc"
+                        android:text="@string/txt_offline_remind"/>
+
+                    <ToggleButton
+                        android:id="@+id/setting_quit_message_iv"
+                        style="@style/set_togglebtn"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line"
+                    android:visibility="gone"
+                    style="@style/set_line"/>
+
+                <LinearLayout
+                    android:id="@+id/setting_start_live_tip"
+                    style="@style/set_item"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/set_desc"
+                        android:text="@string/title_start_live_tip"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px36_dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/setting_modifypwd"
+                    style="@style/set_txt_item"
+                    android:text="@string/txt_modify_pwd"/>
+
+                <View style="@style/set_line"/>
+
+                <TextView
+                    android:id="@+id/setting_feedback"
+                    style="@style/set_txt_item"
+                    android:text="@string/txt_feedback"/>
+
+                <View style="@style/set_line"/>
+
+                <LinearLayout
+                    android:id="@+id/setting_ll_update"
+                    style="@style/set_item">
+                    <TextView
+                        android:id="@+id/setting_update"
+                        style="@style/set_desc"
+                        android:text="@string/txt_version_check"/>
+                    <TextView
+                        android:id="@+id/setting_update_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/px44_dp"
+                        android:text="38.5K"
+                        android:textColor="@color/color_9ea3b5"/>
+                </LinearLayout>
+
+
+                <View style="@style/set_line"/>
+
+                <TextView
+                    android:id="@+id/setting_action"
+                    style="@style/set_txt_item"
+                    android:text="@string/txt_activity_about"
+                    android:visibility="visible"/>
+                <View
+                    android:id="@+id/setting_line"
+                    style="@style/set_line"/>
+
+                <TextView
+                    android:id="@+id/setting_about"
+                    style="@style/set_txt_item"
+                    android:text="@string/title_about_us"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px36_dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/setting_clear_cache"
+                    style="@style/set_item">
+
+                    <TextView
+                        style="@style/set_desc"
+                        android:text="@string/txt_clear_cache"/>
+
+                    <TextView
+                        android:id="@+id/setting_clear_cache_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="38.5K"
+                        android:textColor="@color/color_9ea3b5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/setting_logoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textSize="@dimen/px46_sp"
+                android:layout_marginBottom="@dimen/px120_dp"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:paddingTop="@dimen/px40_dp"
+                android:paddingBottom="@dimen/px40_dp"
+                android:textColor="@color/color_ff5959"
+                android:text="退出登录"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_panel_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/chat_item_video_preview_video_parent"
+        android:layout_width="@dimen/px560_dp"
+        android:layout_height="@dimen/px420_dp">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.TextureVideoView
+            android:id="@+id/chat_item_video_preview_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/chat_item_video_thumb_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_pic" />
+
+        <ImageView
+            android:id="@+id/chat_item_video_preview_play"
+            android:layout_width="@dimen/px120_dp"
+            android:layout_height="@dimen/px120_dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/f1_video_play" />
+
+        <com.juxin.library.view.DownloadProgressView
+            android:id="@+id/chat_item_video_progress_bar"
+            android:layout_width="@dimen/px120_dp"
+            android:layout_height="@dimen/px120_dp"
+            android:layout_centerInParent="true"
+            app:progressColor="@color/half_trans_white"
+            app:shapeType="circle" />
+
+        <com.juxin.library.view.CircularCoverView
+            android:id="@+id/chat_item_video_cover_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cover_color="@color/bg_color" />
+    </RelativeLayout>
+</LinearLayout>

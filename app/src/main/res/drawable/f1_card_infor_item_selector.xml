@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/f1_card_infor_item_unbg" android:state_enabled="true"/>
+    <item android:drawable="@drawable/f1_card_infor_item_bg" android:state_enabled="false"/>
+
+</selector>

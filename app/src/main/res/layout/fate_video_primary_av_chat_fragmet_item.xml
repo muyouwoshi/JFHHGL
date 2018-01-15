@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="18dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:weightSum="3">
+
+
+    <include
+        android:id="@+id/item_one"
+        layout="@layout/av_chat_fragment_item" />
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="0dp" />
+
+    <include
+        android:id="@+id/item_two"
+        layout="@layout/av_chat_fragment_item" />
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="0dp" />
+
+    <include
+        android:id="@+id/item_three"
+        layout="@layout/av_chat_fragment_item" />
+
+</LinearLayout>

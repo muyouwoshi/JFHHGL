@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:cacheColorHint="@color/transparent"
+    android:orientation="vertical">
+
+    <com.juxin.predestinate.module.logic.baseui.custom.CustomStatusListView
+        android:id="@+id/my_attention_panel_crlv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

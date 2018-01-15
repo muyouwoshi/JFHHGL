@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_pre_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px39_sp" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_FF86A2"
+            android:textSize="@dimen/px39_sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px24_dp"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <!-- 男、女进度 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_pre_progreee"
+                android:layout_width="@dimen/px75_dp"
+                android:layout_height="@dimen/px75_dp" />
+
+            <!-- 男 女进度条位置 -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px75_dp"
+                android:layout_marginLeft="@dimen/px18_dp"
+                android:layout_marginRight="@dimen/px18_dp"
+                android:layout_toLeftOf="@+id/iv_aft_progress"
+                android:layout_toRightOf="@+id/iv_pre_progreee"
+                android:layout_weight="1">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px36_dp"
+                    android:layout_gravity="center"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/f1_peerage_progress" />
+
+                <TextView
+                    android:id="@+id/tv_progress_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px39_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0/0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px28_sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_aft_progress"
+                android:layout_width="@dimen/px75_dp"
+                android:layout_height="@dimen/px75_dp" />
+        </LinearLayout>
+
+        <!-- 级别提示 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_level_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="一星"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30_sp" />
+
+
+            <TextView
+                android:id="@+id/tv_level_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|right"
+                android:text="二星"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30_sp" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

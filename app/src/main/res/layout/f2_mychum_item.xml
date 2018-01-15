@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mychum_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/px35_dp">
+
+        <ImageView
+            android:id="@+id/mychum_item_img"
+            android:layout_width="@dimen/px160_dp"
+            android:layout_height="@dimen/px160_dp"
+            android:src="@drawable/default_head" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:layout_marginRight="@dimen/px35_dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mychum_item_title"
+                        style="@style/txt_item_nickname"
+                        android:textSize="@dimen/px45_sp" />
+
+                    <ImageView
+                        android:id="@+id/mychum_item_knighthood"
+                        style="@style/icon_title"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:scaleType="fitCenter"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/mychum_item_friend_level"
+                        style="@style/icon_relation"
+                        android:visibility="gone">
+
+                        <ImageView
+                            style="@style/icon_relation"
+                            android:layout_marginLeft="@dimen/px10_dp"
+                            android:background="@drawable/f2_bs04_bg"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/mychum_item_tv_friend_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/px8_dp"
+                            android:textSize="@dimen/px18_dp"
+                            tools:text="LV4" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/mychum_item_icon"
+                        style="@style/icon_mei"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:src="@drawable/f2_icon_meili"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/mychum_item_img_vip"
+                        style="@style/icon_vip"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:src="@drawable/f2_icon_vip"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mychum_item_tv_isonline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_8fcda9"
+                    tools:text="在线" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px35_dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mychum_item_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15_dp"
+                    android:textColor="@color/filter_text_gray_color"
+                    android:textSize="@dimen/px26_sp"
+                    android:visibility="visible"
+                    tools:text="Lv.2 相见恨晚" />
+
+                <ProgressBar
+                    android:id="@+id/mychum_item_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/px400_dp"
+                    android:layout_height="@dimen/px10_dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:layout_marginRight="@dimen/px20_dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/f2_level_progress" />
+
+                <TextView
+                    android:id="@+id/mychum_item_progress_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/filter_text_gray_color"
+                    android:textSize="@dimen/px22_sp"
+                    tools:text="20/200" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mychum_item_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1_dp"
+        android:background="@color/color_DDDDDD"/>
+
+    <LinearLayout
+        android:id="@+id/mychum_item_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

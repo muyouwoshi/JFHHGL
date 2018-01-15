@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/concern_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px30_dp"
+        android:paddingRight="@dimen/px30_dp"
+        android:paddingTop="@dimen/px9_dp">
+
+        <ImageView
+            android:id="@+id/concern_list_item_head"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/px15_dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/concern_list_item_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignTop="@id/concern_list_item_head"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="@dimen/px6_dp"
+            android:alpha="200"
+            android:text="天仙妹妹"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px46_sp" />
+
+        <ImageView
+            android:id="@+id/concern_list_item_img_vipState"
+            android:layout_width="@dimen/px50_dp"
+            android:layout_height="@dimen/px50_dp"
+            android:layout_alignBottom="@+id/concern_list_item_nickname"
+            android:layout_alignTop="@+id/concern_list_item_nickname"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:layout_toRightOf="@+id/concern_list_item_nickname"
+            android:background="@drawable/f1_vip_icon" />
+
+        <TextView
+            android:id="@+id/concern_list_item_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/concern_list_item_nickname"
+            android:layout_below="@id/concern_list_item_nickname"
+            android:layout_marginTop="@dimen/px27_dp"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/concern_list_item_diqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/concern_list_item_nickname"
+            android:layout_marginLeft="@dimen/px18_dp"
+            android:layout_marginTop="@dimen/px27_dp"
+            android:layout_toRightOf="@id/concern_list_item_age"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="@dimen/px42_dp" />
+
+        <ImageView
+            android:id="@+id/concern_list_item_pic"
+            android:layout_width="@dimen/px45_dp"
+            android:layout_height="@dimen/px45_dp"
+            android:layout_below="@id/concern_list_item_nickname"
+            android:layout_marginLeft="@dimen/px24_dp"
+            android:layout_marginTop="@dimen/px36_dp"
+            android:layout_toRightOf="@id/concern_list_item_diqu"
+            android:src="@drawable/f1_near_tu" />
+
+        <TextView
+            android:id="@+id/concern_list_item_piccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/concern_list_item_nickname"
+            android:layout_marginLeft="@dimen/px15_dp"
+            android:layout_marginTop="@dimen/px27_dp"
+            android:layout_toRightOf="@id/concern_list_item_pic"
+            android:text="0照片"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="@dimen/px42_dp" />
+
+        <View
+            android:id="@+id/concern_list_item_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px3_dp"
+            android:layout_below="@id/concern_list_item_head"
+            android:layout_marginTop="@dimen/px15_dp"
+            android:background="@color/color_ededed" />
+
+        <TextView
+            android:id="@+id/concern_list_item_btnconcern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px24_dp"
+            android:text="关注TA"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="@dimen/px42_sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/live_room_load_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/black_per7f"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/blur_circle_size"
+            android:layout_height="@dimen/blur_circle_size"
+            android:src="@drawable/ic_live_base_dialog_title" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/live_room_freeze"
+            android:textColor="@color/mokuai_bg_press"
+            android:textSize="@dimen/txt_middle" />
+
+        <TextView
+            android:id="@+id/goto_hot_button"
+            android:layout_width="160dp"
+            android:layout_height="@dimen/blur_circle_size"
+            android:layout_margin="@dimen/blur_circle_size"
+            android:layout_marginTop="@dimen/margin_big"
+            android:gravity="center"
+            android:text="@string/goto_hot"
+            android:textColor="@color/mokuai_bg_press"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_net_error" />
+
+    <include layout="@layout/common_loading"  />
+
+    <include layout="@layout/common_nodata" />
+
+    <ScrollView
+        android:background="@color/color_F0F0F0"
+        android:id="@+id/root"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:background="@color/color_fff2df"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/px24_dp"
+                android:paddingBottom="@dimen/px24_dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/autoreply_horn_img"
+                    android:layout_width="@dimen/px45_dp"
+                    android:layout_height="@dimen/px45_dp" />
+                <TextView
+                    android:id="@+id/des"
+                    android:textSize="@dimen/big_font_36"
+                    android:layout_marginLeft="@dimen/px15_dp"
+                    android:text="@string/auto_reply_des"
+                    android:textColor="@color/color_dca14e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/px30_dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/f1_woman_autoreply_empty_add" android:layout_width="match_parent" android:layout_height="wrap_content"></include>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/autoVideoVoice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/px150_dp">
+
+                    <TextView
+                        android:textColor="@color/hei_color"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/big_font_40"
+                        android:layout_width="wrap_content"
+                        android:text="@string/auto_invite_video"
+                        android:layout_height="wrap_content" />
+
+                    <SeekBar
+                        android:id="@+id/sb_auto_invite_video"
+                        style="@style/SeekBar" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/px26_dp"
+                    android:textSize="@dimen/big_font_36"
+                    android:layout_marginBottom="@dimen/px66_dp"
+                    android:textColor="@color/color_c4c4c4"
+                    android:text="@string/auto_invite_video_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/px150_dp">
+
+                    <TextView
+                        android:textColor="@color/hei_color"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/big_font_40"
+                        android:layout_width="wrap_content"
+                        android:text="@string/auto_invite_voice"
+                        android:layout_height="wrap_content" />
+
+                    <SeekBar
+                        android:id="@+id/sb_auto_invite_voice"
+                        style="@style/SeekBar" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/px26_dp"
+                    android:textSize="@dimen/big_font_36"
+                    android:layout_marginBottom="@dimen/px66_dp"
+                    android:textColor="@color/color_c4c4c4"
+                    android:text="@string/auto_invite_voice_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

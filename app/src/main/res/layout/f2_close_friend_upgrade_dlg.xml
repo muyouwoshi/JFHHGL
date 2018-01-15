@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/close_friend_upgrade_ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px25_dp"
+        android:layout_marginRight="@dimen/px25_dp"
+        android:layout_marginTop="@dimen/px240_dp"
+        android:background="@drawable/p1_gift_dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px66_dp">
+
+        <TextView
+            android:id="@+id/close_friend_upgrade_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px180_dp"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px46_sp"
+            tools:text="@string/closeness_to_upgrade" />
+
+        <TextView
+            android:id="@+id/close_friend_upgrade_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px36_dp"
+            android:textColor="@color/color_52CDC3"
+            android:textSize="@dimen/px46_sp"
+            tools:text="患难与共（Lv5）" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px80_dp"
+            android:text="获得特权："
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px40_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px80_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/px76_dp"
+                    android:layout_height="@dimen/px76_dp"
+                    android:background="@drawable/f2_icon_level" />
+
+                <TextView
+                    android:id="@+id/close_friend_upgrade_tv_bottom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/px26_dp"
+                    tools:text="@string/special_mark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px150_dp"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/px76_dp"
+                    android:layout_height="@dimen/px76_dp"
+                    android:background="@drawable/f2_icon_discount" />
+
+                <TextView
+                    android:id="@+id/close_friend_upgrade_tv_bottom_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/px26_dp"
+                    tools:text="@string/discount" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+        android:layout_width="@dimen/px500_dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/f2_img_update" />
+    <TextView
+        android:id="@+id/close_friend_upgrade_tv_top_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="92dp"
+        android:textSize="@dimen/px32_sp"
+        android:textColor="@color/white"
+        tools:text="患难与共（Lv5）"/>
+</RelativeLayout>

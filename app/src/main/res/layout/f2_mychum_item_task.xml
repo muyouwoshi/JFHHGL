@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/px30_dp"
+        android:paddingBottom="@dimen/px30_dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chum_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_zhuyao"
+                android:textSize="@dimen/px39_sp"
+                tools:text="视频20分钟" />
+
+            <TextView
+                android:id="@+id/chum_task_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20_dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/px34_sp"
+                tools:text="任务奖励：" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chum_task_btn"
+            android:layout_width="@dimen/px150_dp"
+            android:layout_height="@dimen/px72_dp"
+            android:background="@drawable/f2_friend_task_item_state_bg"
+            android:gravity="center"
+            android:textColor="@color/color_61D6C8"
+            android:textSize="@dimen/px30_sp"
+            tools:text="去完成" />
+    </LinearLayout>
+
+    <View style="@style/divider_line_horizontal" />
+</LinearLayout>

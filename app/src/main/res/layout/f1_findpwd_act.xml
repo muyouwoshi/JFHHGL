@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <View style="@style/divider_spacing_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/px40_dp">
+
+            <TextView
+                style="@style/findpwd_tip_txt"
+                android:text="@string/txt_phone" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/editText_input_phone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <View style="@style/divider_line_gapLeft40px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/findpwd_tip_txt"
+                android:text="@string/txt_verifycode" />
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/editText_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="phone"
+                android:maxLength="8" />
+
+            <Button
+                android:id="@+id/bt_send_code"
+                style="@style/button_middle"
+                android:layout_marginRight="@dimen/px40_dp"
+                android:background="@drawable/r1_btn_getcode_bg"
+                android:text="@string/bt_send_code_normal"
+                android:textColor="@color/btn_getcode_stroke" />
+        </LinearLayout>
+
+        <View style="@style/divider_line_gapLeft40px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/findpwd_tip_txt"
+                android:text="@string/txt_setpwd" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/editText_input_pwd"
+                android:maxLength="20"
+                android:hint="@string/ext_setpwd_hit" />
+        </LinearLayout>
+
+        <View style="@style/divider_line" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginTop"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_submit"
+            style="@style/button_big"
+            android:layout_marginLeft="@dimen/px60_dp"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:layout_marginTop="@dimen/px60_dp"
+            android:text="@string/bt_ok" />
+    </LinearLayout>
+</LinearLayout>

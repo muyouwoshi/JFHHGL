@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <com.juxin.library.view.CustomFrameLayout
+        android:id="@+id/payalipay_web_custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/payalipay_web_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include layout="@layout/common_loading" />
+
+        <include layout="@layout/common_net_error" />
+
+    </com.juxin.library.view.CustomFrameLayout>
+</LinearLayout>
+
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/y1_talk_sound_r"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/y1_talk_sound_r3"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/y1_talk_sound_r2"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/y1_talk_sound_r1"
+        android:duration="200" />
+</animation-list>

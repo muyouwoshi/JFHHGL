@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/withdraw_ll_summary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/withdraw_item_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px50_dp"
+        android:background="@color/bg_color"
+        android:paddingTop="@dimen/px30_dp"
+        android:paddingBottom="@dimen/px20_dp">
+
+        <TextView
+            android:id="@+id/withdraw_item_tv_mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_9a9fac"
+            android:textSize="@dimen/px30_sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px30_dp"
+        android:paddingLeft="@dimen/px47_dp"
+        android:paddingRight="@dimen/px47_dp"
+        android:paddingTop="@dimen/px30_dp">
+
+        <!--    begin 正常信息显示    -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px3_dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/withdraw_tv_path"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="提现成功"
+                android:textColor="@color/color_565d74"
+                android:textSize="@dimen/px42_sp"/>
+
+            <TextView
+                android:id="@+id/withdraw_tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/px16_dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2017"
+                android:textColor="@color/color_D4D4D4"
+                android:textSize="@dimen/px28_sp"/>
+        </LinearLayout>
+        <!--    end 正常信息显示    -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/px50_dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/withdraw_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/px45_sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/withdraw_item_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1_dp"
+        android:layout_marginLeft="@dimen/px47_dp"
+        android:layout_marginRight="@dimen/px47_dp"
+        android:background="@color/color_CCCCCC"/>
+
+</LinearLayout>

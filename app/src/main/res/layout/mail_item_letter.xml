@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_gap_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px235_dp"
+        android:background="@drawable/list_item_selector">
+
+        <LinearLayout
+            android:id="@+id/mail_ll_letter_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/mail_item_letter_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <!--android:background="@drawable/list_item_selector"-->
+
+        <LinearLayout
+            android:id="@+id/mail_item_letter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/px35_dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/px245_dp"
+                android:layout_height="@dimen/px235_dp"
+                android:paddingLeft="@dimen/px35_dp">
+
+                <ImageView
+                    android:id="@+id/mail_item_headpic"
+                    style="@style/avatar_middle"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/px30_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:src="@drawable/default_head" />
+
+                <com.juxin.library.unread.BadgeView
+                    android:id="@+id/mail_item_unreadnum"
+                    style="@style/badge_num_big"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/px15_dp"
+                    android:layout_marginTop="@dimen/px15_dp"
+                    android:text="1"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mail_item_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/px45_sp" />
+
+                    <ImageView
+                        android:id="@+id/mail_item_nobility"
+                        style="@style/icon_title"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:scaleType="fitXY"
+                        android:src="@null"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/mail_relation_state"
+                        style="@style/icon_relation"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:background="@drawable/f1_relation_value"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/px36_dp"
+                        android:text="lv1"
+                        android:textColor="@color/theme_color_red"
+                        android:textSize="@dimen/px22_sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/mail_item_ranking_state"
+                        style="@style/icon_mei"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:src="@drawable/f1_top01"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/mail_item_vip"
+                        style="@style/icon_vip"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:src="@drawable/f1_vip_icon"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/mail_item_certification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px12_dp"
+                        android:background="@color/color_56aff3"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/px9_dp"
+                        android:paddingLeft="@dimen/px12_dp"
+                        android:paddingRight="@dimen/px12_dp"
+                        android:paddingTop="@dimen/px3_dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px36_sp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/mail_item_last_time"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px35_dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:lines="1"
+                        android:textColor="@color/color_aaaaaa"
+                        android:textSize="@dimen/px36_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px2_dp"
+                    android:layout_marginTop="@dimen/px25_dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mail_item_last_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/px8_dp"
+                        android:background="@drawable/f1_mail_item_delivery"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/px6_dp"
+                        android:paddingRight="@dimen/px6_dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px36_sp"
+                        android:visibility="gone" />
+
+                    <com.juxin.predestinate.module.logic.baseui.custom.EmojiTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/mail_item_last_msg"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:maxWidth="200dp"
+                        android:textColor="@color/color_aaaaaa"
+                        android:textSize="@dimen/px39_sp"
+                        app:emojiSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mail_item_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/px35_dp"
+                android:paddingRight="@dimen/px35_dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mail_item_right_icon"
+                    style="@style/icon_small"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/f1_call_state_ico" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/divider_line_horizontal" />
+</LinearLayout>

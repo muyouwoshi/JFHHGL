@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 通用dialog左边按钮的点击效果 -->
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 下、左圆角 -->
+            <corners android:bottomLeftRadius="@dimen/px8_dp" />
+            <solid android:color="@color/mokuai_bg_press" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <!-- 下、左圆角 -->
+            <corners android:bottomLeftRadius="@dimen/px8_dp" />
+            <solid android:color="@color/mokuai_bg_press" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <!-- 下、左圆角 -->
+            <corners android:bottomLeftRadius="@dimen/px8_dp" />
+            <solid android:color="@color/btn_enable" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!-- 下、左圆角 -->
+            <corners android:bottomLeftRadius="@dimen/px8_dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</selector>

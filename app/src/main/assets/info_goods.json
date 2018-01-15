@@ -1,0 +1,38 @@
+{
+  "secret_diamond": {
+    "list": [
+      {
+        "pid": 58,
+        "name": "1000钻石",
+        "num": 1000,
+        "desc": "",
+        "cost": 100
+      },
+      {
+        "pid": 56,
+        "name": "100钻石",
+        "num": 100,
+        "desc": "",
+        "cost": 10
+      }
+    ]
+  },
+  "chat_diamond": {
+    "list": [
+      {
+        "pid": 56,
+        "name": "100钻石",
+        "num": 100,
+        "desc": "",
+        "cost": 10
+      },
+      {
+        "pid": 57,
+        "name": "600钻石",
+        "num": 600,
+        "desc": "",
+        "cost": 60
+      }
+    ]
+  }
+}

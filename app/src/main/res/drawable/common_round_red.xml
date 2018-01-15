@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 通用主题红色按钮的点击效果 -->
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 下、右圆角 -->
+            <corners android:radius="30dp" />
+            <solid android:color="@color/color_ed6363" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <!-- 下、右圆角 -->
+            <corners android:radius="30dp" />
+            <solid android:color="@color/color_ed6363" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <!-- 下、右圆角 -->
+            <corners android:radius="30dp" />
+            <solid android:color="@color/btn_enable" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!-- 下、右圆角 -->
+            <corners android:radius="30dp" />
+            <solid android:color="@color/theme_color_red" />
+        </shape>
+    </item>
+
+</selector>

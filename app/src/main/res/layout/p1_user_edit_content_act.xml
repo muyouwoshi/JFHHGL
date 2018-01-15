@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <include layout="@layout/layout_margintop" />
+
+    <LinearLayout
+        style="@style/center_set_item"
+        android:layout_height="@dimen/center_item_height"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_content_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@null"
+            android:hint="@string/user_info_put_name"
+            android:maxLines="1"
+            android:textColor="@color/text_zhuyao_black"
+            android:textColorHint="@color/text_ciyao_gray"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/tv_name_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="s"
+            android:textColor="@color/color_999999" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mark1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px35_dp"
+        android:background="@color/bg_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/view_confidentiality"
+        style="@style/center_set_item"
+        android:layout_height="@dimen/center_item_height"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保密设置"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/tv_auth_tip"
+            style="@style/center_item_text"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingRight="@dimen/px30_dp"
+            android:text="仅对VIP公开"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px34_sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            style="@style/SeekBar"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <include layout="@layout/fillbottom_bg" />
+</LinearLayout>

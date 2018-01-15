@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px25_dp"
+    android:paddingLeft="@dimen/px25_dp"
+    android:paddingRight="@dimen/px25_dp">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/group_sayhello_dlg_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:gravity="right"
+            android:text="@string/abtest_vip_privilege"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/px36_sp" />
+
+        <LinearLayout
+            android:id="@+id/pay_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px60_dp"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px60_dp"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px130_dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/px40_dp"
+            android:layout_marginLeft="@dimen/px60_dp"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:background="@drawable/f1_bt_invite_expired"
+            android:gravity="center"
+            android:text="确认支付"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px40_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_look_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看VIP特权"
+                android:textColor="#65BFFD"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/color_d2d2d2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服电话：0731-89746010"
+                android:textColor="#c2c2c2"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px10_dp"
+        android:background="@drawable/bg_bottom_while_shape" />
+
+</LinearLayout>

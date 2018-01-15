@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!-- 描边 -->
+            <!--<stroke android:width="2px" android:color="#dcdcdc" />-->
+            <!--填充-->
+            <solid android:color="@color/white" />
+            <corners android:radius="@dimen/px24_dp"/>
+        </shape>
+    </item>
+</selector>

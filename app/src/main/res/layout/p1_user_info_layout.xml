@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ScrollView
+        android:id="@+id/layout_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <include layout="@layout/base_title" />
+
+        </FrameLayout>
+    </ScrollView>
+
+    <!-- 底部功能按钮 -->
+    <LinearLayout
+        android:id="@+id/userinfo_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/color_E51B1B1B"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_userinfo_bottom_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px58_dp"
+                android:layout_height="@dimen/px58_dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f2_userinfo_send" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_info_send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px34_sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ic_close_friend1"
+            layout="@layout/p1_userinfo_close_friend"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_userinfo_bottom_hi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_sayhello"
+                android:layout_width="@dimen/px58_dp"
+                android:layout_height="@dimen/px58_dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f2_userinfo_hi" />
+
+            <TextView
+                android:id="@+id/tv_sayhello_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_info_hi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px34_sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ic_close_friend2"
+            layout="@layout/p1_userinfo_close_friend"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_userinfo_bottom_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/px58_dp"
+                android:layout_height="@dimen/px58_dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f2_userinfo_video" />
+
+            <TextView
+                android:id="@+id/tv_look_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_info_look_at_her"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px34_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_userinfo_bottom_voice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/px58_dp"
+                android:layout_height="@dimen/px58_dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f2_userinfo_voice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_info_voice"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px34_sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/ll_userinfo_bottom_voice_space"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 礼物悬框 -->
+
+    <ImageView
+        android:id="@+id/iv_gift"
+        android:layout_width="@dimen/px145_dp"
+        android:layout_height="@dimen/px145_dp"
+        android:layout_above="@+id/userinfo_bottom"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:background="@drawable/f1_fc_gift"
+        android:visibility="gone" />
+</FrameLayout>

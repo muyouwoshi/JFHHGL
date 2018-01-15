@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!--图片容器-->
+        <GridView
+            android:id="@+id/gv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="4dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" />
+
+        <!--顶部日期显示Tip-->
+        <RelativeLayout
+            android:id="@+id/rl_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#bb000000"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!--底部不同相册选择文件夹-->
+        <RelativeLayout
+            android:id="@+id/rl_choose_directory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_bottom"
+            android:background="#88000000"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/lv_directories"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-400dp"
+                android:background="@color/white"
+                android:divider="@color/album_exhPic_div"
+                android:dividerHeight="1px"
+                android:listSelector="@color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="46.6666666dp"
+            android:layout_alignParentBottom="true"
+            android:background="#aa505a5c"
+            android:clickable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/v_line"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_choose_image_directory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p1_album_chose_arrow"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@drawable/p1_album_bg"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_preview"
+                android:background="#bb000000" />
+
+            <TextView
+                android:id="@+id/tv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ededed"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

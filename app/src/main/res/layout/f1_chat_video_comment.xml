@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/layout_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/base_title"
+        android:fadingEdge="none"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/px100_dp">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/button_big"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/container"
+                android:layout_marginLeft="@dimen/px105_dp"
+                android:layout_marginRight="@dimen/px105_dp"
+                android:background="@drawable/f1_boxgobtn_bg"
+                android:text="@string/chat_video_earn_close"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

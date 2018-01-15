@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 定义一套颜色资源，分别设置聚焦，点击，选中，不可用及正常状态下的颜色及形状 bg_chat_edittext_pressed -->
+    <item android:drawable="@drawable/bg_chat_edittext_pressed" android:state_enabled="true" android:state_focused="true" android:state_pressed="false" />
+    <item android:drawable="@drawable/bg_chat_edittext_pressed" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/bg_chat_edittext_pressed" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/bg_chat_edittext_pressed" android:state_enabled="false" />
+    <item android:drawable="@drawable/bg_chat_edittext_normal" />
+
+</selector>

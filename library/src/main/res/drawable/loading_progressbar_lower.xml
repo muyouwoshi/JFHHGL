@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    android:variablePadding="true">
+
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading01"
+            android:gravity="left" />
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading02"
+            android:gravity="left" />
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading03"
+            android:gravity="left" />
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading04"
+            android:gravity="left" />
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading05"
+            android:gravity="left" />
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading06"
+            android:gravity="left" />
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/friends_loading07"
+            android:gravity="left" />
+    </item>
+
+</animation-list>

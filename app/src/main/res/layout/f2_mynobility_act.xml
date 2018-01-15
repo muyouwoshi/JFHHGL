@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <!--<com.juxin.predestinate.third.recyclerholder.CustomRecyclerView-->
+    <!--android:id="@+id/mynobility_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none" />-->
+
+
+    <com.juxin.predestinate.module.logic.baseui.custom.CustomStatusListView
+        android:id="@+id/mynobility_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/mynobility_ll_explain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px50_dp"
+        android:layout_marginRight="@dimen/px50_dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px120_dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/px200_dp"
+            android:layout_height="@dimen/px130_dp"
+            android:background="@drawable/f2_icon_haoyouwu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px80_dp"
+            android:text="非常遗憾，您暂时还没有好友"
+            android:textColor="@color/color_686d7f"
+            android:textSize="@dimen/px46_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/px150_dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_friend_top_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px70_dp"
+                android:paddingLeft="@dimen/px70_dp"
+                android:paddingTop="@dimen/px60_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="以下方式可以获得好友哦~"
+                    android:textColor="@color/color_686d7f"
+                    android:textSize="@dimen/px43_sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px55_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px48_dp"
+                        android:layout_height="@dimen/px48_dp"
+                        android:background="@drawable/f2_icon_no1" />
+
+                    <TextView
+                        android:id="@+id/mynobility_tv_task_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px36_dp"
+                        android:text="@string/send_girl_gift"
+                        android:textColor="@color/color_9fa2ac" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px46_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px48_dp"
+                        android:layout_height="@dimen/px48_dp"
+                        android:background="@drawable/f2_icon_no2" />
+
+                    <TextView
+                        android:id="@+id/mynobility_tv_task_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px36_dp"
+                        android:text="@string/with_girl_voice"
+                        android:textColor="@color/color_9fa2ac" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mynobility_ll_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_friend_bottom_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px50_dp"
+            android:paddingTop="@dimen/px50_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好友规则说明"
+                android:textColor="@color/color_3b3c3f"
+                android:textSize="@dimen/px36_sp" />
+
+            <ImageView
+                android:layout_width="@dimen/px20_dp"
+                android:layout_height="@dimen/px30_dp"
+                android:layout_marginLeft="@dimen/px26_dp"
+                android:background="@drawable/f2_icon_into" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px15_dp"
+                android:layout_marginTop="@dimen/px15_dp"
+                android:background="#f7f4eb"
+                android:paddingLeft="@dimen/px60_dp"
+                android:paddingRight="@dimen/px60_dp"
+                android:text="小编教你简单快捷赚红包的方法，让你快速上手，提现到手软，数钱数到手抽筋"
+                android:textColor="@color/color_CFB280"
+                android:textSize="@dimen/px42_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/px45_sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_one_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="索要礼物 "
+                        android:textColor="@color/color_727171"
+                        android:textSize="@dimen/px60_sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_one_pre"
+                        android:padding="@dimen/px24_dp"
+                        android:text="得收益"
+                        android:textColor="@color/color_727171"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/demand_red_packet_tv_askfor_gift_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/f1_view_yellow_corners"
+                        android:paddingBottom="@dimen/px18_dp"
+                        android:paddingLeft="@dimen/px54_dp"
+                        android:paddingRight="@dimen/px54_dp"
+                        android:paddingTop="@dimen/px18_dp"
+                        android:text="索要礼物"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px36_sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px15_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="施展你的魅力，向男用户索要礼物，"
+                        android:textColor="@color/color_727171"
+                        android:textSize="@dimen/px42_sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="获得礼物收益"
+                        android:textColor="@color/color_EA6684"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px15_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="主动找帅哥聊天，"
+                        android:textColor="@color/color_727171"
+                        android:textSize="@dimen/px42_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="互发消息"
+                        android:textColor="@color/color_EA6684"
+                        android:textSize="@dimen/px42_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="就能获得随机红包"
+                        android:textColor="@color/color_727171"
+                        android:textSize="@dimen/px42_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px15_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="聊天越多，红包越多"
+                        android:textColor="@color/color_EA6684"
+                        android:textSize="@dimen/px42_sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px15_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已发送："
+                        android:textColor="@color/color_727171"
+                        android:textSize="@dimen/px42_sp" />
+
+                    <TextView
+                        android:id="@+id/demand_red_packet_tv_askfor_gift_send_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 人"
+                        android:textColor="@color/color_EA6684"
+                        android:textSize="@dimen/px42_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px15_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="温馨提示：保持在线群发消息会持续发送"
+                        android:textColor="@color/color_727171"
+                        android:textSize="@dimen/px30_sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px30_dp"
+                android:background="#f6f6f6"/>
+
+            <LinearLayout
+                android:id="@+id/demand_red_packet_ll_askfor_gift_setting"
+                android:layout_marginLeft="@dimen/px30_dp"
+                android:layout_marginRight="@dimen/px30_dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px120_dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px40_dp"
+                    android:text="开心大转盘"/>
+
+                <ImageView
+                    android:layout_width="@dimen/px240_dp"
+                    android:layout_height="@dimen/px66_dp"
+                    android:layout_marginLeft="@dimen/px66_dp"
+                    android:background="@drawable/f1_red_packet_shouyi"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#919191"
+                    android:textSize="@dimen/px42_dp"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/px18_dp"
+                    android:text="设置"/>
+                <ImageView
+                    android:layout_width="@dimen/px28_dp"
+                    android:layout_height="@dimen/px42_dp"
+                    android:background="@drawable/y1_go_ico"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

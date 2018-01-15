@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_white"
+        android:paddingBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/f1_close_small" />
+
+        <ImageView
+            android:id="@+id/iv_plugin"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnClose"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_plugin_video" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_plugin"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="您的版本未安装视频组件"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="正在下载组件"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/pbDownload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/tvContent"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="23dp"
+            android:progressDrawable="@drawable/download_progress_color" />
+    </RelativeLayout>
+
+</LinearLayout>

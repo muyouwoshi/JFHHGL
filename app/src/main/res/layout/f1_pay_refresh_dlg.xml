@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_margin="@dimen/px24_dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="@dimen/px60_dp"
+        android:layout_height="@dimen/px60_dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/px20_dp"
+        android:layout_marginTop="@dimen/px20_dp"
+        android:background="@drawable/f1_close_small" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/pay_refresh_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px52_sp" />
+
+    <ProgressBar
+        android:layout_width="@dimen/px140_dp"
+        android:layout_height="@dimen/px140_dp"
+        android:indeterminateDrawable="@drawable/loading_progressbar"
+        android:indeterminateDuration="1000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px60_dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pay_refresh_text"
+            android:textColor="@color/color_C7C7C7"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/px42_sp"
+            tools:text="59秒" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/abtest_pay_item_normal_bg"
+    android:paddingLeft="10dp">
+
+    <ImageView
+        android:id="@+id/tv_pay_key"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/abtest_pay_key" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_pay_key"
+        android:layout_toRightOf="@+id/tv_pay_key"
+        android:textColor="#666666"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F24C77"
+        android:textSize="14dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_select"
+        android:layout_marginRight="6dp"
+        android:text="100元"/>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        android:src="@drawable/f1_select_right" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/spread_unlock_bg"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/px160_dp"
+        android:layout_height="@dimen/px160_dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/spread_unlock_ok"/>
+
+    <TextView
+        android:id="@+id/spread_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解锁成功"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px50_dp"/>
+
+    <TextView
+        android:id="@+id/spread_result_title_sub"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spread_share_success_remind"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/px30_dp"/>
+
+    <TextView
+        android:id="@+id/spread_result_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px105_dp"
+        android:background="@drawable/f1_bt_invite_expired"
+        android:text="@string/get_it"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/px48_dp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="35dp"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spread_result_info"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/px30_dp"/>
+
+</LinearLayout>

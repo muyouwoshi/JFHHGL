@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.predestinate.module.logic.baseui.xlistview.ExListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_ex_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:footerDividersEnabled="false"
+    android:hapticFeedbackEnabled="false"
+    android:headerDividersEnabled="false"
+    android:listSelector="@android:color/transparent"
+    android:overScrollMode="never"
+    android:scrollbars="none" />

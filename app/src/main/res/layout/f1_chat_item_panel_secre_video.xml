@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="@dimen/px60_dp"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/chat_panel_secre_video_ll_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/chat_panel_secre_video_img_video"
+                android:layout_width="84dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/chat_panel_secre_video_img_top"
+                android:layout_width="@dimen/px72_dp"
+                android:layout_height="@dimen/px72_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/f1_play_btn" />
+
+            <TextView
+                android:id="@+id/chat_panel_secre_video_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/px16_dp"
+                android:paddingBottom="@dimen/px9_dp"
+                android:text="06:12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px26_sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_panel_secre_video_ll_video"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/px11_dp"
+            android:layout_marginRight="@dimen/px15_dp"
+            android:layout_marginTop="@dimen/px15_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px33_dp"
+                android:layout_height="@dimen/px33_dp"
+                android:background="@drawable/f1_unlock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px15_dp"
+                android:text="@string/unlock_the_video"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/px3_dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px22_sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

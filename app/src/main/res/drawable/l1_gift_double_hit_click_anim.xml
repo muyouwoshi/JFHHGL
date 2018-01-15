@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+    >
+
+    <item
+        android:drawable="@drawable/giftcombo_work_0"
+        android:duration="100"
+        />
+    <item
+        android:drawable="@drawable/giftcombo_work_1"
+        android:duration="100"
+        />
+    <item
+        android:drawable="@drawable/giftcombo_work_2"
+        android:duration="100"
+        />
+    <item
+        android:drawable="@drawable/giftcombo_work_3"
+        android:duration="100"
+        />
+    <item
+        android:drawable="@drawable/giftcombo_work_4"
+        android:duration="100"
+        />
+    <item
+        android:drawable="@drawable/giftcombo_work_5"
+        android:duration="100"
+        />
+    <item
+        android:drawable="@drawable/giftcombo_work_6"
+        android:duration="100"
+        />
+
+</animation-list>

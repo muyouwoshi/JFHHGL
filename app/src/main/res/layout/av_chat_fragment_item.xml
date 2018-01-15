@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <com.juxin.predestinate.module.logic.baseui.custom.SquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px17_dp">
+
+            <ImageView
+                android:id="@+id/iv_media"
+                android:layout_width="@dimen/px50_dp"
+                android:layout_height="@dimen/px50_dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="@dimen/px88_dp"
+                android:layout_height="@dimen/px43_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.juxin.predestinate.module.logic.baseui.custom.SquareLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="6dp"
+        android:textColor="#3A4870"/>
+
+    <TextView
+        android:id="@+id/tv_age_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#8A93AA"/>
+</LinearLayout>

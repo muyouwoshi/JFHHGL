@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_F7F7F7"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px45_dp"
+        android:paddingTop="@dimen/px45_dp">
+
+        <ImageView
+            android:layout_width="@dimen/px90_dp"
+            android:layout_height="@dimen/px90_dp"
+            android:src="@drawable/f1_ic_my_diamonds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px24_dp"
+            android:text="@string/usable_diamond"
+            android:textColor="@color/color_A6A6A6"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/wode_diamond_txv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px24_dp"
+            android:text="0"
+            android:textColor="@color/color_D93A2A"
+            android:textSize="@dimen/px52_sp" />
+    </LinearLayout>
+
+    <com.juxin.predestinate.third.recyclerholder.CustomRecyclerView
+        android:id="@+id/wode_diamond_crl_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+</LinearLayout>

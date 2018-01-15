@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.juxin.predestinate"
+    android:versionCode="10250201"
+    android:versionName="1.2.1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 百度定位所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!--录音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- =====听云权限===== -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- =====听云权限===== -->
+
+    <application
+        android:name=".module.logic.application.App"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <!-- 软件轻量包升级配置，meta-data数值型字符串无法读取，遂默认以"id_"开头进行字符串切割，"id_"后配置文档如下： -->
+        <!-- http://test.game.xiaoyouapp.cn:20080/juxin/api_doc/src/master/info/android_app_id.md -->
+        <meta-data
+            android:name="LITE_UPDATE_APPID"
+            android:value="id_${lite_update_appid}" />
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="yuanfenba" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.logic.baseui.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.start.NavUserAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.start.UserRegInfoAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.start.UserRegInfoCompleteAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.start.UserLoginExtAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.user.check.UserCheckInfoAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.user.check.other.UserBlockAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.auth.PhoneVerifyAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.SettingAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.AboutAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.SearchTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.UserModifyPwdAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.SuggestAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.self.album.UserPhotoAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.utils.PhotoDisplayAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.utils.PrivatePhotoDisplayAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.edit.info.UserEditInfoAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.edit.EditContentAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.other.UserOtherSetAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.other.UserOtherLabelAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.edit.UserEditSignAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.start.WebEntranceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- ============= 小友模块start ============= -->
+        <activity
+            android:name=".ui.user.my.MyAttentionAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.MyDiamondsAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.MyDiamondsExplainAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.RedBoxRecordAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.WithDrawExplainAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.WithDrawRecordAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.WithDrawApplyAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.WithDrawSuccessAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.RedBoxPhoneVerifyAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.auth.IDCardAuthenticationAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.auth.IDCardAuthenticationSucceedAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.my.DemandRedPacketAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.my.RotarySetActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.check.secret.UserSecretAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.paygoods.diamond.GoodsDiamondDialog"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Background" />
+
+        <activity
+            android:name=".ui.user.check.secret.dialog.SecretGiftDlg"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Background" />
+
+        <activity
+            android:name=".ui.user.check.secret.dialog.SecretDiamondDlg"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Background" />
+
+        <activity
+            android:name=".ui.user.check.secret.dialog.SecretVideoPlayerAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.mail.chat.PrivateChatAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.mail.popup.RandomRedBoxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ui.pay.PayListAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pay.PayOrderAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Background" />
+        <activity
+            android:name=".ui.pay.PayRefreshDlg"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Background" />
+        <activity
+            android:name=".ui.pay.PayResultDlg"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Background" />
+
+        <activity
+            android:name=".ui.pay.PayWebAct"
+            android:screenOrientation="portrait" />
+
+        <!-- ============= 相机相册模块start ============= -->
+        <activity
+            android:name=".module.local.album.activity.TransferActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".module.local.album.activity.PickOrTakeImageActivity"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.local.album.activity.PickBigImagesActivity"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.local.album.activity.ResetOrFinishAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".module.local.album.crop.CropImageAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.user.auth.RecordVideoAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.auth.MyAuthenticationVideoAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.auth.MyAuthenticationAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.start.FindPwdAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.auth.PhoneVerifyCompleteAct"
+            android:screenOrientation="portrait" />
+
+        <!-- ============= 锁屏弹窗 ============= -->
+        <activity
+            android:name=".module.logic.notify.view.UserMailNotifyAct"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".module.logic.notify.view.LockScreenActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".module.logic.notify.LockScreenReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!--================= 发现 =======================-->
+        <activity
+            android:name=".ui.discover.DefriendAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.MyFriendsAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mail.SysMessAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.MyDefriendAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.UserAvatarUploadAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.SayHelloUserAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pay.wepayother.h5.PayWebActivity"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.EarnMoneyAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.WomanAutoReplyAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mail.chat.OffNetDescribeAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.search.SearchUserActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.TitlePrivilegeAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.IntimateFriendExplainAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.CatchGoddessInfoAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.CatchGoddessAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mail.MyChumAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.discover.ChatInviteAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.ChatSecretAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.ChatStrangerAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discover.task.ChatGiftAct"
+            android:configChanges="screenSize|keyboard|orientation" />
+        <activity
+            android:name=".ui.agora.act.comment.RtcCommentActivity"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.RankAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.MultiTitleAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.my.ShareCodeAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.friend.PeerageSayHelloActivity"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.share.ShareOtherInfo"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.live.GirlLiveEndActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.LiveStartLiveTipActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.LiveSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.ui.LiveRecommendAct"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- ============= service =============== -->
+        <service
+            android:name=".module.logic.socket.CoreService"
+            android:process=":coreservice" />
+
+        <!-- ============== 第三方 ====================== -->
+
+        <!-- 百度定位 注意后续对 AK 的替换 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${baidu_AK}" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- ============== 微信其它支付 ==================== -->
+        <!-- ============== 二维码支付 ==================== -->
+        <activity
+            android:name=".ui.pay.wepayother.qrcode.WepayQRCodeAct"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:screenOrientation="portrait" />
+        <!-- ============== 二维码支付结束 ==================== -->
+        <!--杰莘公众号-->
+        <activity
+            android:name="com.switfpass.pay.activity.QQWapPayWebView"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--杰莘公众号end-->
+        <!--掌付公众号-->
+        <activity
+            android:name="com.third.wa5.sdk.ThirdActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent" />
+        <!--掌付公众号end-->
+        <activity
+            android:name="com.switfpass.pay.activity.PayResultActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!--卓越支付wap-->
+        <activity android:name="com.zy.activity.PayWxWapActivity" />
+        <!---卓越支付wap end-->
+
+        <!-- ============== 微信其它支付结束 ==================== -->
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="screenSize|keyboard|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/No_Background" />
+
+        <!--腾讯qq相关-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--此处需要填写“tencent”+申请QQsdk的“APPID” 在ShareUtils中找b包名对应的APPID-->
+                <data android:scheme="tencent${qq_share_appid}" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/No_Background" />
+
+        <meta-data
+            android:name="com.juxin.predestinate.module.local.glide.GlideSetting"
+            android:value="GlideModule" />
+
+        <!-- QQ分享 -->
+        <activity
+            android:name=".ui.share.QQShareActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/No_Background" />
+
+    </application>
+</manifest>

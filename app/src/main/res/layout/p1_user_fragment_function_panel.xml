@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px206_dp"
+    android:orientation="horizontal">
+    <!--布局删除需谨慎不然panel无法计算权重weight-->
+    <RelativeLayout
+        android:id="@+id/rl_vip_rechange"
+        style="@style/center_pieces_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/px30_dp">
+
+            <ImageView
+                style="@style/icon_middle"
+                android:src="@drawable/f1_icon_vip" />
+
+            <TextView
+                style="@style/text_middle"
+                android:text="VIP充值"
+                android:textColor="@color/color_666666" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_page"
+        style="@style/center_pieces_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/px30_dp">
+
+            <ImageView
+                style="@style/icon_middle"
+                android:src="@drawable/f1_icon_mainpage" />
+
+            <TextView
+                style="@style/text_middle"
+                android:text="主页"
+                android:textColor="@color/color_666666" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rank"
+        style="@style/center_pieces_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/px30_dp">
+
+            <ImageView
+                style="@style/icon_middle"
+                android:src="@drawable/f1_icon_rank" />
+
+            <TextView
+                style="@style/text_middle"
+                android:text="榜单"
+                android:textColor="@color/color_666666" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        style="@style/center_pieces_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/px30_dp">
+
+            <ImageView
+                style="@style/icon_middle"
+                android:src="@drawable/f1_icon_gift" />
+
+            <TextView
+                style="@style/text_middle"
+                android:text="礼物"
+                android:textColor="@color/color_666666" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

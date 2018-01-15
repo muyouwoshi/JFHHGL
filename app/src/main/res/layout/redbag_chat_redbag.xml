@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/f42_chat_redbag_left_pic" />
+
+    <LinearLayout
+        android:id="@+id/rl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px286_dp"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/redbag_chat_redbag_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px190_dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_invite_img"
+                android:layout_width="@dimen/px138_dp"
+                android:layout_height="@dimen/px138_dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/redbagcoins_img"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px35_dp"
+                android:layout_toRightOf="@+id/iv_invite_img"
+                android:minWidth="126dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_invite_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="赠送的红包"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px40_sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px15_dp"/>
+
+                <TextView
+                    android:id="@+id/tv_invite_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="查看红包"
+                    android:textColor="@color/color_D1ECFF"
+                    android:textSize="@dimen/px32_sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96_dp"
+            android:background="@drawable/redbag_chat_redbag_bottom_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30_sp"
+                android:paddingLeft="@dimen/px57_dp"
+                android:textColor="@color/color_bbbbbb"
+                android:text="@string/redbag"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/f42_chat_redbag_right_pic" />
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px25_dp"
+        android:background="@drawable/redbag_explain_ll_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/redbag_explain_img_close"
+            android:layout_width="@dimen/px55_dp"
+            android:layout_height="@dimen/px55_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px55_dp"
+            android:layout_marginTop="@dimen/px40_dp"
+            android:background="@drawable/dlg_close_small"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px70_dp"
+            android:text="幸运红包"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px46_sp"/>
+
+        <LinearLayout
+            android:id="@+id/redbag_explain_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_title"
+            android:layout_marginLeft="@dimen/px60_dp"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:layout_marginTop="@dimen/px46_dp"
+            android:background="@drawable/f2__vip_top__bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/px28_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px78_dp"
+                android:layout_height="@dimen/px78_dp"
+                android:background="@drawable/f2_th_ico"/>
+
+            <TextView
+                android:id="@+id/desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30_dp"
+                android:text="你暂时还没有红包卡哦！"
+                android:textColor="#d8ab64"
+                android:textSize="@dimen/px34_sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_ll_top"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px40_dp"
+            android:text="如何获得？"
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px36_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_how"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:text="1.视频聊天后有机会获得红包"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/px34_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_one"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:text="2.赠送礼物后有机会获得红包"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/px34_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_two"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:text="3.充值成功后有机会获得红包"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/px34_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_three"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:text="4.参与直播活动有机会获得红包"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/px34_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_four"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:text="5.还有更多幸运红包机会，等你来发现"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/px34_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_five"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px70_dp"
+            android:text="使用方式："
+            android:textColor="@color/color_zhuyao"
+            android:textSize="@dimen/px36_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_way"
+            android:layout_marginLeft="@dimen/px110_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:text="可以选择赠送给他人，或者放入自己的钱包"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/px34_sp"/>
+
+        <TextView
+            android:id="@+id/redbag_explain_tv_know"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redbag_explain_tv_to"
+            android:background="@drawable/redbag_explain_tv_bg"
+            android:layout_marginTop="@dimen/px72_dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px65_dp"
+            android:paddingTop="@dimen/px55_dp"
+            android:text="知道了"
+            android:textColor="@color/color_3b3c3f"
+            android:textSize="@dimen/px40_sp"/>
+    </RelativeLayout>
+</LinearLayout>

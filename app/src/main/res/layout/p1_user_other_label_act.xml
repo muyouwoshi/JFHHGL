@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <include layout="@layout/layout_margintop" />
+
+    <LinearLayout
+        style="@style/center_set_item"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_label_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@null"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/tv_label_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="s"
+            android:textColor="@color/color_999999"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/px35_dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/px35_dp"
+            android:text="@string/user_other_label_often"
+            android:textColor="@color/text_ciyao_gray" />
+
+        <include layout="@layout/p1_user_flow_label" />
+
+    </LinearLayout>
+
+    <include layout="@layout/fillbottom_bg" />
+</LinearLayout>

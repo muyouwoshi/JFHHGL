@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.predestinate.ui.discover.search.SearchLabelView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_label"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@drawable/abtest_bg_search_edtext"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:drawableLeft="@drawable/abtest_edittext_search_icon_left"
+        android:drawablePadding="10dp"
+        android:hint="搜索用户ID"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:drawableLeft="@drawable/abtest_edittext_search_icon_left"
+        android:drawablePadding="10dp"
+        android:hint="搜索用户ID"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:text="今日剩余:4"
+        android:textSize="10dp" />
+</com.juxin.predestinate.ui.discover.search.SearchLabelView>

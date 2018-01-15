@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xlistview_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/xlistview_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/xlistview_header_hint_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xlistview_header_hint_normal" />
+
+                <LinearLayout
+                    android:id="@+id/xlistview_header_last_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xlistview_header_last_time"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/xlistview_header_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刚刚"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/px120_dp"
+            android:layout_height="@dimen/px120_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px15_dp"
+            android:layout_toLeftOf="@id/xlistview_header_text"
+            android:src="@drawable/y1_listview_head"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/xlistview_header_heart_container"
+            android:layout_width="80dip"
+            android:layout_height="100dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/xlistview_header_text">
+
+            <ImageView
+                android:id="@+id/xlistview_header_heart_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/pull_heart_small" />
+
+            <ImageView
+                android:id="@+id/xlistview_header_heart_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:src="@drawable/pull_heart_big" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/xlistview_header_heart_ext"
+            android:layout_width="40dip"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/xlistview_header_text"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/pull_heart_small" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:src="@drawable/pull_heart_big" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- 聊天表情切换指示小点选中效果 -->
+    <solid android:color="@color/color_e5e5e5" />
+
+</shape>

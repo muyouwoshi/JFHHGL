@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="@dimen/px45_dp"
+    android:paddingRight="@dimen/px45_dp">
+
+    <!-- 年龄 身高 距离 上线时间-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_round_pink_2"
+                android:gravity="center"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp">
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="@dimen/px36_dp"
+                    android:layout_height="@dimen/px36_dp"
+                    android:src="@drawable/f1_sex_female_2" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px30_sp"
+                    tools:text="22岁" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/bg_shape_round_blue"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:text="165cm" />
+
+            <!-- 魅力土豪 -->
+            <ImageView
+                android:id="@+id/iv_rank"
+                android:layout_width="@dimen/px52_dp"
+                android:layout_height="@dimen/px52_dp"
+                android:layout_marginLeft="@dimen/px12_dp"
+                android:src="@drawable/f1_top01" />
+
+            <ImageView
+                android:id="@+id/iv_vip"
+                android:layout_width="@dimen/px84_dp"
+                android:layout_height="@dimen/px45_dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px12_dp"
+                android:src="@drawable/f1_vip_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_userinfo_dis_n_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="12sp"
+                tools:text="5公里以内" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" · "
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_last_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="12sp"
+                tools:text="1天以内" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 关注星标 -->
+    <LinearLayout
+        android:id="@+id/ll_guanzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_half_circle_rect_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px45_dp"
+        android:paddingRight="@dimen/px45_dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_guanzhu"
+            android:layout_width="@dimen/px45_dp"
+            android:layout_height="@dimen/px45_dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/f1_follow_star" />
+
+        <TextView
+            android:id="@+id/tv_guanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px10_dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px42_sp"
+            tools:text="关注 3633" />
+    </LinearLayout>
+</RelativeLayout>

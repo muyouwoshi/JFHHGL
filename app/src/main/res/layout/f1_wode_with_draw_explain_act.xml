@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/base_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px80_dp"
+        android:text="钱包提现须知"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px47_dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1_dp"
+        android:layout_marginLeft="@dimen/px95_dp"
+        android:layout_marginRight="@dimen/px95_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:background="@color/color_D5D5D5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:text="第一、"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px44_dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px10_dp"
+        android:lineSpacingExtra="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:text="收入需要24小时解冻，解冻后才能放入钱包提现。"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/px42_dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px55_dp"
+        android:text="第二、"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px44_dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px10_dp"
+        android:lineSpacingExtra="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:text="提现需填写真实姓名、银行卡号、开户银行等信息，填写错误信息将会导致提现失败。"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/px42_dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px55_dp"
+        android:text="第三、"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px44_dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px100_dp"
+        android:layout_marginTop="@dimen/px10_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:lineSpacingExtra="@dimen/px30_dp"
+        android:text="提现到账时间为72小时。"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/px42_dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+
+        <include layout="@layout/f1_customerservice_btn"/>
+    </RelativeLayout>
+
+</LinearLayout>

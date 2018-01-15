@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<include layout="@layout/base_title" />-->
+
+    <com.juxin.predestinate.module.logic.baseui.custom.CustomStatusListView
+        android:id="@+id/discover_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--</LinearLayout>-->
+
+    <Button
+        android:id="@+id/discover_group_sayhi_btn"
+        android:layout_width="@dimen/px341_dp"
+        android:layout_height="@dimen/px126_dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/px35_dp"
+        android:layout_marginRight="@dimen/px35_dp"
+        android:background="@drawable/f2_gxhsx_btn"
+        android:visibility="visible" />
+
+</FrameLayout>

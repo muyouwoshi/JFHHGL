@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/common_list_item"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px35_dp"
+        android:paddingTop="@dimen/px35_dp"
+        android:text="@string/look_at_she_type"
+        android:textColor="@color/text_ciyao_gray"
+        android:textSize="@dimen/px42_sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_own_agree"
+        style="@style/center_set_item">
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/look_at_she_own"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <CheckBox
+            android:id="@+id/cb_own_agree"
+            style="@style/icon_middle_center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/p1_look_select_bg"
+            android:button="@null"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px3_dp"
+        android:background="@color/bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_own_disagree"
+        style="@style/center_set_item">
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/look_at_she_no_own"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <CheckBox
+            android:id="@+id/cb_own_disagree"
+            style="@style/icon_middle_center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/p1_look_select_bg"
+            android:button="@null"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px3_dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_def_select"
+        style="@style/common_list_item"
+        android:gravity="right|center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px25_dp"
+        android:paddingTop="@dimen/px25_dp">
+
+        <CheckBox
+            android:id="@+id/cb_def_sel"
+            style="@style/icon_small"
+            android:layout_marginRight="@dimen/px18_dp"
+            android:background="@drawable/p1_def_look_select"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/look_at_she_def"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px36_sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginTop"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/tv_select_ok"
+        style="@style/common_list_item"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px35_dp"
+        android:paddingTop="@dimen/px35_dp"
+        android:text="确 定"
+        android:textColor="@color/theme_color_red"
+        android:textSize="@dimen/px45_sp" />
+</LinearLayout>

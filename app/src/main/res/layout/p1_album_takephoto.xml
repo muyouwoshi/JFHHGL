@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.library.view.AspectRatioLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_takePic_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/px120_dp"
+        android:layout_height="@dimen/px120_dp"
+        android:background="@color/transparent"
+        android:src="@drawable/p1_album_camera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px20_dp"
+        android:text="@string/album_take_pic"
+        android:textColor="@color/album_takePic_txt"
+        android:textSize="@dimen/px42_sp" />
+
+</com.juxin.library.view.AspectRatioLinearLayout>

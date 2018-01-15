@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="1000dp"
+              android:gravity="bottom"
+              android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/bottom_gif_view_blank"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/px25_dp"
+            android:paddingLeft="@dimen/px25_dp"
+            android:paddingRight="@dimen/px25_dp">
+            <RelativeLayout
+                android:id="@+id/bottom_gif_rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/p1_gift_dialog_bg"
+                android:paddingTop="@dimen/px42_dp">
+
+                <LinearLayout
+                    android:id="@+id/bottom_gif_ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px50_dp"
+                    android:layout_marginRight="@dimen/px50_dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px56_dp"
+                        android:layout_height="@dimen/px56_dp"
+                        android:background="@drawable/f1_gift_ico"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px30_dp"
+                        android:text="送礼更容易搭讪成功"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/px34_sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的钻石："
+                        android:textColor="@color/color_C7C7C7"
+                        android:textSize="@dimen/px34_sp"/>
+
+                    <TextView
+                        android:id="@+id/bottom_gif_txv_allstone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px1_dp"
+                        android:text="34690"
+                        android:textColor="@color/color_FF9900"
+                        android:textSize="@dimen/px34_sp"/>
+
+                    <TextView
+                        android:id="@+id/bottom_gif_txv_pay"
+                        android:layout_width="@dimen/px165_dp"
+                        android:layout_height="@dimen/px86_dp"
+                        android:layout_marginLeft="@dimen/px30_dp"
+                        android:background="@drawable/btn_gif_pay_bg"
+                        android:gravity="center"
+                        android:text="充值"
+                        android:textColor="@color/color_FD7194"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bottom_gif_view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1_dp"
+                    android:layout_marginLeft="@dimen/px50_dp"
+                    android:layout_marginRight="@dimen/px50_dp"
+                    android:layout_below="@+id/bottom_gif_ll_top"
+                    android:layout_marginTop="@dimen/px43_dp"
+                    android:background="@color/bg_color"/>
+
+                <com.juxin.predestinate.ui.user.my.view.CustomViewPager
+                    android:id="@+id/bottom_gift_vp_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px50_dp"
+                    android:layout_marginRight="@dimen/px50_dp"
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/px36_dp"
+                    android:layout_below="@+id/bottom_gif_view_line"
+                    android:scrollbars="none"/>
+                <!--<com.juxin.predestinate.third.recyclerholder.CustomRecyclerView-->
+                <!--android:id="@+id/bottom_gif_rlv_gif"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/bottom_gif_view_line"-->
+                <!--android:layout_marginTop="@dimen/px36_dp"/>-->
+
+                <com.juxin.predestinate.ui.user.my.view.PageIndicatorView
+                    android:id="@+id/bottom_gif_rlv_gif_indicator"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px50_dp"
+                    android:layout_marginRight="@dimen/px50_dp"
+                    android:layout_marginTop="@dimen/px60_dp"
+                    android:layout_below="@+id/bottom_gift_vp_view"/>
+
+                <TextView
+                    android:id="@+id/bottom_gif_view_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1_dp"
+                    android:layout_below="@+id/bottom_gif_rlv_gif_indicator"
+                    android:layout_marginTop="@dimen/px60_dp"
+                    android:background="@color/bg_color"/>
+
+                <LinearLayout
+                    android:id="@+id/bottom_gif_ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bottom_gif_view_line2"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px26_dp"
+                    android:paddingLeft="@dimen/px50_dp"
+                    android:paddingRight="@dimen/px30_dp"
+                    android:background="@drawable/p1_gift_dialog_bottom_bg"
+                    android:paddingTop="@dimen/px26_dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/bottom_gif_ll_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="共需钻石："
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/px34_sp"/>
+
+                            <TextView
+                                android:id="@+id/bottom_gif_txv_needstone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/color_FF9900"
+                                android:textSize="@dimen/px34_sp"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/bottom_gif_btn_redbag"
+                            android:layout_width="108dp"
+                            android:layout_height="@dimen/px108_dp"
+                            android:background="@drawable/redbag_btn_bg"
+                            android:adjustViewBounds="true"
+                            android:gravity="center"
+                            android:text="放入自己钱包"
+                            android:visibility="gone"
+                            android:textColor="@color/color_626365"
+                            android:textSize="@dimen/px40_sp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/bottom_gif_tv_sendnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数量："
+                        android:textColor="@color/color_666666"/>
+
+                    <RelativeLayout
+                        android:id="@+id/bottom_gif_ll_sendnum"
+                        android:layout_width="@dimen/px200_dp"
+                        android:layout_height="@dimen/px74_dp"
+                        android:layout_marginLeft="@dimen/px1_dp"
+                        android:layout_gravity="center_vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/p1_gift_dialog_edit_bg"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/bottom_gif_txv_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:paddingRight="@dimen/px20_dp"
+                            android:layout_marginLeft="@dimen/px27_dp"
+                            android:text="1"
+                            android:textColor="@color/fengexian_lahei"
+                            android:textSize="@dimen/px34_sp"/>
+                        <TextView
+                            android:id="@+id/bottom_gif_txv_sendnum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:numeric="integer"
+                            android:hint="0"
+                            android:height="@dimen/px34_sp"
+                            android:lineSpacingExtra="0dp"
+                            android:focusable="false"
+                            android:background="#00000000"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/px34_sp"/>
+
+                        <TextView
+                            android:id="@+id/bottom_gif_txv_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/px27_dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/px20_dp"
+                            android:text="1"
+                            android:textColor="@color/fengexian_lahei"
+                            android:textSize="@dimen/px34_sp"/>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bottom_gif_txv_send"
+                        android:layout_width="@dimen/px230_dp"
+                        android:layout_height="@dimen/px108_dp"
+                        android:layout_marginLeft="@dimen/px30_dp"
+                        android:background="@drawable/f1_send_btn_bg"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:text="赠送"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px40_sp"/>
+                </LinearLayout>
+                <com.juxin.predestinate.ui.user.my.view.GiftPopView
+                    android:id="@+id/bottom_gif_gpv"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/bottom_gif_ll_bottom"
+                    android:layout_marginRight="@dimen/px21_dp"
+                    android:layout_marginBottom="-12dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>

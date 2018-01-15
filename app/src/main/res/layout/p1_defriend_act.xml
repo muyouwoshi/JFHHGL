@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <include layout="@layout/layout_margintop" />
+
+    <ListView
+        android:id="@+id/defriend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+    <EditText
+        android:id="@+id/defriend_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px300_dp"
+        android:layout_marginTop="@dimen/px35_dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/defriend_edt_hint"
+        android:padding="@dimen/px35_dp"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/px48_sp" />
+
+</LinearLayout>

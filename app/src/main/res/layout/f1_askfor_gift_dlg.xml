@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/f1_view_white_corners"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rl_ask_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/want_bag_tips"
+                    android:textColor="@color/color_FF839D"
+                    android:textSize="18sp" />
+
+                <com.juxin.predestinate.ui.user.my.view.CustomViewPager
+                    android:id="@+id/vp_gift_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_gift_main_mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/px30_dp"
+                    android:paddingBottom="@dimen/px60_dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <com.juxin.predestinate.ui.user.my.view.PageIndicatorView
+                        android:id="@+id/tv_gift_pagesize"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px50_dp"
+                        android:layout_marginRight="@dimen/px50_dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px120_dp"
+                    android:layout_marginLeft="@dimen/px60_dp"
+                    android:layout_marginRight="@dimen/px60_dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/askfor_btn_voice"
+                        android:layout_width="@dimen/px100_dp"
+                        android:layout_height="@dimen/px100_dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/p1_chat_a01" />
+
+                    <RelativeLayout
+                        android:id="@+id/askfor_rl_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/askfor_editmsg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px30_dp"
+                            android:layout_marginRight="@dimen/px30_dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/f1_mail_chat_act_editmsg_selector"
+                            android:gravity="center_vertical"
+                            android:hint="@string/coquetry"
+                            android:inputType="textMultiLine"
+                            android:minHeight="37dp"
+                            android:maxLength="40"
+                            android:padding="@dimen/px35_dp"
+                            android:textColorHint="@color/color_C8C8CE"
+                            android:textSize="@dimen/px48_sp" />
+                        <TextView
+                            android:id="@+id/askfor_tv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/askfor_editmsg"
+                            android:layout_alignRight="@+id/askfor_editmsg"
+                            android:textSize="@dimen/px20_dp"
+                            android:textColor="@color/color_C8C8CE"
+                            android:layout_marginBottom="@dimen/px10_dp"
+                            android:layout_marginRight="@dimen/px10_dp"
+                            android:text="0/40"/>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/askfor_btn_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px99_dp"
+                        android:layout_marginLeft="@dimen/px30_dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/f1_mail_chat_act_btnsend_selector"
+                        android:shadowColor="@color/color_727171"
+                        android:shadowDx="0.0"
+                        android:shadowDy="-1.0"
+                        android:shadowRadius="0.2"
+                        android:text="按住说话"
+                        android:textColor="@color/color_727171"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/askfor_voice_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px99_dp"
+                        android:layout_marginLeft="@dimen/px30_dp"
+                        android:layout_marginRight="@dimen/px30_dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/askfor_voice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/px99_dp"
+                            android:layout_marginLeft="@dimen/px30_dp"
+                            android:layout_marginRight="@dimen/px30_dp"
+                            android:background="@drawable/f1_view_gat_corners_stroke"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px99_dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_gift_main_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px120_dp"
+                    android:layout_margin="@dimen/px45_dp"
+                    android:background="@drawable/f1_view_pink_corners"
+                    android:gravity="center"
+                    android:padding="@dimen/px15_dp"
+                    android:text="@string/send"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

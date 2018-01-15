@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical">
+
+    <View style="@style/divider_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/discover_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px35_dp">
+
+            <ImageView
+                android:id="@+id/discover_item_avatar"
+                style="@style/avatar_middle"
+                android:layout_centerVertical="true"
+                android:src="@drawable/default_head" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px35_dp"
+                android:layout_toRightOf="@id/discover_item_avatar">
+
+                <LinearLayout
+                    android:id="@+id/discover_item_name_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/discover_item_name"
+                        style="@style/txt_item_nickname" />
+
+                    <ImageView
+                        android:id="@+id/discover_title_state"
+                        android:layout_width="@dimen/px120_dp"
+                        android:layout_height="@dimen/px48_dp"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/discover_relation_state"
+                        android:layout_width="@dimen/px110_dp"
+                        android:layout_height="@dimen/px50_dp"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:paddingLeft="@dimen/px36_dp"
+                        android:gravity="center"
+                        android:background="@drawable/f1_relation_value"
+                        android:text="lv1"
+                        android:textSize="@dimen/px22_sp"
+                        android:textColor="@color/theme_color_red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/discover_item_ranking_state"
+                        style="@style/icon_small"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:src="@drawable/f1_top01"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/discover_item_vip_state"
+                        style="@style/icon_small"
+                        android:layout_marginLeft="@dimen/px10_dp"
+                        android:src="@drawable/f1_vip_icon"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/discover_item_age_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/discover_item_name_content"
+                    android:layout_below="@id/discover_item_name_content"
+                    android:layout_marginTop="@dimen/px9_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/discover_item_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/px25_dp"
+                        android:text="22岁"
+                        android:textColor="@color/filter_text_gray_color"
+                        android:textSize="@dimen/txt_small" />
+
+                    <TextView
+                        android:id="@+id/discover_item_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/px15_dp"
+                        android:text="172cm"
+                        android:textColor="@color/filter_text_gray_color"
+                        android:textSize="@dimen/txt_small" />
+
+                    <ImageView
+                        android:id="@+id/discover_item_point"
+                        android:layout_width="@dimen/px10_dp"
+                        android:layout_height="@dimen/px10_dp"
+                        android:layout_marginRight="@dimen/px15_dp"
+                        android:background="@drawable/f1_dot_ico" />
+
+                    <TextView
+                        android:id="@+id/discover_item_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px15_dp"
+                        android:text="5km以内"
+                        android:textColor="@color/filter_text_gray_color"
+                        android:textSize="@dimen/txt_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/discover_item_age_content"
+                    android:layout_marginTop="@dimen/px10_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/discover_item_calling_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/icon_small"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/f1_calling_ico" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="通话中..."
+                            android:textColor="@color/color_6dcca3"
+                            android:textSize="@dimen/px30_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_item_video_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/discover_item_video"
+                            style="@style/icon_small"
+                            android:background="@drawable/f1_video_state_ico" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/px5_dp"
+                            android:text="可视频"
+                            android:textColor="@color/color_b89ca3"
+                            android:textSize="@dimen/px30_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_item_call_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/discover_item_call"
+                            style="@style/icon_small"
+                            android:background="@drawable/f1_call_state_ico" />
+
+                        <TextView
+                            android:id="@+id/discover_item_call_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/px5_dp"
+                            android:text="可语音"
+                            android:textColor="@color/color_b89ca3"
+                            android:textSize="@dimen/px30_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/discover_item_sayhi"
+                style="@style/button_middle_list"
+                android:layout_width="@dimen/px200_dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/f1_sayhellow_btn_bg"
+                android:enabled="false"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/discover_item_online_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/px38_dp"
+                android:paddingRight="@dimen/px38_dp"
+                android:textColor="@color/color_ciyao"
+                android:textSize="@dimen/big_font_40"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

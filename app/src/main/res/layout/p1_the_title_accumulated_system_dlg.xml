@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px25_dp"
+    android:layout_marginLeft="@dimen/px25_dp"
+    android:layout_marginRight="@dimen/px25_dp"
+    android:paddingBottom="@dimen/px50_dp"
+    android:paddingLeft="@dimen/px50_dp"
+    android:paddingRight="@dimen/px50_dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p1_gift_dialog_bg">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f1_img_pop_up_present" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px130_dp"
+                android:text="@string/accumulated_system"
+                android:textColor="@color/color_zhuyao"
+                android:textSize="@dimen/px53_dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free_delievery"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/px46_dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px40_dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+
+                <ImageView
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_margin="@dimen/px5_dp"
+                    android:background="@drawable/f1_icon_tequan" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/px386_dp"
+                android:layout_height="@dimen/px245_dp"
+                android:layout_marginTop="@dimen/px90_dp"
+                android:background="@drawable/f1_ic0n_jiakechong" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px120_dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/px20_dp"
+                    android:layout_height="@dimen/px20_dp"
+                    android:background="@drawable/f1_dot_accumulated_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:text="贵族推荐"
+                    android:textColor="@color/color_zhuyao"
+                    android:textSize="@dimen/px36_dp" />
+                <TextView
+                    android:layout_width="@dimen/px20_dp"
+                    android:layout_height="@dimen/px20_dp"
+                    android:layout_marginLeft="@dimen/px26_dp"
+                    android:background="@drawable/f1_dot_accumulated_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:text="专属徽章"
+                    android:textColor="@color/color_zhuyao"
+                    android:textSize="@dimen/px36_dp" />
+
+                <TextView
+                    android:layout_width="@dimen/px20_dp"
+                    android:layout_height="@dimen/px20_dp"
+                    android:layout_marginLeft="@dimen/px26_dp"
+                    android:background="@drawable/f1_dot_accumulated_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:text="专属座驾"
+                    android:textColor="@color/color_zhuyao"
+                    android:textSize="@dimen/px40_dp" />
+
+                <TextView
+                    android:layout_width="@dimen/px20_dp"
+                    android:layout_height="@dimen/px20_dp"
+                    android:layout_marginLeft="@dimen/px26_dp"
+                    android:background="@drawable/f1_dot_accumulated_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:text="专属守护"
+                    android:textColor="@color/color_zhuyao"
+                    android:textSize="@dimen/px36_dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/accumlated_dlg_check_privilege"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px144_dp"
+                android:layout_marginBottom="@dimen/px50_dp"
+                android:layout_marginLeft="@dimen/px70_dp"
+                android:layout_marginRight="@dimen/px70_dp"
+                android:layout_marginTop="@dimen/px100_dp"
+                android:background="@drawable/f1_btn_check_the_privilege_bg"
+                android:gravity="center"
+                android:text="@string/check_the_privilege"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px50_dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

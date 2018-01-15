@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/bg_cucsomerservice" />
+    <corners android:radius="@dimen/px360_dp" />
+    <padding
+        android:bottom="@dimen/px30_dp"
+        android:left="@dimen/px40_dp"
+        android:right="@dimen/px40_dp"
+        android:top="@dimen/px30_dp" />
+</shape>

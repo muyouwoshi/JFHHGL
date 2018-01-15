@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@drawable/bg_live_user_card_dialog"
+    android:gravity="center"
+    android:text="取消"
+    android:textColor="#7E7E7E"
+    android:textSize="13sp" />

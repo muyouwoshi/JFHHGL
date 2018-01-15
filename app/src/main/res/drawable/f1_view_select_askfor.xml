@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/px2_dp"
+                android:color="@color/color_FD6C8E" />
+            <!--填充-->
+            <solid android:color="@color/transparent" />
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</selector>

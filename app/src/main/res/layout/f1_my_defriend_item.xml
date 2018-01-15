@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical">
+
+    <View style="@style/divider_line" />
+
+    <RelativeLayout
+        android:id="@+id/mydefriend_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px35_dp">
+
+        <ImageView
+            android:id="@+id/mydefriend_item_avatar"
+            style="@style/avatar_middle"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_head" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:layout_toRightOf="@id/mydefriend_item_avatar">
+
+            <LinearLayout
+                android:id="@+id/mydefriend_item_name_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mydefriend_item_name"
+                    style="@style/txt_item_nickname" />
+
+                <ImageView
+                    android:id="@+id/mydefriend_item_ranking_state"
+                    style="@style/icon_small"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:src="@drawable/f1_top01"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/mydefriend_item_vip_state"
+                    style="@style/icon_small"
+                    android:src="@drawable/f1_vip_icon"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mydefriend_item_age_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mydefriend_item_name_content"
+                android:layout_below="@id/mydefriend_item_name_content"
+                android:layout_marginTop="@dimen/px15_dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mydefriend_item_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px25_dp"
+                    android:text="22岁"
+                    android:textColor="@color/filter_text_gray_color"
+                    android:textSize="@dimen/txt_small" />
+
+                <TextView
+                    android:id="@+id/mydefriend_item_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="172cm"
+                    android:textColor="@color/filter_text_gray_color"
+                    android:textSize="@dimen/txt_small" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

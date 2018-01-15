@@ -1,0 +1,225 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.8-RC1'
+        // 听云检测
+        classpath 'com.networkbench.newlens.agent.android:agent-gradle-plugin:2.7.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven { url "https://jitpack.io" }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+//==================读取配置文件====================
+
+ext {
+    versions = [minSDK   : 15,
+                targetSDK: 19]
+
+    cAppDefCName = '小友'
+    cDefApplicationId = 'com.xiaoyou.friends'
+    cWorkDir = 'D:\\pkgHelper\\'
+
+    cApplicationId = project.hasProperty('appid') ? appid : cDefApplicationId
+    // 轻量包默认为小友纯净版升级id，全量包不会用到此参数
+    cLiteUpdateAppid = project.hasProperty('upid') ? upid : '00000001'
+    cAppName = project.hasProperty('appname') ? appname : ''
+    cAppCName = project.hasProperty('appcname') ? appcname : cAppDefCName
+
+    println "--------cApplicationId:${cApplicationId}, cLiteUpdateAppid:${cLiteUpdateAppid},cAppName:${cAppName},cAppCName:${cAppCName}"
+
+    cConfigTxt = 'configs.txt'
+    def sCfgDir = cWorkDir + 'config\\'
+    def sBaiduKeyTxt = sCfgDir + 'baidu_key.txt'
+    def sJskPathTxt = sCfgDir + 'jks_path.txt'
+    def sQQShareIdTxt = sCfgDir + 'qq_share_id.txt'
+    def sWeChatShareIdTxt = sCfgDir + 'wechat_share_id.txt'
+
+    cBaiduAK = getPropertyValue(cApplicationId, sBaiduKeyTxt)
+    cStoreFile = getPropertyValue(cApplicationId, sJskPathTxt)
+    cQQShareId = getPropertyValue(cApplicationId, sQQShareIdTxt)
+    cWeChatShareId = getPropertyValue(cApplicationId, sWeChatShareIdTxt)
+
+    //从配置文件加载的变量
+    cStorePassword = ''
+    cKeyAlias = ''
+    cKeyPassword = ''
+
+    cVersionCode = ''
+    cVersionName = ''
+
+    cApkPath = ''
+    cShortVersion = ''
+    cApkDefName = ''
+    cApkAndResPath = ''
+    cApkJiaGuPath = ''
+
+    //加载参数配置
+    initConfigs()
+}
+
+//加载参数配置
+def initConfigs() {
+    Properties props = loadProperties(cConfigTxt)
+
+    //默认为小友的baidu地图key
+    if (cBaiduAK == '') cBaiduAK = 'elGG0q1NMdaWQgmvKONkO1AUnFww443q'
+    if (cStoreFile == '') cStoreFile = props['storeFile']
+    if (cQQShareId == '') cQQShareId = '1105602280'
+    if (cWeChatShareId == '') cWeChatShareId = 'wx94c2bcfa8be093b3'
+
+    cStorePassword = props['storePassword']
+    cKeyAlias = props['keyAlias']
+    cKeyPassword = props['keyPassword']
+
+    cVersionCode = props['VersionCode']
+    cVersionName = props['VersionName']
+    //不是小友，则版本号+4
+    if (cApplicationId != cDefApplicationId) {
+        def nAry = cVersionName.toString().split('\\.')
+        cVersionName = "${nAry[0].toInteger() + 4}.${nAry[1]}.${nAry[2]}"
+    }
+
+    cApkPath = props['ApkPath']
+
+    if (cAppName == '') cAppName = props['AppName']
+    if (cAppName == '') cAppName = getPrjName(cApplicationId)
+
+    cShortVersion = cVersionName.replaceAll('\\.', '')
+
+    def sApkBaseName = cAppName + "_" + cVersionCode + "%s.apk"
+    def sApkBasePath = new File(cApkPath).canonicalPath + File.separator + sApkBaseName
+
+    cApkDefName = String.format(sApkBaseName, '')
+    cApkAndResPath = String.format(sApkBasePath, '')
+    cApkJiaGuPath = String.format(sApkBasePath, "_${cShortVersion}_jiagu_sign")
+}
+
+//从文件中获取属性值
+static String getPropertyValue(pAppId, pPath) {
+    Properties props = loadProperties(pPath)
+    def PropertyValue = props[pAppId]
+    return PropertyValue == null ? "" : PropertyValue
+}
+
+//从包名获取项目名
+static String getPrjName(pAppId) {
+    def sp = pAppId.split('\\.')
+    def sName = sp.size() > 0 ? sp[sp.size() - 1] : ""
+    return sName
+}
+
+static Properties loadProperties(sFileName) {
+    File file = new File(sFileName)
+    Properties props = new Properties()
+    if (!file.exists()) return props
+
+    def b = new byte[3]
+
+    def InputS = new FileInputStream(file)
+    InputS.read(b)
+    if (b[0].intValue() == -17 && b[1].intValue() == -69 && b[2].intValue() == -65) {
+        props.load(new InputStreamReader(InputS, 'UTF-8'))
+    } else {
+        InputS.getChannel().position(0)
+        props.load(new InputStreamReader(InputS, 'GBK'))
+    }
+    InputS.close()
+
+    return props
+}
+
+//360加固win64
+task aJiagu() << {
+    exec {
+        def myCommand = [cWorkDir + 'jiagu.bat', cStoreFile, cApkAndResPath, cApkPath]
+        commandLine myCommand
+    }
+}
+
+//生成渠道包
+task execQudao() << {
+    exec {
+        def myCommand = [cWorkDir + 'qudao.bat', cAppName, cApkJiaGuPath, cApkPath, cShortVersion]
+        commandLine myCommand
+    }
+}
+
+//生成Flavor
+String getFlavor() {
+    def flavor = "_${cApplicationId}"
+    //ex为命令行传参 用于一个包名对应多个不同资源的情况
+    //使用方法:gradlew resguardRelease -Pex=1
+    if (project.hasProperty('ex') && ex != "") flavor = flavor + "_" + ex
+    return flavor
+}
+
+//拷贝java源码到Flavor目录
+def copyJavaSourceToFlavorDir(sBaseFile) {
+    def sDstFile = String.format(sBaseFile, getFlavor(), cApplicationId.replaceAll('\\.', '/'))
+    def sSrcFile = String.format(sBaseFile, 'main', 'com/juxin/predestinate')
+
+    def dstFile = file(sDstFile)
+    file(dstFile.parent).mkdirs()
+
+    def sContent = file(sSrcFile).getText('UTF-8')
+    sContent = sContent.replace("package com.juxin.predestinate.wxapi;", "package ${cApplicationId}.wxapi;")
+
+    dstFile.delete()
+    dstFile.write(sContent, 'UTF-8')
+}
+
+//修改微信支付回调文件
+task('editWXPayEntryAct') {
+    def sBaseFile = "app/src/%s/java/%s/wxapi/WXPayEntryActivity.java"
+    copyJavaSourceToFlavorDir(sBaseFile)
+}
+
+//修改微信分享回调文件
+task('editWXEntryAct') {
+    def sBaseFile = "app/src/%s/java/%s/wxapi/WXEntryActivity.java"
+    copyJavaSourceToFlavorDir(sBaseFile)
+}
+
+//字符串替换
+task('editStrings') {
+    def sBaseFile = 'app/src/%s/res/values/strings.xml'
+    def sDstFile = String.format(sBaseFile, getFlavor())
+    def sSrcFile = String.format(sBaseFile, 'main')
+
+    def dstFile = file(sDstFile)
+    file(dstFile.parent).mkdirs()
+
+    def sContent = file(sSrcFile).getText('UTF-8')
+    if (cAppCName != '' && cAppCName != cAppDefCName) {
+        sContent = sContent.replaceAll(cAppDefCName, cAppCName)
+    }
+
+    dstFile.delete()
+    dstFile.write(sContent, 'UTF-8')
+}

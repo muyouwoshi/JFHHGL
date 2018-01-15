@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p2_bg_user_reg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/NoMultipoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/act_space"
+            android:paddingRight="@dimen/act_space"
+            android:paddingTop="@dimen/act_space">
+
+            <TextView
+                android:id="@+id/txt_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/txt_complete_hit"
+                android:textColor="@color/color_title_new"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/img_reg_info_upload_photo"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_marginTop="20dip"
+                android:clickable="true"
+                android:src="@drawable/btn_reg_upload_photo_selector" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/txt_upload_head_hit"
+                android:textColor="@color/color_494949"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_reg_info_job"
+                style="@style/reg_info_item"
+                android:layout_marginTop="@dimen/px30_dp">
+
+                <TextView
+                    android:id="@+id/txt_reg_info_job_desc"
+                    style="@style/text_reg_complete_desc"
+                    android:text="@string/txt_reg_job_desc" />
+
+                <TextView
+                    android:id="@+id/txt_reg_info_job"
+                    style="@style/text_reg_complete_info" />
+            </LinearLayout>
+
+            <View style="@style/divider_line_reg" />
+
+            <LinearLayout
+                android:id="@+id/layout_reg_info_edu"
+                style="@style/reg_info_item">
+
+                <TextView
+                    android:id="@+id/txt_reg_info_edu_desc"
+                    style="@style/text_reg_complete_desc"
+                    android:text="@string/txt_reg_edu_desc" />
+
+
+                <TextView
+                    android:id="@+id/txt_reg_info_edu"
+                    style="@style/text_reg_complete_info" />
+            </LinearLayout>
+
+            <View style="@style/divider_line_reg" />
+
+            <LinearLayout
+                android:id="@+id/layout_reg_info_income"
+                style="@style/reg_info_item">
+
+                <TextView
+                    android:id="@+id/txt_reg_info_income_desc"
+                    style="@style/text_reg_complete_desc"
+                    android:text="@string/txt_reg_income_desc" />
+
+                <TextView
+                    android:id="@+id/txt_reg_info_income"
+                    style="@style/text_reg_complete_info" />
+            </LinearLayout>
+
+            <View style="@style/divider_line_reg" />
+
+            <LinearLayout
+                android:id="@+id/layout_reg_info_height"
+                style="@style/reg_info_item">
+
+                <TextView
+                    android:id="@+id/txt_reg_info_height_desc"
+                    style="@style/text_reg_complete_desc"
+                    android:text="@string/txt_reg_height_desc" />
+
+                <TextView
+                    android:id="@+id/txt_reg_info_height"
+                    style="@style/text_reg_complete_info" />
+            </LinearLayout>
+
+            <View style="@style/divider_line_reg" />
+
+            <LinearLayout
+                android:id="@+id/layout_reg_info_marry"
+                style="@style/reg_info_item">
+
+                <TextView
+                    android:id="@+id/txt_reg_info_marry_desc"
+                    style="@style/text_reg_complete_desc"
+                    android:text="@string/txt_reg_marry_desc" />
+
+                <TextView
+                    android:id="@+id/txt_reg_info_marry"
+                    style="@style/text_reg_complete_info" />
+            </LinearLayout>
+
+            <View style="@style/divider_line_reg" />
+
+            <Button
+                android:id="@+id/user_reg_info_complete_submit"
+                style="@style/button_big"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="50dip"
+                android:text="@string/bt_complete"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

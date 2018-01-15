@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_dlg_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px60_dp"
+        android:paddingLeft="@dimen/px30_dp"
+        android:paddingRight="@dimen/px30_dp"
+        android:paddingTop="@dimen/px60_dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px200_dp"
+                android:layout_height="@dimen/px200_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/public_title_avager_huise_bg" />
+
+            <ImageView
+                android:id="@+id/avatar_2"
+                android:layout_width="@dimen/px195_dp"
+                android:layout_height="@dimen/px195_dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px33_dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px42_sp"
+                    tools:text="这个人真的很漂酿" />
+
+                <ImageView
+                    android:id="@+id/top00"
+                    style="@style/icon_title"
+                    android:layout_marginLeft="@dimen/px15_dp" />
+
+                <ImageView
+                    android:id="@+id/top01"
+                    android:layout_width="@dimen/px50_dp"
+                    android:layout_height="@dimen/px50_dp"
+                    android:layout_marginLeft="@dimen/px15_dp"
+                    android:src="@drawable/f1_top01" />
+
+                <ImageView
+                    android:id="@+id/vip_icon"
+                    style="@style/icon_vip"
+                    android:layout_marginLeft="@dimen/px15_dp"
+                    android:src="@drawable/f1_vip_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px15_dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36_sp"
+                tools:text="20岁 - 5公里外" />
+
+            <LinearLayout
+                android:id="@+id/price_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px15_dp"
+                android:background="@drawable/peerage_optimize_vip_price_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px9_dp"
+                android:paddingLeft="@dimen/px20_dp"
+                android:paddingRight="@dimen/px20_dp"
+                android:paddingTop="@dimen/px9_dp">
+
+                <TextView
+                    android:id="@+id/call_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="视频通话:"
+                    android:textColor="@color/color_dba78b"
+                    android:textSize="@dimen/px30_sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px30_sp"
+                    tools:text="50钻/分钟" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_online_status"
+            android:layout_width="@dimen/px126_dp"
+            android:layout_height="@dimen/px53_dp"
+            android:src="@drawable/myfriends_online" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/f2_round_white">
+
+        <ImageView
+            android:id="@+id/iv_share_reward_close"
+            android:layout_width="@dimen/px51_dp"
+            android:layout_height="@dimen/px51_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px30_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:src="@drawable/dlg_close_small"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px67_dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px108_dp"
+            android:paddingRight="@dimen/px108_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px68_dp"
+                    android:src="@drawable/spread_share_pakage_ic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px40_dp"
+                    android:text="@string/spread_share_reward"
+                    android:textColor="@color/color_f27647"
+                    android:textSize="@dimen/px56_sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px90_dp"
+                android:gravity="center"
+                android:text="@string/spread_share_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px42_sp"/>
+
+            <!-- begin 消费 收入 奖励 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px54_dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_e9f6ff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/px55_dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/spread_share_man_reward"
+                        android:textColor="@color/text_ciyao_gray"
+                        android:textSize="@dimen/px32_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px33_dp"
+                        android:text="50%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px34_sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/color_ffebe8"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/px55_dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/spread_share_w_reward"
+                        android:textColor="@color/text_ciyao_gray"
+                        android:textSize="@dimen/px32_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px33_dp"
+                        android:text="30%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px34_sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- end 消费 收入 奖励 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px90_dp"
+                android:lineSpacingExtra="@dimen/px18_dp"
+                android:text="@string/spread_share_reward_expf"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px36_sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px135_dp"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:lineSpacingExtra="@dimen/px18_dp"
+                android:text="@string/spread_share_reward_exps"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px36_sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

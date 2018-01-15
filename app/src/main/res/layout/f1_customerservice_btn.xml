@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_customerservice_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="@dimen/px80_dp"
+    android:layout_marginRight="@dimen/px30_dp"
+    android:background="@drawable/bg_customerservice"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/px60_dp"
+        android:layout_height="@dimen/px60_dp"
+        android:src="@drawable/f1_customerservice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px5_dp"
+        android:text="@string/bt_customerservice_chat"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px48_sp" />
+</LinearLayout>

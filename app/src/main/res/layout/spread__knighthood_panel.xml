@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/transparent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px25_dp"
+    android:paddingLeft="@dimen/px25_dp"
+    android:paddingRight="@dimen/px25_dp">
+
+    <LinearLayout
+        android:id="@+id/spread_panel_kh_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginTop="@dimen/px38_dp"
+        android:background="@drawable/f2__vip_top__bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px28_dp">
+
+        <ImageView
+            android:layout_width="@dimen/px72_dp"
+            android:layout_height="@dimen/px72_dp"
+            android:background="@drawable/f2_th_ico" />
+
+        <TextView
+            android:id="@+id/spread_panel_kh_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:text="@string/the_message_for_free"
+            android:textColor="#d8ab64"
+            android:textSize="@dimen/px32_sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spread_panel_kh_tv_difference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:gravity="center"
+        android:text="@string/how_much_is_poor"
+        android:textSize="@dimen/px42_sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginTop="@dimen/px28_dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_weight="1"
+            android:background="@color/color_D4D4D4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   赠送礼物快速升级爵位，永久解锁聊天   "
+            android:textColor="@color/color_CACACA"
+            android:textSize="@dimen/px32_sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_weight="1"
+            android:background="@color/color_D4D4D4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/to_upgrade_gift_ll_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_upgrade_gift_tv_tip"
+        android:layout_marginTop="@dimen/px45_dp"
+        android:paddingLeft="@dimen/px33_dp"
+        android:paddingRight="@dimen/px33_dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/spread_panel_gift_ll_gift_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spread_gift_send_select_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/spread_panel_kh_gift_img_one"
+                    android:layout_width="@dimen/px140_dp"
+                    android:layout_height="@dimen/px140_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/spread_panel_kh_gift_tv_needstone_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    android:textColor="@color/color_FD7194"
+                    android:textSize="@dimen/px40_sp"
+                    tools:text="18钻石" />
+
+                <TextView
+                    android:id="@+id/spread_panel_kh_gift_tv_gifname_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px34_dp"
+                    android:layout_marginTop="@dimen/px12_dp"
+                    android:textColor="@color/color_C7C7C7"
+                    android:textSize="@dimen/px28_sp"
+                    tools:text="泰迪熊" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/spread_panel_kh_tv_experience_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:gravity="center"
+                android:text="18钻石"
+                android:textColor="@color/color_a2adb5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px60_dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/spread_panel_gift_ll_gift_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spread_gift_send_unselect_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/spread_panel_kh_gift_img_two"
+                    android:layout_width="@dimen/px140_dp"
+                    android:layout_height="@dimen/px140_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/spread_panel_kh_gift_tv_needstone_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    android:textColor="@color/color_FD7194"
+                    android:textSize="@dimen/px40_sp"
+                    tools:text="18钻石" />
+
+                <TextView
+                    android:id="@+id/spread_panel_kh_gift_tv_gifname_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px34_dp"
+                    android:layout_marginTop="@dimen/px12_dp"
+                    android:textColor="@color/color_C7C7C7"
+                    android:textSize="@dimen/px28_sp"
+                    tools:text="泰迪熊" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/spread_panel_kh_tv_experience_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:gravity="center"
+                android:text="18钻石"
+                android:textColor="@color/color_a2adb5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/spread_panel_gift_ll_gift_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spread_gift_send_unselect_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/spread_panel_kh_gift_img_three"
+                    android:layout_width="@dimen/px140_dp"
+                    android:layout_height="@dimen/px140_dp"
+                    android:layout_marginTop="@dimen/px30_dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/spread_panel_kh_gift_tv_needstone_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px40_dp"
+                    android:textColor="@color/color_FD7194"
+                    android:textSize="@dimen/px40_sp"
+                    tools:text="18钻石" />
+
+                <TextView
+                    android:id="@+id/spread_panel_kh_gift_tv_gifname_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px34_dp"
+                    android:layout_marginTop="@dimen/px12_dp"
+                    android:textColor="@color/color_C7C7C7"
+                    android:textSize="@dimen/px28_sp"
+                    tools:text="泰迪熊" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/spread_panel_kh_tv_experience_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:gravity="center"
+                android:text="18钻石"
+                android:textColor="@color/color_a2adb5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spread_panel_kh_tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px140_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:background="@drawable/f1_bt_invite_expired"
+        android:gravity="center"
+        android:text="立即赠送"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px45_sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_marginTop="@dimen/px40_dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_weight="1"
+            android:background="@color/color_D4D4D4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   爵位的特权   "
+            android:textColor="@color/color_CACACA"
+            android:textSize="@dimen/px32_sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px1_dp"
+            android:layout_weight="1"
+            android:background="@color/color_D4D4D4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spread_panel_kh_tv_privilege_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:textSize="@dimen/px34_sp" />
+
+    <TextView
+        android:id="@+id/spread_panel_kh_tv_privilege_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px50_dp"
+        android:layout_marginLeft="@dimen/px30_dp"
+        android:layout_marginTop="@dimen/px30_dp"
+        android:textSize="@dimen/px34_sp" />
+</LinearLayout>

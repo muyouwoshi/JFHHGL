@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.library.view.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/px60_dp"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:background="@drawable/p1_notify_lock_panel"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/px30_dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/px55_dp"
+                android:layout_height="@dimen/px55_dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/icon"
+                android:text="@string/message_xiaou"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/wake_lock_off"
+                android:layout_width="@dimen/px60_dp"
+                android:layout_height="@dimen/px60_dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/p1_dialog_close" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wake_lock_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px45_dp"
+            android:singleLine="true"
+            android:text="HELLO美女"
+            android:textColor="@color/theme_color_red"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/wake_lock_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px24_dp"
+            android:maxLines="2"
+            android:text="这么晚还忙些什么"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px36_sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_reply_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px45_dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/wake_lock_content"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px15_dp"
+                android:layout_weight="1"
+                android:background="#a7a7a7"
+                android:padding="@dimen/px9_dp"
+                android:textSize="@dimen/px42_sp" />
+
+            <TextView
+                android:id="@+id/wake_lock_send"
+                style="@style/button_small"
+                android:text="@string/send"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</com.juxin.library.view.CustomFrameLayout>

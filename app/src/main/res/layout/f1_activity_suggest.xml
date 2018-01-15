@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/edt_suggest_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f1_mail_chat_act_editmsg_sel"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/ext_suggest_hit"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxWidth="5.0dip"
+            android:minWidth="10.0dip"
+            android:padding="5dp"
+            android:textSize="@dimen/px39_sp">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_suggest_desc"
+            android:textColor="@color/hei_color"
+            android:textSize="@dimen/px39_sp" />
+
+        <EditText
+            android:id="@+id/edt_suggest_qq"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/f1_mail_chat_act_editmsg_sel"
+            android:ems="10"
+            android:hint="@string/ext_feedback_contact_hit"
+            android:padding="5dp"
+            android:textSize="@dimen/px39_sp" />
+
+        <Button
+            android:id="@+id/btn_suggest_send"
+            style="@style/button_big"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/send" />
+    </LinearLayout>
+</LinearLayout>

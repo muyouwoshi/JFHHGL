@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- button  灰色6px圆角样式 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/px6_dp" android:bottomRightRadius="@dimen/px6_dp" android:topLeftRadius="@dimen/px6_dp" android:topRightRadius="@dimen/px6_dp" />
+            <stroke android:width="@dimen/px1_dp" android:color="@color/color_D6D6D6" />
+            <solid android:color="@color/btn_getcode_solid_press" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/px6_dp" android:bottomRightRadius="@dimen/px6_dp" android:topLeftRadius="@dimen/px6_dp" android:topRightRadius="@dimen/px6_dp" />
+            <stroke android:width="@dimen/px1_dp" android:color="@color/color_D6D6D6" />
+            <solid android:color="@color/btn_getcode_solid_press" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/px6_dp" android:bottomRightRadius="@dimen/px6_dp" android:topLeftRadius="@dimen/px6_dp" android:topRightRadius="@dimen/px6_dp" />
+            <stroke android:width="@dimen/px1_dp" android:color="@color/color_D6D6D6" />
+            <solid android:color="@color/btn_getcode_solid_press" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/px6_dp" android:bottomRightRadius="@dimen/px6_dp" android:topLeftRadius="@dimen/px6_dp" android:topRightRadius="@dimen/px6_dp" />
+            <stroke android:width="@dimen/px1_dp" android:color="@color/color_D6D6D6" />
+            <solid android:color="@color/btn_getcode_solid_normal" />
+        </shape>
+    </item>
+
+</selector>

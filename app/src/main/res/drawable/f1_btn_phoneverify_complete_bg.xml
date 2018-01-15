@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/btn_getcode_solid_press" />
+            <stroke android:width="@dimen/px3_dp" android:color="@color/color_E4E4E4" />
+            <corners android:radius="@dimen/px6_dp" />
+            <padding android:bottom="@dimen/px35_dp" android:top="@dimen/px35_dp" />
+        </shape>
+    </item>
+    <item android:state_focused="true">　　　　
+        <shape android:shape="rectangle">
+            <solid android:color="@color/btn_getcode_solid_press" />
+            <stroke android:width="@dimen/px3_dp" android:color="@color/color_E4E4E4" />
+            <corners android:radius="@dimen/px6_dp" />
+            <padding android:bottom="@dimen/px35_dp" android:top="@dimen/px35_dp" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/btn_getcode_solid_press" />
+            <stroke android:width="@dimen/px3_dp" android:color="@color/color_E4E4E4" />
+            <corners android:radius="@dimen/px6_dp" />
+            <padding android:bottom="@dimen/px35_dp" android:top="@dimen/px35_dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <stroke android:width="@dimen/px3_dp" android:color="@color/color_E4E4E4" />
+            <corners android:radius="@dimen/px6_dp" />
+            <padding android:bottom="@dimen/px35_dp" android:top="@dimen/px35_dp" />
+        </shape>
+    </item>
+</selector>

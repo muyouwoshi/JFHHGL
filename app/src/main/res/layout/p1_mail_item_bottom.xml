@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px140_dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mail_item_title_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingBottom="@dimen/px30_dp"
+        android:paddingLeft="@dimen/px35_dp"
+        android:paddingRight="@dimen/px35_dp"
+        android:paddingTop="@dimen/px30_dp"
+        android:background="@color/white"
+        android:text="查看更多"
+        android:textColor="@color/color_zhuyao"
+        android:textSize="@dimen/px45_sp" />
+
+    <View style="@style/divider_line_horizontal" />
+</LinearLayout>

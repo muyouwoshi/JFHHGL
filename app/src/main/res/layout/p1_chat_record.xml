@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.library.view.AspectRatioLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px300_dp"
+    android:layout_height="@dimen/px300_dp"
+    android:background="@drawable/v3_voice_hint_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/px15_dp">
+
+    <ImageView
+        android:id="@+id/chat_mic_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/y1_talk_sound_ly_1" />
+
+    <TextView
+        android:id="@+id/chat_recording_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px15_dp"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/px8_dp"
+        android:paddingLeft="@dimen/px15_dp"
+        android:paddingRight="@dimen/px15_dp"
+        android:paddingTop="@dimen/px2_dp"
+        android:text="手指上滑取消发送"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px32_sp" />
+</com.juxin.library.view.AspectRatioLinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Library</string>
+
+
+    <string name="listview_header_hint_normal">开始刷新</string>
+    <string name="listview_header_hint_release">刷新中...</string>
+    <string name="listview_loading">loading...</string>
+    <string name="nomore_loading">没有更多的加载</string>
+    <string name="refreshing">刷新中...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="loading_done">加载完成</string>
+    <string name="listview_header_last_time">last update：</string>
+
+    <!-- =================缓存数据 start================= -->
+    <string name="cache_state_good">缓存状态良好</string>
+    <string name="cache_state_little">有少量缓存，可以清理</string>
+    <string name="cache_state_huge">有大量缓存，建议清除</string>
+    <!-- =================缓存数据 end================= -->
+
+    <!-- ImageLoader标识ImageView tag用id-->
+    <string name="view_url_tag_id"></string>
+    <string name="view_trans_tag_id"></string>
+</resources>

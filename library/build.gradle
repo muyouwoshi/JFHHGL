@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion rootProject.versions.minSDK
+        targetSdkVersion rootProject.versions.targetSDK
+
+        versionCode 1
+        versionName "1.0"
+        ndk { abiFilters "armeabi" }//让64位的操作系统可以兼容32位的库文件 , "armeabi-v7a", "arm64-v8a", "x86"
+        resConfigs "en", "zh"//清理无用语言包
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+
+    //dex分包support库
+    compile 'com.android.support:multidex:1.0.2'
+
+    //recyclerView工具库:[https://github.com/CymChad/BaseRecyclerViewAdapterHelper]
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.32'
+    //Glide:[https://github.com/bumptech/glide]
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.5.0@aar'
+
+    //retrofit:[https://github.com/square/retrofit]
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    //fast-json解析:[https://github.com/alibaba/fastjson]
+    compile 'com.alibaba:fastjson:1.2.39'
+    //跨进程sp存储:[https://github.com/grandcentrix/tray]
+    compile 'net.grandcentrix.tray:tray:0.12.0'
+
+    //OKHttp:[https://github.com/square/okhttp]
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+
+    //rxJava:[https://github.com/ReactiveX/RxJava],rxAndroid:[https://github.com/ReactiveX/RxAndroid]
+    compile 'io.reactivex.rxjava2:rxjava:2.1.5'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //日志打印库:[https://github.com/elvishew/XLog]
+    compile 'com.elvishew:xlog:1.4.0'
+    //图片缩放查看控件:[https://github.com/chrisbanes/PhotoView]
+    compile 'com.github.chrisbanes:PhotoView:2.1.3'
+    //ViewAnimator动画库:[https://github.com/florent37/ViewAnimator]
+    compile("com.github.florent37:viewanimator:1.0.5") {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile("com.aliyun.ams:alicloud-android-httpdns:1.+") {
+        exclude module: 'alicloud-android-utdid'
+    }
+    //侧滑删除:[https://github.com/mcxtzhang/SwipeDelMenuLayout]
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+}

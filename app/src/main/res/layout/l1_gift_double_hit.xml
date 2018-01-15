@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.predestinate.ui.live.view.LiveDoubleHitGiftView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l1_gift_double_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/gift_loading_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:id="@+id/gift_click_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/gift_double_count_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="11dp"
+        />
+</com.juxin.predestinate.ui.live.view.LiveDoubleHitGiftView>

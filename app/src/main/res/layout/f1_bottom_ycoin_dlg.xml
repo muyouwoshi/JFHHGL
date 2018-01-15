@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px20_dp"
+        android:background="@drawable/bg_shape_round_whit">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:text="@string/goods_ycoin_new_title"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px52_sp" />
+
+        <LinearLayout
+            android:id="@+id/remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y币余额: "
+                android:textColor="@color/text_ciyao_gray" />
+
+            <TextView
+                android:id="@+id/ycoin_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/picker_pink_color" />
+        </LinearLayout>
+
+        <!-- 商品列表-->
+        <LinearLayout
+            android:id="@+id/goods_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remain"
+            android:layout_marginLeft="@dimen/px40_dp"
+            android:layout_marginRight="@dimen/px40_dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pay_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_container"
+            android:layout_marginLeft="@dimen/px50_dp"
+            android:layout_marginRight="@dimen/px50_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:background="@drawable/view_gray_stroke">
+
+            <TextView
+                android:id="@+id/tv_ycoin_ts1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px30_dp"
+                android:paddingLeft="@dimen/px15_dp"
+                android:paddingTop="@dimen/px30_dp"
+                android:text="开通无限Y币"
+                android:textColor="#999999"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="（赠送50元话费）"
+                android:textColor="@color/color_FF5722"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_get_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="@dimen/px15_dp"
+                android:text="话费领取规则 >"
+                android:textColor="@color/pay_tel_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- 支付方式-->
+        <LinearLayout
+            android:id="@+id/pay_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_method"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px50_dp"
+            android:paddingRight="@dimen/px50_dp" />
+
+        <!-- 充值按钮 -->
+        <LinearLayout
+            android:id="@+id/btn_chongzhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_type_container"
+            android:padding="@dimen/px50_dp">
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/px30_dp"
+                android:background="@drawable/abtest_dialog_submit_button_bg"
+                android:stateListAnimator="@null"
+                android:text="@string/ok"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ycoin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_chongzhi"
+            android:layout_marginBottom="@dimen/px60_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tequan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ycoin_tequan_btn"
+                android:textColor="@color/pay_tel_color" />
+
+            <TextView
+                android:id="@+id/tv_kefu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="客服电话：0731-89746010"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_cancel"
+        style="@style/icon_middle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px50_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:src="@drawable/f1_close_btn02" />
+</RelativeLayout>

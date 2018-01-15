@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px25_dp"
+        android:background="@drawable/f42_hb01"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px35_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px70_dp"
+                android:layout_height="@dimen/px70_dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/f42_close_hb"/>
+
+            <TextView
+                android:id="@+id/gift_redpackage_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/px35_dp"
+                android:text="@string/success_receive"
+                android:textColor="@color/color_ffe27f"
+                android:textSize="@dimen/big_font_60"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/gift_redpackage_bottom_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px190_dp"
+                android:background="@drawable/f42_hb02"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_marginTop="@dimen/px60_dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:minHeight="@dimen/px35_dp"
+                    android:padding="@dimen/px35_dp"
+                    android:textColor="@color/bg_color"
+                    android:textSize="@dimen/px39_sp"/>
+
+                <TextView
+                    android:id="@+id/gift_redpackage_ok_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:padding="@dimen/px35_dp"
+                    android:text="@string/yet_receive"
+                    android:textColor="@color/color_50535d"
+                    android:textSize="@dimen/big_font_45"/>
+
+                <TextView
+                    android:id="@+id/gift_redpackage_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="72 小时未领取将返还到您的背包"
+                    android:textColor="@color/color_b9babe"
+                    android:textSize="@dimen/px31_dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px35_dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gift_redpackage_ll_top"
+                android:layout_width="@dimen/px270_dp"
+                android:layout_height="@dimen/px270_dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/px20_dp"
+                android:background="@drawable/f42_coins_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gift_redpackage_pirce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="￥1.27"
+                    android:textColor="#734523"
+                    android:textSize="@dimen/px66_sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gift_redpackage_bottom_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gift_redpackage_ll_top"
+                android:layout_gravity="center"
+                android:background="@drawable/f42_hb02"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:minHeight="@dimen/px35_dp"
+                    android:padding="@dimen/px35_dp"
+                    android:text="@string/gift_redpackage_desc"
+                    android:textColor="@color/color_ffaf9c"
+                    android:textSize="@dimen/px39_sp"/>
+
+                <TextView
+                    android:id="@+id/gift_redpackage_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:padding="@dimen/px35_dp"
+                    android:text="知道了"
+                    android:textColor="@color/color_50535d"
+                    android:textSize="@dimen/big_font_45"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

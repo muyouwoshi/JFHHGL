@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/f1_dialog_tips_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px30_dp"
+        android:paddingLeft="@dimen/px30_dp"
+        android:text="VIP服务"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px48_sp"
+        android:gravity="center|center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px180_dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txt_update_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px60_dp"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/px48_sp"
+            android:paddingRight="@dimen/px60_dp"
+            android:text="@string/txt_dialog_tips"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="@dimen/px180_dp"
+        android:gravity="center_vertical" >
+	  
+        <View 
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+        
+        <TextView
+            android:id="@+id/txt_update_cancel"
+            android:layout_width="100dip"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:background="@drawable/monthly_letter_item_pay_selector" />
+		
+         <View 
+            android:id="@+id/v_update_gone"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            />
+
+        <TextView
+            android:id="@+id/txt_update_submit"
+            android:layout_width="100dip"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="我要开通"
+            android:textColor="@color/white"
+           
+            android:background="@drawable/monthly_letter_item_pay_selector" />
+        
+         <View 
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

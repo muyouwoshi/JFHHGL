@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding
+                android:left="@dimen/px30_dp"
+                android:top="@dimen/px30_dp"
+                android:right="@dimen/px30_dp"
+                android:bottom="@dimen/px30_dp" />
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/px1_dp"
+                android:color="@color/color_F64051" />
+            <!--填充-->
+            <solid android:color="@color/color_FFFDE4" />
+        </shape>
+    </item>
+</selector>

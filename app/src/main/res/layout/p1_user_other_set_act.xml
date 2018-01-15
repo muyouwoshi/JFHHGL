@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_margintop" />
+
+            <!-- 头部信息 -->
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/user_head"
+                    style="@style/avatar_middle"
+                    android:layout_margin="@dimen/px35_dp"
+                    android:src="@drawable/default_pic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/px35_dp"
+                    android:layout_marginTop="@dimen/px35_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rl_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="用户昵称"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/px42_sp" />
+
+                        <ImageView
+                            android:id="@+id/user_vip_status"
+                            android:layout_width="@dimen/px42_dp"
+                            android:layout_height="@dimen/px42_dp"
+                            android:layout_marginLeft="@dimen/px10_dp"
+                            android:src="@drawable/p1_vip_ico"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px35_dp" />
+
+                    <TextView
+                        android:id="@+id/user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID:"
+                        android:textColor="@color/text_ciyao_gray"
+                        android:textSize="@dimen/px39_sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/layout_margintop" />
+
+            <!-- 备注名 -->
+            <RelativeLayout
+                android:id="@+id/rl_remark"
+                style="@style/center_set_item"
+                android:layout_height="@dimen/center_item_height">
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_remark_name"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/center_item_txt" />
+
+                <TextView
+                    android:id="@+id/user_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px35_dp"
+                    android:layout_toRightOf="@+id/tv_remark"
+                    android:textColor="@color/txt_middle"
+                    android:textSize="@dimen/center_item_txt" />
+                <View
+                    android:id="@+id/edit_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@+id/user_remark"
+                    android:background="@color/black"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <include layout="@layout/center_information_line" />
+
+            <!-- 标签 -->
+            <LinearLayout
+                android:id="@+id/ll_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/px35_dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/px200_dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:text="@string/check_info_impress_sign"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/center_item_txt" />
+
+                <LinearLayout
+                    style="@style/center_item_text"
+                    android:gravity="center_vertical">
+
+                    <include layout="@layout/p1_user_flow_label" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/right_go"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_margintop"
+                android:visibility="gone" />
+
+            <!-- 设置语音接听 -->
+            <RelativeLayout
+                android:id="@+id/rl_voice"
+                style="@style/center_set_item"
+                android:layout_height="@dimen/center_item_height"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_title_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_voice"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/center_item_txt" />
+
+                <TextView
+                    android:id="@+id/et_voice_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_mark"
+                    android:text="10"
+                    android:textColor="@color/bg_reghead_end"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/user_other_set_chat_price"
+                    android:textColor="@color/bg_reghead_end"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/center_information_line"
+                android:visibility="gone" />
+
+            <!-- 设置视频接听 -->
+            <RelativeLayout
+                android:id="@+id/rl_video"
+                style="@style/center_set_item"
+                android:layout_height="@dimen/center_item_height"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_title_mark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_video"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/center_item_txt" />
+
+                <TextView
+                    android:id="@+id/et_video_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_mark1"
+                    android:text="20"
+                    android:textColor="@color/bg_reghead_end"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_mark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/user_other_set_chat_price"
+                    android:textColor="@color/bg_reghead_end"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_margintop" />
+
+            <!-- 接受对方视频 -->
+            <LinearLayout
+                android:id="@+id/ll_accept_video"
+                style="@style/center_set_item"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/center_item_text"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_video_accept" />
+
+                <SeekBar
+                    android:id="@+id/sb_accept_video"
+                    style="@style/SeekBar" />
+            </LinearLayout>
+
+            <!-- 消息置顶 -->
+            <LinearLayout
+                android:id="@+id/ll_msg_stick"
+                style="@style/center_set_item"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/center_item_text"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_stick" />
+
+                <SeekBar
+                    android:id="@+id/sb_msg_stick"
+                    style="@style/SeekBar" />
+            </LinearLayout>
+
+            <include layout="@layout/center_information_line"
+                android:visibility="gone"/>
+
+            <!-- 接受对方语音 -->
+            <LinearLayout
+                android:id="@+id/ll_accept_voice"
+                style="@style/center_set_item"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/center_item_text"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_voice_accept" />
+
+                <SeekBar
+                    android:id="@+id/sb_accept_voice"
+                    style="@style/SeekBar" />
+            </LinearLayout>
+
+            <!-- 消息免打扰 -->
+            <LinearLayout
+                android:id="@+id/ll_msg_disturb"
+                style="@style/center_set_item"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/center_item_text"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_disturb" />
+
+                <SeekBar
+                    android:id="@+id/sb_msg_disturb"
+                    style="@style/SeekBar" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_margintop"
+                android:visibility="gone"/>
+
+            <!-- 清空聊天记录 -->
+            <RelativeLayout
+                android:id="@+id/rl_clear"
+                style="@style/center_set_item"
+                android:layout_height="@dimen/center_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_clear"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/center_item_txt" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_margintop" />
+
+            <!-- 屏蔽 -->
+            <LinearLayout
+                android:id="@+id/ll_msg_shield"
+                style="@style/center_set_item">
+
+                <TextView
+                    style="@style/center_item_text"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_chat_shield" />
+
+                <SeekBar
+                    android:id="@+id/sb_msg_shield"
+                    style="@style/SeekBar" />
+            </LinearLayout>
+
+            <include layout="@layout/center_information_line" />
+
+            <!-- 投诉 -->
+            <RelativeLayout
+                android:id="@+id/rl_complain"
+                style="@style/center_set_item"
+                android:layout_height="@dimen/center_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px5_dp"
+                    android:text="@string/user_other_set_complain"
+                    android:textColor="@color/text_zhuyao_black"
+                    android:textSize="@dimen/center_item_txt" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/y1_right_go" />
+            </RelativeLayout>
+
+            <View style="@style/divider_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_page_footing"
+                android:background="@color/bg_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/fillbottom_bg" />
+</LinearLayout>

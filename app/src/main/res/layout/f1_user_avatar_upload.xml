@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nohead_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgBtn_noheard_head"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:src="@null" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_noheard_ts"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="@drawable/nohead_yuan" />
+        </RelativeLayout>
+
+        <com.juxin.library.view.CustomFrameLayout
+            android:id="@+id/img_upload_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dip">
+
+            <LinearLayout
+                android:id="@+id/img_upload_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_usernohead_ts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dip"
+                    android:text="你的头像因以下原因被拒绝："
+                    android:textColor="@color/text_gray"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:background="@drawable/nohead_tan" />
+
+                    <TextView
+                        android:id="@+id/txt_usernohead_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="22dip"
+                        android:paddingRight="20dip"
+                        android:text="未审核通过"
+                        android:textColor="@color/noheard_info"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_upload_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upload_head_logo_male" />
+        </com.juxin.library.view.CustomFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="35dip">
+
+            <Button
+                android:id="@+id/btn_pick_photo_nohead"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/btn_upload_head_blueback_selector"
+                android:drawableLeft="@drawable/ic_upload_head_album"
+                android:drawablePadding="-10dip"
+                android:paddingLeft="10dip"
+                android:text="相册选取"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_take_photo_nohead"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/btn_upload_head_redback_selector"
+                android:drawableLeft="@drawable/ic_upload_head_carema"
+                android:drawablePadding="-10dip"
+                android:paddingLeft="10dip"
+                android:text="拍照上传"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_usernohead_ts2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/txt_noheard_ts"
+            android:textColor="@color/noheard_info2"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px45_dp"
+        android:paddingLeft="@dimen/px45_dp"
+        android:paddingRight="@dimen/px45_dp">
+
+        <!-- 标题 begin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/px45_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="发送私密视频，"
+                android:textColor="@color/text_zhuyao_black"
+                android:textSize="@dimen/px52_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轻松拿收益"
+                android:textColor="@color/theme_color_red"
+                android:textSize="@dimen/px52_sp" />
+        </LinearLayout>
+        <!-- 标题 end -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="点击上传专属私密视频"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px42_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_add_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_add_video"
+                android:layout_width="@dimen/px212_dp"
+                android:layout_height="@dimen/px212_dp"
+                android:layout_margin="@dimen/px30_dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/f1_bt_add_gift" />
+
+            <ImageView
+                android:id="@+id/iv_add_video_bg"
+                android:layout_width="@dimen/px212_dp"
+                android:layout_height="@dimen/px212_dp"
+                android:layout_margin="@dimen/px30_dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/bg_corner_half_trans"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_add_video_over"
+                android:layout_width="@dimen/px212_dp"
+                android:layout_height="@dimen/px212_dp"
+                android:layout_margin="@dimen/px30_dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_add_video_over"
+                    android:layout_width="@dimen/px90_dp"
+                    android:layout_height="@dimen/px90_dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/f1_video_play2" />
+
+                <TextView
+                    android:id="@+id/tv_add_video_over_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/px12_dp"
+                    android:text=""
+                    android:textColor="@color/text_ciyao_gray"
+                    android:textSize="@dimen/px30_sp"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="选择查看解锁所需礼物"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px42_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.25"
+                android:background="#f2f2f2" />
+        </LinearLayout>
+
+        <!-- 选择礼物 begin -->
+        <include layout="@layout/f1_ask_for_gift_item" />
+        <!-- 选择礼物 end -->
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px135_dp"
+            android:layout_marginBottom="@dimen/px30_dp"
+            android:background="@drawable/f1_bt_invite_expired"
+            android:gravity="center"
+            android:padding="@dimen/px30_dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px48_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请上传个人真实视频，请勿发送广告、涉黄图片等违法内容。"
+            android:textColor="@color/color_f38635"
+            android:textSize="@dimen/px34_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px18_dp"
+            android:text="一经发现，严肃处理，后果自负"
+            android:textColor="@color/color_f38635"
+            android:textSize="@dimen/px34_sp" />
+    </LinearLayout>
+</LinearLayout>

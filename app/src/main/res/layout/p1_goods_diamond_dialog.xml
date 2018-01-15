@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="@dimen/px30_dp"
+    android:paddingRight="@dimen/px30_dp">
+
+    <LinearLayout
+        android:id="@+id/recharge_popping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- 文字提示 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px30_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px54_dp"
+            android:paddingRight="@dimen/px54_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:text="开通服务"
+                android:textColor="#ff4582"
+                android:textSize="@dimen/px48_sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_diamond_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本次送礼还差"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px39_sp" />
+
+                <TextView
+                    android:id="@+id/tv_decdiamod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10钻石"
+                    android:textColor="#ff4582"
+                    android:textSize="@dimen/px39_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=",快去充值吧"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px39_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 商品列表 / 支付方式容器 -->
+        <LinearLayout
+            android:id="@+id/pay_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px35_dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px45_dp"
+            android:paddingRight="@dimen/px45_dp" />
+
+        <!-- 充值按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px54_dp"
+            android:paddingRight="@dimen/px54_dp"
+            android:paddingTop="@dimen/px50_dp">
+
+            <Button
+                android:id="@+id/btn_recharge"
+                style="@style/button_big"
+                android:textColor="@color/white"
+                android:background="@drawable/abtest_dialog_submit_button_bg"
+                android:layout_marginBottom="@dimen/px80_dp"
+                android:text="@string/goods_pay_immediately" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

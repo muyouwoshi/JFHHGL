@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <com.juxin.library.view.CustomFrameLayout
+        android:id="@+id/say_hello_users_frame_layput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/say_hello_users_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.juxin.predestinate.module.logic.swipemenu.SwipeListView
+                android:id="@+id/say_hello_users_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/say_hello_users_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/say_hello_users_delete"
+                    android:layout_width="0dip"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mail_bottom_selector"
+                    android:enabled="false"
+                    android:text="删除"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/say_hello_users_all_ignore"
+                    android:layout_width="0dip"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mail_bottom_sel"
+                    android:text="全部设为已读"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_nodata" />
+
+    </com.juxin.library.view.CustomFrameLayout>
+
+
+</LinearLayout>

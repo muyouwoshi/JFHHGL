@@ -1,0 +1,21 @@
+﻿#APK 签名key文件目录
+storeFile = ../xiaou.jks
+
+#APK 签名key密码（第一重密码）
+storePassword = fate123
+
+#APK 签名key别名
+keyAlias = fate
+
+#APK 签名key别名密码（第二重密码）
+keyPassword = fate123
+
+#版本号
+VersionCode = 10250201
+VersionName = 1.2.1
+
+#APK输出目录相对路径，生成加固包的时候需要指定确切的路径
+ApkPath = ../../K_GEN_APK/Predestinate/
+
+#App名称
+AppName = xiaou_live_base

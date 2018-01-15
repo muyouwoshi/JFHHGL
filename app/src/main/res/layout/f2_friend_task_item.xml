@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/level_of_intimacy_ll_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px30_dp"
+        android:paddingRight="@dimen/px30_dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friend_task_item_tv_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px32_sp"
+                android:textColor="@color/color_6d7183"
+                tools:text="视频20分钟"/>
+            <TextView
+                android:id="@+id/friend_task_item_tv_award"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20_dp"
+                android:textSize="@dimen/px26_sp"
+                android:textColor="@color/color_c0c3d1"
+                tools:text="任务奖励："/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/px1_dp"/>
+        <TextView
+            android:id="@+id/friend_task_item_tv_state"
+            android:layout_width="@dimen/px180_dp"
+            android:layout_height="@dimen/px80_dp"
+            android:background="@drawable/f2_friend_task_item_state_bg"
+            android:gravity="center"
+            android:textColor="@color/color_6F7485"
+            android:textSize="@dimen/px32_sp"
+            tools:text="去完成"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/px30_dp"
+        android:id="@+id/friend_task_item_ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_DADADA"/>
+
+
+</LinearLayout>

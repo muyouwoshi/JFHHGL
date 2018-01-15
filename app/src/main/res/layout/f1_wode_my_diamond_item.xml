@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/px30_dp">
+
+        <ImageView
+            android:id="@+id/wode_my_diamond_item_img_diamond"
+            android:layout_width="@dimen/px90_dp"
+            android:layout_height="@dimen/px90_dp"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:src="@drawable/f1_ic_my_diamonds" />
+
+        <TextView
+            android:id="@+id/wode_my_diamond_item_tv_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:layout_weight="1"
+            android:text="100钻石"
+            android:textColor="@color/color_131313"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/wode_my_diamond_item_tv_price"
+            android:layout_width="@dimen/px240_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px30_dp"
+            android:background="@drawable/f1_wode_bt_diamond_price_selector"
+            android:gravity="center"
+            android:padding="@dimen/px18_dp"
+            android:text="￥30"
+            android:textColor="@color/color_595757"
+            android:textSize="@dimen/px45_sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1_dp"
+        android:background="@color/color_E0E0E0" />
+</LinearLayout>

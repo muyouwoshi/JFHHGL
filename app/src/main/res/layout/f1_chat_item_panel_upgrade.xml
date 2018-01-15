@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px35_dp"
+        android:paddingRight="@dimen/px35_dp"
+        android:paddingTop="@dimen/px35_dp"
+        android:paddingBottom="@dimen/px25_dp"
+        android:background="@color/color_F5F5F5"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/chat_item_text_content"
+            android:text="发了一条新类型消息"
+            android:textSize="@dimen/px45_sp"/>
+
+        <TextView
+            style="@style/chat_item_text_content"
+            android:layout_marginTop="@dimen/px20_dp"
+            android:text="你的版本过低，无法接收此类消息"
+            android:textColor="@color/color_ciyao"
+            android:textSize="@dimen/px36_sp"/>
+    </LinearLayout>
+    <View
+        style="@style/divider_line_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/chat_item_text_upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px35_dp"
+        android:paddingRight="@dimen/px35_dp"
+        android:paddingTop="@dimen/px25_dp"
+        android:paddingBottom="@dimen/px25_dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mail_item_headpic"
+            style="@style/avatar_middle"
+            android:layout_width="@dimen/px50_dp"
+            android:layout_height="@dimen/px50_dp"
+            android:src="@drawable/f1_msg_update" />
+
+        <TextView
+            style="@style/chat_item_text_content"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:text="立即升级"
+            android:textColor="@color/color_45a3ec"/>
+
+    </LinearLayout>
+</LinearLayout>

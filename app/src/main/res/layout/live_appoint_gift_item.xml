@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/appoint_gif_item_ll_top"
+        android:layout_width="@dimen/px270_dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/gift_item_bg"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/appoint_gif_item_img"
+            android:layout_width="@dimen/px140_dp"
+            android:layout_height="@dimen/px140_dp"
+            android:layout_marginTop="@dimen/px30_dp"/>
+        <TextView
+            android:id="@+id/appoint_gif_item_txvneedstone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_FD7194"
+            android:textSize="@dimen/px34_sp"
+            android:layout_marginTop="@dimen/px10_dp"
+            />
+        <TextView
+            android:id="@+id/appoint_gif_item_txvgifname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px28_sp"
+            android:textColor="@color/color_BEBEBE"
+            android:layout_marginBottom="@dimen/px30_dp"
+            />
+    </LinearLayout>
+</LinearLayout>

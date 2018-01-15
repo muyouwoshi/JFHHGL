@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.juxin.library.view.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_custom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/px100_dp">
+
+    <!-- 女性结算-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/girl_comment_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px36_dp"
+            android:layout_marginRight="@dimen/px36_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/color_DDDDDD" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10_dp"
+                android:layout_marginRight="@dimen/px10_dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/chat_video_earn"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px36_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/color_DDDDDD" />
+        </LinearLayout>
+
+        <!-- 收入明细-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px500_dp"
+            android:layout_below="@+id/girl_comment_header"
+            android:layout_marginTop="@dimen/px40_dp"
+            android:orientation="vertical">
+
+            <!--视频收益-->
+            <RelativeLayout
+                android:id="@+id/rl_video_earn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px60_dp"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/video_earn"
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:src="@drawable/f1_chat_video_girl_earn" />
+
+                <TextView
+                    android:id="@+id/tv_income_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px60_dp"
+                    android:layout_toRightOf="@+id/video_earn"
+                    android:text="@string/chat_girl_video_earn"
+                    android:textColor="@color/text_middle_gray" />
+
+                <TextView
+                    android:id="@+id/video_earn_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/theme_color_red"
+                    tools:text="@string/chat_video_girl_earn" />
+            </RelativeLayout>
+
+            <!--礼物收益-->
+            <RelativeLayout
+                android:id="@+id/rl_gift_earn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px60_dp"
+                android:layout_marginRight="@dimen/px60_dp"
+                android:layout_marginTop="@dimen/px80_dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/gift_earn"
+                    android:layout_width="@dimen/px80_dp"
+                    android:layout_height="@dimen/px80_dp"
+                    android:src="@drawable/f1_chat_gift_girl_earn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px60_dp"
+                    android:layout_toRightOf="@+id/gift_earn"
+                    android:text="@string/chat_girl_gift_earn"
+                    android:textColor="@color/text_middle_gray" />
+
+                <TextView
+                    android:id="@+id/gift_earn_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/theme_color_red"
+                    tools:text="@string/chat_video_girl_earn" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 男性评价 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/comment_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px36_dp"
+            android:layout_marginRight="@dimen/px36_dp"
+            android:layout_marginTop="@dimen/px30_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/color_DDDDDD" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10_dp"
+                android:layout_marginRight="@dimen/px10_dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/chat_video_comment"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px36_sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/color_DDDDDD" />
+        </LinearLayout>
+
+        <!-- 评价星级 -->
+        <com.juxin.predestinate.ui.agora.view.RatingBarView
+            android:id="@+id/custom_ratingbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_header"
+            android:layout_marginTop="@dimen/px40_dp"
+            android:gravity="center_horizontal"
+            app:starCount="5"
+            app:starEmpty="@drawable/staroff"
+            app:starFill="@drawable/staron"
+            app:starImageSize="@dimen/px150_dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_prop_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_ratingbar"
+            android:layout_marginTop="@dimen/px80_dp"
+            android:visibility="gone">
+
+            <!-- 单选 -->
+            <com.juxin.predestinate.ui.agora.view.ViewAutoWrap
+                android:id="@+id/view_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px105_dp"
+                android:layout_marginRight="@dimen/px105_dp" />
+
+            <!-- 其他原因 -->
+            <EditText
+                android:id="@+id/tv_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_comment_content"
+                android:layout_marginLeft="@dimen/px105_dp"
+                android:layout_marginRight="@dimen/px105_dp"
+                android:layout_marginTop="@dimen/px80_dp"
+                android:background="@drawable/bg_comment_reason"
+                android:hint="@string/chat_video_comment_other"
+                android:lineSpacingExtra="@dimen/px9_dp"
+                android:padding="@dimen/px30_dp"
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/px43_sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</com.juxin.library.view.CustomFrameLayout>

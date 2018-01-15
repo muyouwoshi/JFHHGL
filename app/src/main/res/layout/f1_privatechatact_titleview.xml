@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cus_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/px22_dp"
+            android:paddingRight="@dimen/px22_dp"
+            android:text="别；是；中国国"
+            android:textColor="@color/color_title_new"
+            android:textSize="@dimen/px52_sp" />
+
+        <RelativeLayout
+            android:id="@+id/cus_top_title_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px53_dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cus_top_title"
+            android:paddingTop="@dimen/px3_dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/cus_top_title_img"
+                android:layout_width="@dimen/px52_dp"
+                android:layout_height="@dimen/px52_dp"
+                android:src="@drawable/f1_top01" />
+
+            <TextView
+                android:id="@+id/cus_top_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/cus_top_title_img"
+                android:layout_alignRight="@+id/cus_top_title_img"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="6dp"
+                android:ellipsize="end"
+                android:maxEms="3"
+                android:maxLines="1"
+                android:text="Top3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px26_sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/net_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/color_cccccc"
+        android:textSize="@dimen/px26_sp" />
+</LinearLayout>

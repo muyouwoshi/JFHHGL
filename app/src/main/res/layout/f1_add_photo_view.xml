@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_rl_voice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+        android:id="@+id/add_photo_img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"/>
+    <ImageView
+        android:id="@+id/add_photo_img_up"
+        android:layout_width="@dimen/px218_dp"
+        android:layout_height="@dimen/px98_dp"
+        android:background="@drawable/f1_id_card_photo_up"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/add_photo_tv_tip"
+        android:layout_width="@dimen/px218_dp"
+        android:layout_height="@dimen/px98_dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/f1_upload_btn"
+        android:textSize="@dimen/px42_sp"/>
+
+</FrameLayout>

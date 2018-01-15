@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/px360_dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_info"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/cover_bg"/>
+
+        <Button
+            android:id="@+id/btn_user_nav_reg"
+            android:layout_alignTop="@+id/nav_bottom"
+            android:layout_centerHorizontal="true"
+            style="@style/badge_common_register_login"
+            android:text="注册"
+            android:textColor="@color/color_565d74"
+            android:textSize="@dimen/px46_sp"/>
+
+        <Button
+            android:id="@+id/btn_user_nav_login"
+            style="@style/badge_common_register_login"
+            android:layout_below="@+id/btn_user_nav_reg"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:layout_centerHorizontal="true"
+            android:text="登录"
+            android:textColor="@color/color_565d74"
+            android:textSize="@dimen/px46_sp"/>
+    </RelativeLayout>
+</LinearLayout>

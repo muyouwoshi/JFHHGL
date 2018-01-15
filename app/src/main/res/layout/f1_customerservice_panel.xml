@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_customerservice_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_customerservice_bind_desc"
+        android:textColor="@color/text_zhuyao_black"
+        android:textSize="@dimen/txt_small" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/px10_dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px20_dp"
+        android:layout_marginTop="@dimen/px20_dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_customerservice_qq"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/txt_small" />
+
+        <LinearLayout
+            android:id="@+id/ll_open_qq_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40_dp"
+            android:background="@drawable/f1_btn_getqq_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/px10_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px50_dp"
+                android:layout_height="@dimen/px50_dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/f1_qq_ico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px15_dp"
+                android:text="@string/txt_qq_desc"
+                android:textSize="@dimen/px38_sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/px10_dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_customerservice_phone"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/txt_small" />
+
+        <TextView
+            android:id="@+id/tv_customerservice_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:textSize="@dimen/px38_sp"
+            android:textColor="@color/txt_customerservice_phone"
+            android:text="@string/txt_customerservice_phone_default" />
+
+        <TextView
+            android:id="@+id/tv_customerservice_worktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10_dp"
+            android:textSize="@dimen/px38_sp"
+            android:text="(9:00-18:00)"
+            android:textColor="@color/text_ciyao_gray" />
+    </LinearLayout>
+
+
+</LinearLayout>

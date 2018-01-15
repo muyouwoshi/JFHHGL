@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00ffffff"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_consume_top"
+        layout="@layout/live_consume_list_fragment_top"/>
+
+    <ListView
+        android:id="@+id/lv_consume"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/live_admin_manage_bottom_white2"
+        android:cacheColorHint="#00000000"
+        android:divider="#e6e6e6"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="#00000000"
+        android:scrollbars="none">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_refresh"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/live_no_network"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_refresh"
+                android:layout_marginTop="10dp"
+                android:text="网络未连接，请检查网络设置"
+                android:textColor="#999999"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

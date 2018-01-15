@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/px120_dp"
+    android:layout_marginRight="@dimen/px120_dp"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px66_dp"
+    android:paddingRight="@dimen/px66_dp">
+
+    <ImageView
+        android:id="@+id/title_upgrade_img_crown"
+        android:layout_width="@dimen/px130_dp"
+        android:layout_height="@dimen/px130_dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px104_dp"
+        android:layout_marginTop="@dimen/px50_dp"
+        android:background="@drawable/f2_img_black1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_upgrade_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px50_dp"
+            tools:text="金牌王老吉" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_upgrade_ll_own"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px20_dp"
+        android:paddingLeft="@dimen/px60_dp"
+        android:paddingTop="@dimen/px40_dp">
+
+        <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+            android:id="@+id/title_upgrade_img_star"
+            android:layout_width="@dimen/px480_dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f2_font_gongxirs" />
+ha
+    </LinearLayout>
+
+    <com.juxin.predestinate.module.logic.baseui.custom.CropEndImageView
+        android:id="@+id/title_upgrade_img_bottom_crown"
+        android:layout_width="@dimen/px306_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px46_dp" />
+
+</LinearLayout>

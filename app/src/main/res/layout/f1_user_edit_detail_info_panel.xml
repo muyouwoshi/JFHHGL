@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/divider_area_editinfo"
+        android:text="@string/user_edit_info_detail_info"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_margintop" />
+
+    <!-- 学历 -->
+    <LinearLayout
+        android:id="@+id/edu_view"
+        style="@style/center_set_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_edit_info_edu"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/edu"
+            style="@style/center_item_text"
+            android:gravity="right"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px40_sp" />
+
+        <ImageView
+            style="@style/right_go"
+            android:layout_marginLeft="@dimen/px25_dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/center_information_line" />
+
+    <!-- 职业 -->
+    <LinearLayout
+        android:id="@+id/job_view"
+        style="@style/center_set_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_edit_info_job"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/job"
+            style="@style/center_item_text"
+            android:gravity="right"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px40_sp" />
+
+        <ImageView
+            style="@style/right_go"
+            android:layout_marginLeft="@dimen/px25_dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/center_information_line" />
+
+    <!-- 生日 -->
+    <LinearLayout
+        android:id="@+id/birth_view"
+        style="@style/center_set_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_edit_info_birthday"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/birth"
+            style="@style/center_item_text"
+            android:gravity="right"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px40_sp" />
+
+        <ImageView
+            style="@style/right_go"
+            android:layout_marginLeft="@dimen/px25_dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/center_information_line" />
+
+    <!-- 体重 -->
+    <LinearLayout
+        android:id="@+id/weight_view"
+        style="@style/center_set_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_edit_info_weight"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/weight"
+            style="@style/center_item_text"
+            android:gravity="right"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px40_sp" />
+
+        <ImageView
+            style="@style/right_go"
+            android:layout_marginLeft="@dimen/px25_dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/center_information_line" />
+
+    <!-- 星座 -->
+    <LinearLayout
+        android:id="@+id/star_view"
+        style="@style/center_set_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_edit_info_star"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/star"
+            style="@style/center_item_text"
+            android:gravity="right"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/px40_sp" />
+
+        <ImageView
+            style="@style/right_go"
+            android:layout_marginLeft="@dimen/px25_dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_page_footing"
+        android:background="@color/bg_color" />
+</LinearLayout>

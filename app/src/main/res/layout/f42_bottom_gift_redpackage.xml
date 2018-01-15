@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/f42_hb01"
+              android:orientation="vertical"
+              android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/px35_dp">
+
+        <ImageView
+            android:id="@+id/gift_redpackage_close"
+            android:layout_width="@dimen/px70_dp"
+            android:layout_height="@dimen/px70_dp"
+            android:layout_marginRight="@dimen/px35_dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/f42_close_hb"/>
+
+        <TextView
+            android:id="@+id/gift_redpackage_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/px35_dp"
+            android:text="哇哦，他送你红包啦"
+            android:textColor="@color/color_FFAE00"
+            android:textSize="@dimen/big_font_60"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/f42_hb02"
+            android:layout_marginTop="@dimen/px190_dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gift_redpackage_title"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="0.4"
+                android:minHeight="@dimen/px35_dp"
+                android:padding="@dimen/px35_dp"
+                android:layout_marginTop="@dimen/px170_dp"
+                android:gravity="center"
+                android:text="已存入钱包，可直接提现"
+                android:textColor="@color/color_4bb5ff"
+                android:textSize="@dimen/px39_sp"/>
+
+            <TextView
+                android:id="@+id/gift_redpackage_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="0.6"
+                android:layout_marginBottom="@dimen/px20_dp"
+                android:padding="@dimen/px35_dp"
+                android:gravity="center"
+                android:text="知道了"
+                android:textColor="@color/color_ciyao"
+                android:textSize="@dimen/big_font_45"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/px270_dp"
+            android:layout_height="@dimen/px270_dp"
+            android:layout_gravity="center"
+            android:background="@drawable/f42_coins_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gift_redpackage_title"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gift_redpackage_pirce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="￥1.27"
+                android:textSize="@dimen/px66_sp"
+                android:lines="1"
+                android:textColor="#734523"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

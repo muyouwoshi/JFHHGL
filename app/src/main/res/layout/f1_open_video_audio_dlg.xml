@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/px50_dp">
+
+        <TextView
+            android:id="@+id/tv_open_va_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/open_video_chat_title"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px56_sp" />
+
+        <TextView android:id="@+id/tv_open_va_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_video_chat_content"
+            android:textSize="14sp"
+            android:textColor="@color/filter_text_gray_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:text="@string/user_auth_dialog_btn_cancel_text"
+                android:textColor="@color/text_ciyao_gray" />
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:textColor="#fd6f92"
+                android:text="@string/go_to_open" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

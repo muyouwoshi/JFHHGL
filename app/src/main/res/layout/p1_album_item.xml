@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_pic"/>
+
+    <!--图片选中后阴影遮罩-->
+    <View
+        android:id="@+id/v_gray_masking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66333333"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_pick_or_not"
+        android:layout_width="@dimen/px100_dp"
+        android:layout_height="@dimen/px100_dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="@dimen/px15_dp"
+        android:layout_marginTop="@dimen/px15_dp"
+        android:src="@drawable/p1_album_chose" />
+</FrameLayout>

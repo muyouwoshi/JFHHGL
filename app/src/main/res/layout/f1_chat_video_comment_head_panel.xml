@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px36_dp"
+        android:layout_marginTop="@dimen/px36_dp"
+        android:background="@drawable/bg_comment_clock">
+
+        <ImageView
+            android:id="@+id/iv_clock"
+            android:layout_width="@dimen/px75_dp"
+            android:layout_height="@dimen/px75_dp"
+            android:padding="@dimen/px10_dp"
+            android:src="@drawable/f1_chat_clock_gray" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px80_dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_clock"
+            android:gravity="center"
+            android:paddingRight="@dimen/px30_dp"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px36_sp"
+            tools:text="钻石：12000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_time"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/px80_dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- 头像 -->
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="@dimen/px255_dp"
+            android:layout_height="@dimen/px255_dp"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px35_dp"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px43_sp"
+            tools:text="蛋蛋的忧伤" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:background="@drawable/bg_comment_diamond"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px36_sp"
+                    tools:text="钻石：0" />
+
+                <ImageView
+                    android:id="@+id/iv_money"
+                    android:layout_width="@dimen/px100_dp"
+                    android:layout_height="@dimen/px100_dp"
+                    android:src="@drawable/iv_diamond" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30_dp">
+
+                <TextView
+                    android:id="@+id/tv_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px80_dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:background="@drawable/bg_comment_diamond"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px36_sp"
+                    tools:text="钻石：0" />
+
+                <ImageView
+                    android:id="@+id/iv_relation"
+                    android:layout_width="@dimen/px100_dp"
+                    android:layout_height="@dimen/px100_dp"
+                    android:src="@drawable/iv_relation" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/netStatusLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_fbdaa5"
+    android:paddingBottom="@dimen/px15_dp"
+    android:paddingTop="@dimen/px15_dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px33_dp"
+            android:layout_height="@dimen/px33_dp"
+            android:src="@drawable/link_ico" />
+
+        <TextView
+            android:id="@+id/netStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15_dp"
+            android:text="链接状态"
+            android:textColor="@color/color_a0741d" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/go_no_net_des"
+        android:layout_width="@dimen/px40_dp"
+        android:layout_height="@dimen/px40_dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:src="@drawable/go_no_net_des" />
+
+
+</RelativeLayout>

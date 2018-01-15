@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/view_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        android:background="#96878A">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="6dp"/>
+
+        <ImageView
+            android:id="@+id/iv_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_alignTop="@+id/iv_head"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_peerage_yuliao_window_friend"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/iv_friend"
+            android:layout_alignTop="@+id/iv_head"
+            android:layout_marginTop="4dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_marginBottom="4dp"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:background="@null"
+            android:text="接受"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/btn_refuse"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:background="@null"
+            android:text="拒绝"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:layout_toLeftOf="@+id/btn_accept"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:padding="@dimen/px25_dp">
+
+
+    <!--头像-->
+
+    <RelativeLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="@dimen/px195_dp"
+        android:layout_height="@dimen/px195_dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-43dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            style="@style/avatar_big"
+            android:src="@drawable/public_title_avager_hongse_bg" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/avatar"
+            style="@style/avatar_middle" />
+
+        <ImageView
+            android:layout_width="@dimen/px50_dp"
+            android:layout_height="@dimen/px50_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/px10_dp"
+            android:layout_marginRight="@dimen/px10_dp"
+            android:src="@drawable/vip_dlg_avater_bg_vipico" />
+
+    </RelativeLayout>
+
+    <!-- header -->
+    <RelativeLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px240_dp"
+        android:background="@drawable/f1_chat_pay_head"
+        android:padding="@dimen/px20_dp"
+        android:paddingBottom="@dimen/px20_dp">
+
+        <!-- 女方头像 -->
+        <RelativeLayout
+            android:layout_width="@dimen/px240_dp"
+            android:layout_height="@dimen/px240_dp"
+            android:layout_marginLeft="@dimen/px20_dp">
+
+            <com.juxin.predestinate.module.logic.baseui.custom.RadiationView
+                android:id="@+id/rv_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.juxin.predestinate.module.logic.baseui.custom.RadiationView
+                android:id="@+id/rv_sec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_girl_head"
+                android:layout_width="@dimen/px120_dp"
+                android:layout_height="@dimen/px120_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/default_head" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/chat_img"
+                android:layout_width="@dimen/px80_dp"
+                android:layout_height="@dimen/px80_dp"
+                android:layout_gravity="center"
+                android:src="@drawable/f1_chat_video_img" />
+
+            <TextView
+                android:id="@+id/chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px10_dp"
+                android:text="@string/invite_video_tips"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px34_sp" />
+
+            <TextView
+                android:id="@+id/chat_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px10_dp"
+                android:text="@string/invite_video_price"
+                android:textColor="@color/color_FFE27F"
+                android:textSize="@dimen/px34_sp" />
+        </LinearLayout>
+
+        <!-- 男方头像 -->
+        <ImageView
+            android:id="@+id/iv_my_head"
+            android:layout_width="@dimen/px150_dp"
+            android:layout_height="@dimen/px150_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20_dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/public_index_rechargevip_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+
+    <LinearLayout
+        android:id="@+id/recharge_popping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/color_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px12_dp"
+            android:layout_marginBottom="@dimen/px12_dp"
+            android:layout_marginRight="@dimen/px12_dp"
+            android:layout_marginTop="@dimen/px25_dp"
+            android:text="@string/chat_pay_diamond_tips"
+            android:textSize="@dimen/px42_sp" />
+
+        <!-- 商品列表 / 支付方式容器 -->
+        <LinearLayout
+            android:id="@+id/pay_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px35_dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px45_dp"
+            android:paddingRight="@dimen/px45_dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px54_dp"
+                android:text="@string/diamond_balance"
+                android:textColor="@color/color_FFAE00"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:id="@+id/diamond_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px36_sp" />
+
+        </LinearLayout>
+
+
+        <!-- 充值按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px54_dp"
+            android:paddingRight="@dimen/px54_dp"
+            android:paddingTop="@dimen/px50_dp">
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px105_dp"
+                android:background="@drawable/f1_bt_invite_expired"
+                android:text="@string/goods_pay_immediately"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px48_dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/px30_dp"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px48_sp" />
+    </LinearLayout>
+</RelativeLayout>

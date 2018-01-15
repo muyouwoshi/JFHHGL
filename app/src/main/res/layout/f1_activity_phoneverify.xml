@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px70_dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="5dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px180_dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:contentDescription="@string/img_verify_girl_des"
+                            android:src="@drawable/f1_bronding_ico" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/px15_dp"
+                        android:text="@string/txt_verify_tip_up"
+                        android:textColor="@color/text_ciyao_gray"
+                        android:textSize="@dimen/px39_sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/px45_dp"
+                            android:paddingRight="@dimen/px45_dp"
+                            android:text="+86" />
+
+                        <View
+                            android:layout_width="@dimen/px3_dp"
+                            android:layout_height="@dimen/px20_dp"
+                            android:background="@color/bg_color" />
+
+                        <EditText
+                            android:id="@+id/edt_phoneverify_phone"
+                            style="@style/editText_input"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="@string/ext_phone_hit"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:textSize="@dimen/px39_sp" />
+
+
+                    </LinearLayout>
+
+                    <View style="@style/divider_line_gapLeft40px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/px45_dp">
+
+
+                        <EditText
+                            android:id="@+id/edt_phoneverify_note"
+                            style="@style/editText_input"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="@string/ext_verifycode_hit"
+                            android:inputType="phone"
+                            android:maxLength="8"
+                            android:textSize="@dimen/px39_sp" />
+
+                        <Button
+                            android:id="@+id/btn_phoneverify_begin"
+                            style="@style/button_middle"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/r1_btn_getcode_bg"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/bt_send_code_normal"
+                            android:textColor="@color/btn_getcode_stroke" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_phoneverify_ok"
+                    style="@style/button_big"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/px100_dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/bt_verify" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_F9F9F9"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/px30_dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="@dimen/px30_dp">
+
+                    <include layout="@layout/f1_phonebind_privilege_panel" />
+
+                    <View
+                        style="@style/divider_line"
+                        android:layout_marginBottom="@dimen/px30_dp"
+                        android:layout_marginTop="@dimen/px30_dp" />
+
+                    <include layout="@layout/f1_customerservice_panel" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_page_footing" />
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/f1_customerservice_btn" />
+    </RelativeLayout>
+</LinearLayout>

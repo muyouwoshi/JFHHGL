@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px45_dp"
+                android:text="关闭余额提示"
+                android:textColor="@color/text_zhuyao_black"
+                android:textSize="@dimen/px52_sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px54_dp"
+            android:paddingBottom="@dimen/px30_dp"
+            android:text="关闭聊天页的余额不足提示。"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px42_sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_show_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/px18_dp">
+
+            <CheckBox
+                android:id="@+id/cb_def_sel"
+                android:layout_width="@dimen/px60_dp"
+                android:layout_height="@dimen/px60_dp"
+                android:background="@drawable/p1_close_balance_select"
+                android:button="@null"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px45_dp"
+                android:text="不再出现此提示"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/px18_dp"
+            android:paddingBottom="@dimen/px30_dp">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px30_dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_ciyao_gray"
+                android:textSize="@dimen/px52_sp" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px30_dp"
+                android:text="确认关闭"
+                android:textColor="@color/theme_color_red"
+                android:textSize="@dimen/px52_sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

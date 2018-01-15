@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/level_of_intimacy_ll_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px100_dp">
+
+    <View
+        android:id="@+id/level_of_intimacy_ll_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/title_footer_height"/>
+
+    <LinearLayout
+        android:id="@+id/level_of_intimacy_ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/level_of_intimacy_rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/px50_dp"
+            android:paddingRight="@dimen/px50_dp"
+            android:paddingTop="@dimen/px56_dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/level_of_intimacy_img_head_other"
+                android:layout_width="@dimen/px140_dp"
+                android:layout_height="@dimen/px140_dp"
+                android:src="@drawable/default_pic" />
+
+            <LinearLayout
+                android:id="@+id/level_of_intimacy_ll_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/level_of_intimacy_img_head_other"
+                android:layout_alignTop="@+id/level_of_intimacy_img_head_other"
+                android:layout_toRightOf="@+id/level_of_intimacy_img_head_other"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/px20_dp">
+
+                <ImageView
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px48_dp"
+                    android:background="@drawable/f1_icon_friend" />
+
+                <TextView
+                    android:id="@+id/level_of_intimacy_tv_head_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px8_dp"
+                    android:textSize="@dimen/px30_dp"
+                    tools:text="Lv2" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/level_of_intimacy_img_head_own"
+                android:layout_width="@dimen/px140_dp"
+                android:layout_height="@dimen/px140_dp"
+                android:layout_toRightOf="@+id/level_of_intimacy_ll_head"
+                android:src="@drawable/default_pic" />
+
+            <TextView
+                android:id="@+id/level_of_intimacy_tv_head_intimacys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/level_of_intimacy_img_head_own"
+                android:paddingLeft="@dimen/px20_dp"
+                android:text="@string/intimacys"
+                android:textColor="@color/color_zhuyao" />
+
+            <RelativeLayout
+                android:id="@+id/level_of_intimacy_rl_head_intimacys"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px50_dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/level_of_intimacy_btn_head_retract"
+                android:layout_toRightOf="@+id/level_of_intimacy_tv_head_intimacys"
+                android:gravity="bottom">
+
+                <ProgressBar
+                    android:id="@+id/level_of_intimacy_pb_head_intimacys"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px30_dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:layout_marginRight="@dimen/px20_dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/f2_level_progress" />
+
+                <TextView
+                    android:id="@+id/level_of_intimacy_tv_head_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/px26_dp"
+                    tools:text="50/200" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/level_of_intimacy_btn_head_retract"
+                android:layout_width="@dimen/px150_dp"
+                android:layout_height="@dimen/px100_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/f1_level_of_intimacy_btn_retract_bg"
+                android:gravity="center"
+                android:text="@string/task"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36_sp" />
+
+            <LinearLayout
+                android:id="@+id/level_of_intimacy_ll_head_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level_of_intimacy_img_head_other"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:padding="@dimen/px27_dp"
+                android:paddingTop="@dimen/px9_dp">
+
+                <TextView
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px3_dp"
+                    android:background="@color/color_cccccc" />
+
+                <TextView
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px3_dp"
+                    android:layout_marginTop="@dimen/px6_dp"
+                    android:background="@color/color_cccccc" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/level_of_intimacy_ll_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/level_of_a_close_friend_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/px20_dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/level_of_intimacy_tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28_sp"
+                tools:text="@string/level_of_close_friend" />
+
+            <TextView
+                android:layout_width="@dimen/px60_dp"
+                android:layout_height="@dimen/px3_dp"
+                android:layout_marginTop="@dimen/px8_dp"
+                android:background="@color/color_cccccc" />
+
+            <TextView
+                android:layout_width="@dimen/px60_dp"
+                android:layout_height="@dimen/px3_dp"
+                android:layout_marginTop="@dimen/px6_dp"
+                android:background="@color/color_cccccc" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_level_ll_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f2_hb_bg"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_act_level_details_bg"
+                android:minHeight="@dimen/px222_dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px50_dp"
+                    android:paddingLeft="@dimen/px70_dp"
+                    android:paddingTop="@dimen/px50_dp">
+
+                    <ImageView
+                        android:id="@+id/chat_level_img_icon"
+                        android:layout_width="@dimen/px42_dp"
+                        android:layout_height="@dimen/px36_dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/f2_icon_haoganxin" />
+
+                    <TextView
+                        android:id="@+id/chat_level_tv_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:layout_toRightOf="@+id/chat_level_img_icon"
+                        android:text="好友等级"
+                        android:textColor="@color/color_zhuyao"
+                        android:textSize="@dimen/px34_sp" />
+
+                    <TextView
+                        android:id="@+id/chat_level_tv_level_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chat_level_tv_level"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:layout_marginTop="@dimen/px20_dp"
+                        android:layout_toRightOf="@+id/chat_level_img_icon"
+                        android:text="Lv.2不离不弃"
+                        android:textColor="@color/color_6F7485"
+                        android:textSize="@dimen/px34_sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1_dp"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px50_dp"
+                    android:paddingTop="@dimen/px50_dp">
+
+                    <ImageView
+                        android:id="@+id/chat_level_img_voice"
+                        android:layout_width="@dimen/px78_dp"
+                        android:layout_height="@dimen/px78_dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/f2_icon_tonghuashichang" />
+
+                    <TextView
+                        android:id="@+id/chat_level_tv_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:layout_toRightOf="@+id/chat_level_img_voice"
+                        android:text="语聊时长(分钟)"
+                        android:textColor="@color/color_zhuyao"
+                        android:textSize="@dimen/px26_sp" />
+
+                    <TextView
+                        android:id="@+id/chat_level_tv_voice_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chat_level_tv_voice"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:layout_marginTop="@dimen/px30_dp"
+                        android:layout_toRightOf="@+id/chat_level_img_voice"
+                        tools:text="6"
+                        android:textColor="@color/color_6F7485"
+                        android:textSize="@dimen/px36_sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1_dp"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px50_dp"
+                    android:paddingRight="@dimen/px70_dp"
+                    android:paddingTop="@dimen/px50_dp">
+
+                    <ImageView
+                        android:id="@+id/chat_level_img_gift"
+                        android:layout_width="@dimen/px78_dp"
+                        android:layout_height="@dimen/px78_dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/f2_icon_zengsongliwu" />
+
+                    <TextView
+                        android:id="@+id/chat_level_tv_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:layout_toRightOf="@+id/chat_level_img_gift"
+                        android:text="赠送礼物数"
+                        android:textColor="@color/color_zhuyao"
+                        android:textSize="@dimen/px26_sp" />
+
+                    <TextView
+                        android:id="@+id/chat_level_tv_gift_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chat_level_tv_gift"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:layout_marginTop="@dimen/px30_dp"
+                        android:layout_toRightOf="@+id/chat_level_img_gift"
+                        tools:text="79"
+                        android:textColor="@color/color_6F7485"
+                        android:textSize="@dimen/px36_sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/px40_dp"
+                android:paddingLeft="@dimen/px70_dp"
+                android:paddingRight="@dimen/px70_dp">
+                <LinearLayout
+                    android:id="@+id/chat_level_ll_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/chat_level_img_task"
+                        android:layout_width="@dimen/px38_dp"
+                        android:layout_height="@dimen/px40_dp"
+                        android:background="@drawable/f2_icon_jinrirenwu"/>
+
+                    <TextView
+                        android:id="@+id/f2_icon_jinrirenwu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px38_dp"
+                        android:textColor="@color/color_zhuyao"
+                        android:text="今日任务" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/level_of_intimacy_lv_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/px5_dp"
+                android:paddingBottom="@dimen/px20_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px3_dp"
+                    android:background="@color/color_E9E9E9" />
+
+                <TextView
+                    android:layout_width="@dimen/px60_dp"
+                    android:layout_height="@dimen/px3_dp"
+                    android:layout_marginTop="@dimen/px6_dp"
+                    android:background="@color/color_E9E9E9" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/level_of_intimacy_ll_level_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/f2_downbtn_bg"
+                android:paddingTop="@dimen/px10_dp"
+                android:paddingBottom="@dimen/px8_dp"
+                android:paddingLeft="@dimen/px32_dp"
+                android:paddingRight="@dimen/px32_dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px42_dp"
+                        android:layout_height="@dimen/px36_dp"
+                        android:background="@drawable/f2_icon_haoganxin" />
+
+                    <TextView
+                        android:id="@+id/level_of_intimacy_tv_level_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px16_dp"
+                        android:text="Lv3"
+                        android:textColor="@color/color_ff698d"
+                        android:textSize="@dimen/px32_sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/px10_dp"
+                    android:paddingBottom="@dimen/px10_dp">
+
+                    <TextView
+                        android:layout_width="@dimen/px60_dp"
+                        android:layout_height="@dimen/px3_dp"
+                        android:background="@color/color_E9E9E9" />
+
+                    <TextView
+                        android:layout_width="@dimen/px60_dp"
+                        android:layout_height="@dimen/px3_dp"
+                        android:layout_marginTop="@dimen/px6_dp"
+                        android:background="@color/color_E9E9E9" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/level_of_intimacy_img_task_num"
+                android:background="@drawable/bg_badge_two"
+                android:layout_width="@dimen/px33_dp"
+                android:layout_height="@dimen/px33_dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:button="@null"
+    android:id="@+id/item_tv"
+    android:background="@drawable/bg_group_sayhello_shape_selecter"
+    android:paddingLeft="@dimen/px35_dp"
+    android:paddingRight="@dimen/px35_dp"
+    android:paddingTop="@dimen/px12_dp"
+    android:paddingBottom="@dimen/px12_dp"
+    android:text="北京"
+    android:textColor="@drawable/groupsayhello_flow_text_color"
+    />

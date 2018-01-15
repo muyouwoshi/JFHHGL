@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/p1_chat_invite_tran" />
+
+    <LinearLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px286_dp"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/p1_invite_video_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px190_dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_invite_img"
+                android:layout_width="@dimen/px100_dp"
+                android:layout_height="@dimen/px100_dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/p1_ltlx01"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px15_dp"
+                android:layout_toRightOf="@+id/iv_invite_img"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_invite_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="@string/invite_video"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px40_sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px15_dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_invite_tv_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/video_cost"
+                        android:textColor="@color/color_D1ECFF"
+                        android:textSize="@dimen/px28_sp" />
+
+                    <TextView
+                        android:id="@+id/tv_invite_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:singleLine="true"
+                        android:text="60s"
+                        android:textColor="@color/color_D1ECFF"
+                        android:textSize="@dimen/px28_sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96_dp"
+            android:background="@drawable/p1_invite_video_bottom_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_invite_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:layout_width="@dimen/px46_dp"
+                    android:layout_height="@dimen/px46_dp"
+                    android:background="@drawable/p1_ltbtn01" />
+
+                <TextView
+                    android:id="@+id/tv_invite_tv_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:paddingRight="@dimen/px20_dp"
+                    android:text="拒绝接收"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/px36_sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_invite_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="@dimen/px46_dp"
+                    android:layout_height="@dimen/px46_dp"
+                    android:background="@drawable/p1_ltbtn02" />
+
+                <TextView
+                    android:id="@+id/tv_invite_tv_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20_dp"
+                    android:text="@string/connect"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/px36_sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

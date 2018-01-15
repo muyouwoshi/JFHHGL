@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/spread_share_make_money_bg">
+
+        <ImageView
+            android:id="@+id/iv_share_close"
+            android:layout_width="@dimen/px118_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px61_dp"
+            android:src="@drawable/spread_share_close"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_make_money"
+            android:layout_marginTop="@dimen/px28_dp"
+            android:gravity="center"
+            android:text="@string/spread_make_money_easy"
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px45_sp"/>
+
+        <TextView
+            android:id="@+id/tv_make_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px150_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px48_dp"
+            android:layout_marginLeft="@dimen/px216_dp"
+            android:layout_marginRight="@dimen/px216_dp"
+            android:layout_marginTop="@dimen/px44_dp"
+            android:background="@drawable/spread_share_make_money_bt"
+            android:gravity="center"
+            android:text="@string/spread_make_money_bt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px60_sp"/>
+    </RelativeLayout>
+</LinearLayout>

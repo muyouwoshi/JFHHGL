@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dlg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_video_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px25_dp"
+            android:text="视频聊天"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px45_sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px25_dp"
+            android:layout_marginTop="@dimen/px6_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_video_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0钻石/分"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（自己露脸）"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_ededed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_video_chat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px25_dp"
+            android:text="视频聊天"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px45_sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px25_dp"
+            android:layout_marginTop="@dimen/px6_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_video_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0钻石/分"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（自己不露脸）"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_ededed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_audio_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px25_dp"
+            android:text="语音聊天"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px45_sp" />
+
+        <TextView
+            android:id="@+id/tv_audio_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px25_dp"
+            android:layout_marginTop="@dimen/px6_dp"
+            android:text="0钻石/分"
+            android:textColor="@color/color_cccccc"
+            android:textSize="@dimen/px36_sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_ededed" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px21_dp"
+        android:background="@color/color_ededed" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px45_dp"
+        android:paddingTop="@dimen/px45_dp"
+        android:text="取 消"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+</LinearLayout>

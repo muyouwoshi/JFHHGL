@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/p1_chat_e02" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/p1_chat_e02" android:state_enabled="true" android:state_selected="true" />
+    <item android:drawable="@drawable/p1_chat_e01" />
+</selector>

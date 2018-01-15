@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_margin="@dimen/px24_dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/pay_result_fail_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px52_sp" />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/px200_dp"
+        android:layout_height="@dimen/px200_dp"
+        android:layout_margin="@dimen/px45_dp"
+        android:src="@drawable/f1_pay_result_fail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px20_dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pay_result_fail_text1"
+            android:textColor="@color/color_C7C7C7"
+            android:textSize="@dimen/px40_sp" />
+
+        <TextView
+            android:id="@+id/tv_text1_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/px40_sp"
+            tools:text="0731-89746010" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/px100_dp"
+            android:layout_height="@dimen/px100_dp"
+            android:src="@drawable/f1_pay_custumer" />
+
+        <TextView
+            android:id="@+id/tv_text2_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:text="@string/pay_result_fail_text2"
+            android:textColor="@color/pay_tel_color" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/button_big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px108_dp"
+        android:layout_margin="@dimen/px80_dp"
+        android:adjustViewBounds="true"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_fill_theme_pink_bg"
+        android:gravity="center"
+        android:text="@string/ok" />
+</LinearLayout>

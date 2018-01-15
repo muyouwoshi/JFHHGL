@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/px50_dp">
+
+        <TextView
+            android:id="@+id/join_guild_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_guild_dialog_title"
+            android:textColor="@color/text_zhuyao_black"
+            android:textSize="@dimen/px56_sp" />
+
+        <EditText android:id="@+id/edit_guild_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:layout_marginRight="@dimen/px35_dp"
+            android:inputType="number"
+            android:maxLength="15"
+            android:hint="@string/join_guild_dialog_input_hint"
+            android:textColorHint="#bababa"
+            android:textColor="#bababa"
+            android:background="@drawable/f1_shape_edit_join_guild"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/button_big"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:layout_marginRight="@dimen/px35_dp"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:textColor="@color/white"
+            android:background="@drawable/f1_boxgobtn_bg"
+            android:text="@string/txt_submit" />
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/button_big"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:layout_marginRight="@dimen/px35_dp"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:background="@color/transparent"
+            android:text="@string/user_auth_dialog_btn_cancel_text"
+            android:textColor="@color/text_ciyao_gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

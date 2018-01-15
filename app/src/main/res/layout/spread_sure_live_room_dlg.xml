@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px24_dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round_top_white">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/px84_dp"
+                android:layout_height="@dimen/px84_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px46_dp"
+                android:layout_marginTop="@dimen/px37_dp"
+                android:src="@drawable/f1_close_btn02"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/px64_dp"
+                android:text="这是您要找的直播间吗？"
+                android:textColor="@color/text_zhuyao_black"
+                android:textSize="@dimen/px52_sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_avatar_live"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/px49_dp">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    style="@style/avatar_middle"/>
+
+                <RelativeLayout
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:background="@drawable/spread_white_circle">
+
+                    <ImageView
+                        android:id="@+id/iv_living"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/anim_living"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_avatar_live"
+                android:layout_marginTop="@dimen/px26_dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    style="@style/txt_item_nickname"/>
+
+                <ImageView
+                    android:id="@+id/iv_peerage"
+                    style="@style/icon_title"
+                    android:layout_marginLeft="@dimen/px25_dp"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/iv_mei"
+                    style="@style/icon_mei"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:src="@drawable/f1_top01"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_age_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_nick"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/px36_dp"
+                android:text="20岁  -  1.5km"
+                android:textColor="@color/filter_text_gray_color"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_live_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_age_dis"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/px36_dp"
+                android:layout_marginBottom="@dimen/px66_dp"
+                android:text=""
+                android:textColor="@color/color_B2B2B2"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_live_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round_bot_gwhite"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px60_dp"
+            android:paddingTop="@dimen/px44_dp">
+
+            <ImageView
+                style="@style/icon_middle_center"
+                android:src="@drawable/tab_live_btn"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30_dp"
+                android:text="进入直播间"
+                android:textColor="@color/text_zhuyao_black"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

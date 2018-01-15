@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/defriend_divider_line"
+        style="@style/divider_line_horizontal"
+        android:layout_marginLeft="@dimen/px35_dp"
+        android:layout_marginRight="@dimen/px35_dp" />
+
+    <LinearLayout
+        style="@style/center_set_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/defriend_item_name"
+            style="@style/center_item_text"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/color_5b5b5b"
+            android:textSize="@dimen/px48_sp" />
+
+        <CheckBox
+            android:id="@+id/defriend_item_check"
+            style="@style/icon_middle_center"
+            android:background="@drawable/p1_defriend_select_bg"
+            android:button="@null" />
+    </LinearLayout>
+</LinearLayout>

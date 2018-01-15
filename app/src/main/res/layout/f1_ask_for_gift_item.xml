@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/px24_dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_gift1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/f1_gift_select_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/px18_dp">
+
+        <ImageView
+            android:id="@+id/iv_gift1"
+            android:layout_width="@dimen/px180_dp"
+            android:layout_height="@dimen/px180_dp" />
+
+        <TextView
+            android:id="@+id/tv_gift_price1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/px24_dp"
+            android:text="0钻石"
+            android:textColor="@color/theme_color_red"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px36_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gift2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px18_dp"
+        android:layout_marginRight="@dimen/px18_dp"
+        android:layout_weight="1"
+        android:background="@drawable/f1_gift_select_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/px18_dp">
+
+        <ImageView
+            android:id="@+id/iv_gift2"
+            android:layout_width="@dimen/px180_dp"
+            android:layout_height="@dimen/px180_dp" />
+
+        <TextView
+            android:id="@+id/tv_gift_price2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/px24_dp"
+            android:text="0钻石"
+            android:textColor="@color/theme_color_red"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px36_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gift3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/f1_gift_select_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/px18_dp">
+
+        <ImageView
+            android:id="@+id/iv_gift3"
+            android:layout_width="@dimen/px180_dp"
+            android:layout_height="@dimen/px180_dp" />
+
+        <TextView
+            android:id="@+id/tv_gift_price3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/px24_dp"
+            android:text="0钻石"
+            android:textColor="@color/theme_color_red"
+            android:textSize="@dimen/px42_sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_name3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_ciyao_gray"
+            android:textSize="@dimen/px36_sp" />
+    </LinearLayout>
+</LinearLayout>

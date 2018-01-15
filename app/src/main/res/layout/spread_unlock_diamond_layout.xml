@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spread_unlock_diamond_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/spread_ll_unlock_diamond_have"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px50_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px54_dp"
+                android:text="@string/diamond_balance"
+                android:textColor="@color/color_FFAE00"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:id="@+id/spread_tv_unlock_diamond_remain_have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px54_dp"
+            android:paddingRight="@dimen/px54_dp"
+            android:paddingTop="@dimen/px50_dp">
+
+            <LinearLayout
+                android:id="@+id/spread_ll_unlock_btn_havediamond"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px180_dp"
+                android:background="@drawable/f1_bt_invite_expired"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spread_unlock_pay"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_4"
+                    android:text="@string/spread_unlock_pay_small"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spread_ll_unlock_btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/spread_iv_unlock_btn_show_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/spread_unlock_checked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/spread_unlock_not_warn" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/spread_ll_unlock_diamond_not_have"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/spread_panel_kh_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px50_dp"
+            android:layout_marginRight="@dimen/px50_dp"
+            android:layout_marginTop="@dimen/px38_dp"
+            android:background="@drawable/f2__vip_top__bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/px28_dp">
+
+            <ImageView
+                android:layout_width="@dimen/px72_dp"
+                android:layout_height="@dimen/px72_dp"
+                android:background="@drawable/f2_th_ico" />
+
+            <TextView
+                android:id="@+id/spread_panel_kh_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30_dp"
+                android:text="@string/spread_unlock_dimand_not"
+                android:textColor="#d8ab64"
+                android:textSize="@dimen/px32_sp" />
+        </LinearLayout>
+
+        <!-- 商品列表 / 支付方式容器 -->
+        <LinearLayout
+            android:id="@+id/pay_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px35_dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px45_dp"
+            android:paddingRight="@dimen/px45_dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px54_dp"
+                android:text="@string/diamond_balance"
+                android:textColor="@color/color_FFAE00"
+                android:textSize="@dimen/px36_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/px36_sp" />
+
+        </LinearLayout>
+
+
+        <!-- 充值按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px54_dp"
+            android:paddingRight="@dimen/px54_dp"
+            android:paddingTop="@dimen/px50_dp">
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px105_dp"
+                android:background="@drawable/f1_bt_invite_expired"
+                android:text="@string/spread_txt_pay_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px45_sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

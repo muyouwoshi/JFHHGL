@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/level_of_intimacy_ll_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingRight="@dimen/px50_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/marquee_panel_three_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px150_dp"
+        android:layout_alignBottom="@+id/marquee_panel_two_ll_head_tw"
+        android:layout_alignLeft="@+id/marquee_panel_two_ll_head_tw"
+        android:layout_alignRight="@+id/marquee_panel_two_ll_head_tw"
+        android:layout_alignTop="@+id/marquee_panel_two_ll_head_tw"
+        android:layout_marginRight="@dimen/px70_dp"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/marquee_panel_three_ll_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px116_dp"
+            android:background="@drawable/f2_dm02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/marquee_panel_two_ll_head_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/marquee_panel_two_head_two"
+            android:layout_width="@dimen/px105_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:layout_marginLeft="@dimen/px5_dp" />
+
+        <TextView
+            android:id="@+id/marquee_panel_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px38_sp"
+            android:visibility="visible"
+            tools:text="@string/marquee_upgrade" />
+
+        <RelativeLayout
+            android:id="@+id/marquee_panel_rl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px150_dp"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/marquee_panel_tv_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/f2_dm03"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px22_sp"
+                tools:text="水晶" />
+
+            <ImageView
+                android:id="@+id/marquee_panel_img_icon"
+                android:layout_width="@dimen/px120_dp"
+                android:layout_height="@dimen/px120_dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/px50_dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/marquee_panel_two_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px150_dp"
+        android:layout_alignBottom="@+id/marquee_panel_two_ll_head"
+        android:layout_alignLeft="@+id/marquee_panel_two_ll_head"
+        android:layout_alignRight="@+id/marquee_panel_two_ll_head"
+        android:layout_alignTop="@+id/marquee_panel_two_ll_head"
+        android:layout_marginRight="@dimen/px60_dp"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/marquee_panel_two_ll_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px116_dp"
+            android:background="@drawable/f2_dm01" />
+    </LinearLayout>
+
+    <com.juxin.predestinate.ui.user.my.view.MultiImageView
+        android:id="@+id/marquee_panel_img_gift_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px32_dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/marquee_panel_two_ll_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px30_dp"
+        android:layout_toLeftOf="@+id/marquee_panel_img_gift_num"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/marquee_panel_two_head"
+            android:layout_width="@dimen/px105_dp"
+            android:layout_height="@dimen/px105_dp"
+            android:layout_marginLeft="@dimen/px5_dp" />
+
+        <LinearLayout
+            android:id="@+id/marquee_panel_ll_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20_dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/marquee_panel_tv_from_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px38_sp"
+                tools:text="蓝色星空王子" />
+
+            <TextView
+                android:id="@+id/marquee_panel_tv_to_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px8_dp"
+                android:text="送给 妖姬女王"
+                android:textColor="@color/color_zhuyao"
+                android:textSize="@dimen/px28_sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/marquee_panel_img_gift_icon"
+            android:layout_width="@dimen/px150_dp"
+            android:layout_height="@dimen/px150_dp"
+            android:layout_marginLeft="@dimen/px50_dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

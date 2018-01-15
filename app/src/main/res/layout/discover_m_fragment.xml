@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <RelativeLayout
+        android:id="@+id/netStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.juxin.predestinate.ui.discover.DiscoverMViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/discover_red_card_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/px300_dp"
+            android:layout_marginRight="@dimen/px24_dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/discover_red_card_close"
+                android:layout_width="@dimen/px72_dp"
+                android:layout_height="@dimen/px72_dp"
+                android:layout_gravity="right"
+                android:background="@drawable/live_hb_mini_off" />
+
+            <ImageView
+                android:id="@+id/discover_red_card"
+                android:layout_width="@dimen/px215_dp"
+                android:layout_height="@dimen/px309_dp"
+                android:layout_marginTop="@dimen/px6_dp"
+                android:layout_gravity="right"
+                android:src="@drawable/live_hb_mini" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

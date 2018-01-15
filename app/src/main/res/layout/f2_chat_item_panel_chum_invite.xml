@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/px870_dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chum_invite_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px240_dp"
+        android:background="@drawable/f2_img_chat_friend_bg_01_you"
+        android:paddingLeft="@dimen/px50_dp"
+        android:paddingRight="@dimen/px50_dp"
+        android:paddingBottom="@dimen/px35_dp"
+        android:paddingTop="@dimen/px35_dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/px160_dp"
+            android:layout_height="@dimen/px160_dp"
+            android:layout_marginLeft="@dimen/px22_dp"
+            android:background="@drawable/chat_chum_invite_img_bg"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/chum_invite_img"
+                android:layout_width="@dimen/px110_dp"
+                android:layout_height="@dimen/px110_dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_pic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chum_invite_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/chat_gift_hello_man"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px45_sp" />
+
+            <TextView
+                android:id="@+id/chum_invite_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px9_dp"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="送你棒棒糖一个"
+                android:textColor="@color/color_ffd9d9"
+                android:textSize="@dimen/px39_sp" />
+            <TextView
+                android:id="@+id/chum_invite_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px9_dp"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="送你棒棒糖一个"
+                android:textColor="@color/color_ffd0d0"
+                android:textSize="@dimen/px30_sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chum_invite_lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90_dp"
+        android:background="@drawable/f2_img_chat_friend_bg_02"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/chum_invite_cruel_refused"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:layout_width="@dimen/px46_dp"
+                android:layout_height="@dimen/px46_dp"
+                android:background="@drawable/f2_icon_refuse" />
+
+            <TextView
+                android:id="@+id/chum_invite_reject_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20_dp"
+                android:paddingRight="@dimen/px20_dp"
+                android:text="@string/cruel_refused"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chum_invite_receive_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:gravity="center"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/chum_invite_receive_gift_icon"
+                android:layout_width="@dimen/px46_dp"
+                android:layout_height="@dimen/px46_dp"
+                android:background="@drawable/f2_icon_accept" />
+
+            <TextView
+                android:id="@+id/chum_invite_receive_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20_dp"
+                android:text="@string/receive_gift"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/px36_sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

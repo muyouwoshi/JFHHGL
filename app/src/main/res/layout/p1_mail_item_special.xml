@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mail_item_private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:cacheColorHint="@color/transparent"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/px35_dp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/px245_dp"
+            android:layout_height="@dimen/px235_dp"
+            android:paddingLeft="@dimen/px35_dp">
+
+            <ImageView
+                android:id="@+id/mail_item_headpic"
+                style="@style/avatar_middle"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/px30_dp"
+                android:layout_marginTop="@dimen/px30_dp"
+                android:src="@drawable/default_head" />
+
+            <com.juxin.library.unread.BadgeView
+                android:id="@+id/mail_item_unreadnum"
+                style="@style/badge_num_big"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/px15_dp"
+                android:layout_marginTop="@dimen/px15_dp"
+                android:text="1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mail_item_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/px45_sp" />
+
+                <ImageView
+                    android:id="@+id/mail_item_nobility"
+                    style="@style/icon_title"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:src="@null"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/mail_relation_state"
+                    style="@style/icon_relation"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:paddingLeft="@dimen/px36_dp"
+                    android:gravity="center"
+                    android:background="@drawable/f1_relation_value"
+                    android:text="lv1"
+                    android:textSize="@dimen/px22_sp"
+                    android:textColor="@color/theme_color_red"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mail_item_ranking_state"
+                    style="@style/icon_mei"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:src="@drawable/f1_top01"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mail_item_vip"
+                    style="@style/icon_vip"
+                    android:layout_marginLeft="@dimen/px10_dp"
+                    android:src="@drawable/f1_vip_icon"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mail_item_last_time"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px35_dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/px36_sp" />
+            </LinearLayout>
+
+            <com.juxin.predestinate.module.logic.baseui.custom.EmojiTextView
+                android:id="@+id/mail_item_last_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px2_dp"
+                android:layout_marginTop="@dimen/px25_dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxWidth="200dp"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/px39_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mail_item_invite_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px35_dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mail_item_invite_dial_icon"
+                android:layout_width="@dimen/px190_dp"
+                android:layout_height="@dimen/px91_dp"
+                android:src="@drawable/f1_chat_voice_answer" />
+
+            <TextView
+                android:id="@+id/mail_item_invite_dial_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px9_dp"
+                android:text="50钻/分"
+                android:textSize="@dimen/px36_sp"
+                android:textColor="@color/color_ciyao"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/divider_line_horizontal" />
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px306_dp"
+        android:layout_marginLeft="@dimen/px130_dp"
+        android:layout_marginRight="@dimen/px130_dp"
+        android:background="@drawable/redbag_red_top_round">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/px82_dp"
+            android:layout_height="@dimen/px82_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px31_dp"
+            android:layout_marginTop="@dimen/px31_dp"
+            android:src="@drawable/redbag_close_ic"/>
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px124_dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/color_ffdea5"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_first"
+            android:layout_marginTop="@dimen/px21_dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/color_ffdea5"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_marginLeft="@dimen/px130_dp"
+        android:layout_marginRight="@dimen/px130_dp"
+        android:background="@drawable/redbag_red_bot_round">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px110_dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/redbag_get_center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px175_dp"
+                android:layout_height="@dimen/px175_dp"
+                android:layout_marginTop="@dimen/px6_dp"
+                android:src="@drawable/redbag_dollar_ic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px34_dp"
+                android:text="金额随机"
+                android:textColor="@color/color_ffdea5"
+                android:textSize="11.5sp"/>
+
+            <ImageView
+                android:id="@+id/iv_put_bag"
+                android:layout_width="@dimen/px500_dp"
+                android:layout_height="@dimen/px126_dp"
+                android:layout_marginTop="@dimen/px144_dp"
+                android:src="@drawable/redbag_put_bt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px41_dp"
+                android:text="可在背包中开启或赠送她人"
+                android:textColor="@color/color_ffdea5"
+                android:textSize="11.5sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
